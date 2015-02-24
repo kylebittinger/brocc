@@ -121,14 +121,6 @@ def get_lineage(taxid):
         print str(taxid) + " will not be considered"
         return None
 
-#@author: Serena
-#checks to make sure lowest rank is included in qiime formated taxnomy string
-def setRank(xml_tree, taxid_dict):
-    #get rank
-    rank = xml_tree.find('Taxon/Rank').text
-    if rank not in taxid_dict:
-        taxid_dict[rank] = xml_tree.find('Taxon/ScientificName').text
-
 
 def url_open(url, max_tries=5):
     for n in xrange(max_tries):
