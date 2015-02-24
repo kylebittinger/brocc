@@ -16,9 +16,9 @@ class AssignmentCandidate(object):
         is_high_rank = rank in ["phylum", "kingdom", "domain"]
         is_descended_from_missing_taxon = any("(" in h for h in self.all_taxa)
         if is_high_rank and not is_descended_from_missing_taxon:
-            self.legit_taxa = True
+            self.legit = True
         else:
-            self.legit_taxa = lineage.classified
+            self.legit = lineage.classified
 
     @property
     def all_taxa(self):
@@ -72,15 +72,14 @@ class Assigner(object):
 
     def __init__(self, min_cover, species_min_id, genus_min_id, min_id,
                  consensus_thresholds, max_generic, taxa_db):
-        self.consensus_thresholds = consensus_thresholds
-        self.max_generic = max_generic
-        self.min_id = min_id
         self.min_cover = min_cover
-        # Minimum identity for consideration at each rank
         self.rank_min_ids = [
             species_min_id, genus_min_id, min_id, min_id,
             min_id, min_id, min_id, min_id,
             ]
+        self.min_id = min_id
+        self.consensus_thresholds = consensus_thresholds
+        self.max_generic = max_generic
         self.taxa_db = taxa_db
 
     def _quality_filter(self, seq, hits):
@@ -102,26 +101,20 @@ class Assigner(object):
     def assign(self, name, seq, hits):
         if not hits:
             return NoAssignment(name, "No hits found in database")
-
         hits_to_keep, frac_low_coverage = self._quality_filter(seq, hits)
-
         if frac_low_coverage > .9:
             return NoAssignment(name, "Abundance of low coverage hits: possible chimera")
-
         if not hits_to_keep:
             return NoAssignment(name, "All BLAST hits were filtered for low quality.")
-
         return self.vote(name, seq, hits_to_keep)
 
     def _retrieve_lineage(self, hit):
         taxid = self.taxa_db.get_taxon_id(hit.gi)
         if taxid is None:
             return NoLineage()
-
         raw_lineage = self.taxa_db.get_lineage(taxid)
         if raw_lineage is None:
             return NoLineage()
-
         return Lineage(raw_lineage)
 
     def vote(self, name, seq, hits):
@@ -157,7 +150,6 @@ class Assigner(object):
             if lineage.classified is False:
                 num_generic += 1
 
-        # Immediately return if there are no candidates
         if len(candidates) == 0:
             return None
 
@@ -170,24 +162,20 @@ class Assigner(object):
         if (num_generic / total_votes) < self.max_generic:
             total_votes = total_votes - num_generic
 
-        # Sort candidates by total votes and pick the winner.
-        sorted_candidates = candidates.items()
-        sorted_candidates.sort(reverse=True, key=lambda (taxon, c): c.votes)
-        (name, winner) = sorted_candidates[0]
+        sorted_candidates = candidates.values()
+        sorted_candidates.sort(reverse=True, key=lambda c: c.votes)
+        winning_candidate = sorted_candidates.pop(0)
 
-        # If there is a 50-50 tie for first place and the winner is a
-        # bad classification, consider the runner up.
-        if (winner.legit_taxa is False) and (len(sorted_candidates) > 1):
-            (name, winner) = sorted_candidates[1]
-            # If both top hits are low quality, there is no winner
-            if winner.legit_taxa is False:
+        # If the winner is a bad classification, consider the runner up.
+        if not winning_candidate.legit:
+            if not sorted_candidates:
+                return None
+            winning_candidate = sorted_candidates.pop(0)
+            # If the runner up is also a bad classification, give up.
+            if not winning_candidate.legit:
                 return None
 
-        # Only one low quality hit, no winner.
-        elif winner.legit_taxa is False and len(candidates) == 1:
-            return None
-
-        if (winner.votes / total_votes) > consensus_threshold:
-            return Assignment(query_id, winner, total_votes, num_generic)
+        if (winning_candidate.votes / total_votes) > consensus_threshold:
+            return Assignment(query_id, winning_candidate, total_votes, num_generic)
         else:
             return None
