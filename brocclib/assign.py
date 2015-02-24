@@ -1,12 +1,35 @@
 from __future__ import division
 
-from brocclib.Candidates import Candidate
 from brocclib.Taxon import Lineage, NoLineage
 
 '''
 Created on Aug 29, 2011
 @author: Serena, Kyle
 '''
+
+class Candidate(object):
+    """Candidate assignment"""
+    def __init__(self, lineage, rank):
+        self.votes = 0
+        self.lineage = lineage
+        self.rank = rank
+
+        is_high_rank = rank in ["phylum", "kingdom", "domain"]
+        is_descended_from_missing_taxon = any("(" in h for h in self.all_taxa)
+
+        if is_high_rank and not is_descended_from_missing_taxon:
+            self.legit_taxa = True
+        else:
+            self.legit_taxa = lineage.classified
+
+    @property
+    def all_taxa(self):
+        return self.lineage.get_all_taxa(self.rank)
+
+    @property
+    def standard_taxa(self):
+        return self.lineage.get_standard_taxa(self.rank)
+
 
 class Assignment(object):
     def __init__(self, query_id, winning_candidate, total_votes, num_generic):
@@ -72,7 +95,7 @@ class Assigner(object):
             min_id, min_id, min_id, min_id,
             ]
         self.taxa_db = taxa_db
-    
+
     def _quality_filter(self, seq, hits):
         hits_to_keep = []
         num_low_coverage = 0
@@ -142,7 +165,7 @@ class Assigner(object):
                 continue
             if taxon not in candidates:
                 candidates[taxon] = Candidate(lineage, rank)
-            candidates[taxon].votes += 1                
+            candidates[taxon].votes += 1
 
             if lineage.classified is False:
                 num_generic += 1
@@ -170,7 +193,7 @@ class Assigner(object):
         if (winner.legit_taxa is False) and (len(sorted_candidates) > 1):
             (name, winner) = sorted_candidates[1]
             # If both top hits are low quality, there is no winner
-            if winner.legit_taxa is False: 
+            if winner.legit_taxa is False:
                 return None
 
         # Only one low quality hit, no winner.
