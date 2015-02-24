@@ -7,8 +7,7 @@ Created on Aug 29, 2011
 @author: Serena, Kyle
 '''
 
-class Candidate(object):
-    """Candidate assignment"""
+class AssignmentCandidate(object):
     def __init__(self, lineage, rank):
         self.votes = 0
         self.lineage = lineage
@@ -16,7 +15,6 @@ class Candidate(object):
 
         is_high_rank = rank in ["phylum", "kingdom", "domain"]
         is_descended_from_missing_taxon = any("(" in h for h in self.all_taxa)
-
         if is_high_rank and not is_descended_from_missing_taxon:
             self.legit_taxa = True
         else:
@@ -33,45 +31,34 @@ class Candidate(object):
 
 class Assignment(object):
     def __init__(self, query_id, winning_candidate, total_votes, num_generic):
-        self.id = query_id
+        self.query_id = query_id
         self.winning_candidate = winning_candidate
         self.total_votes = total_votes
         self.num_generic = num_generic
 
     def format_for_full_taxonomy(self):
         lineage = ';'.join(self.winning_candidate.all_taxa)
-        return "%s\t%s\n" % (self.id, lineage)
+        return "%s\t%s\n" % (self.query_id, lineage)
 
     def format_for_standard_taxonomy(self):
         lineage = ';'.join(self.winning_candidate.standard_taxa)
-        return "%s\t%s\n" % (self.id, lineage)
+        return "%s\t%s\n" % (self.query_id, lineage)
 
     def format_for_log(self):
         lineage = ';'.join(self.winning_candidate.all_taxa)
         return "%s\t%s\t%s\t%s\t%s\t%s\n" % (
-            self.id, self.winning_candidate.votes, self.total_votes,
+            self.query_id, self.winning_candidate.votes, self.total_votes,
             self.num_generic, self.winning_candidate.rank, lineage)
 
 
 class NoAssignment(object):
     """Null object representing no assignment, with message."""
-    def __init__(self, name, message):
-        self.name = name
+    def __init__(self, query_id, message):
+        self.query_id = query_id
         self.message = message
 
-    def vote(self, *args, **kwargs):
-        pass
-
-    @property
-    def winning_candidate(self):
-        return self.message
-
-    @property
-    def id(self):
-        return self.name
-
     def format_for_full_taxonomy(self):
-        return "%s\t%s\n" % (self.id, self.message)
+        return "%s\t%s\n" % (self.query_id, self.message)
 
     format_for_standard_taxonomy = format_for_full_taxonomy
     format_for_log = format_for_full_taxonomy
@@ -164,7 +151,7 @@ class Assigner(object):
             if taxon is None:
                 continue
             if taxon not in candidates:
-                candidates[taxon] = Candidate(lineage, rank)
+                candidates[taxon] = AssignmentCandidate(lineage, rank)
             candidates[taxon].votes += 1
 
             if lineage.classified is False:
