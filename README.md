@@ -3,6 +3,10 @@ BROCC
 
 Generate consensus-based taxonomic assignments from BLAST results.
 
+Please cite the following paper when using BROCC:
+
+Dollive S, Peterfreund GL, Sherrill-Mix S, Bittinger K, Sinha R, Hoffmann C, Nabel CS, Hill DA, Artis D, Bachman MA, Custers-Allen R, Grunberg S, Wu GD, Lewis JD, Bushman FD.  A tool kit for quantifying eukaryotic rRNA gene sequences from human microbiome samples.  Genome Biol. 2012 Jul 3;13(7):R60. doi: 10.1186/gb-2012-13-7-r60.
+
 Installion
 ----------
 
@@ -38,7 +42,7 @@ The BROCC command has several options for consensus formation:
 * minimum species identity (for consideration at the species level)
 * minimum genus identity (for consideration at the genus level)
 * minimum overall identity (for consideration at higher levels)
-* maximum proportion of generic hits pruned out before query is 
+* maximum proportion of generic hits pruned out before query is
   given a high level classification only
 
 The defaults are currently set for the ITS1 gene, because these
