@@ -122,14 +122,14 @@ class Assigner(object):
         hits.sort(reverse=True, key=lambda x: x.pct_id)
         hits_lineage = [(hit, self._retrieve_lineage(hit)) for hit in hits]
         for rank in self.ranks:
-            a = self.vote_at_level(name, rank, hits_lineage)
+            a = self.vote_at_rank(name, rank, hits_lineage)
             if a is not None:
                 return a
         return NoAssignment(
             name, "Could not find consensus at domain level. No classification.")
 
-    def vote_at_level(self, query_id, rank, db_hits):
-        '''Votes at a given level (rank) of the taxonomy.'''
+    def vote_at_rank(self, query_id, rank, db_hits):
+        '''Votes at a given rank of the taxonomy.'''
         rank_idx = self.ranks.index(rank)
         min_pct_id = self.rank_min_ids[rank_idx]
         consensus_threshold = self.consensus_thresholds[rank_idx]
