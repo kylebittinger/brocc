@@ -56,7 +56,7 @@ GENERIC_TAXA = [
 GENERIC_FLAGS = [
     "unclassified Fungi",
     "unclassified Basidiomycota",
-    "unclassified Ascomycota",    
+    "unclassified Ascomycota",
     ]
 
 
@@ -77,7 +77,7 @@ class Lineage(object):
         self.store = dictionary
 
         self.species = self.store.get("species")
-        
+
         self.classified = True
         if self.species in self.generic_taxa:
             self.classified = False
@@ -91,7 +91,7 @@ class Lineage(object):
 
         self.family = self.store.get("family")
         if (self.family is None) and (self.genus is not None):
-            self.family = self.genus.split(" (")[0] + " (family)"                
+            self.family = self.genus.split(" (")[0] + " (family)"
 
         self.order = self.store.get("order")
         if (self.order is None) and (self.family is not None):
@@ -132,12 +132,8 @@ class Lineage(object):
             yield t
             if t == taxon:
                 break
-            
+
     def get_taxon(self, rank):
         if rank == "class":
             rank = "clas"
         return getattr(self, rank)
-
- 
-
-    

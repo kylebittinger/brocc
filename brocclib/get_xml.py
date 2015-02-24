@@ -35,21 +35,21 @@ class NcbiEutils(object):
         # Do nothing if no lookups have been performed.
         if self._fresh:
             return None
-        
+
         lineages = list(
             (x, list(sorted(y.items()))) for x, y in self.lineages.items())
         lineages.sort()
 
         taxon_ids = list(self.taxon_ids.items())
         taxon_ids.sort()
-        
+
         data = {
             "lineages": lineages,
             "taxon_ids": taxon_ids,
             }
         with open(self.cache_fp, "w") as f:
             json.dump(data, f, indent=2, separators=(',', ': '))
-            
+
 
 def get_taxon_from_xml(xml_string):
     taxon_dict = {}
@@ -71,7 +71,7 @@ def get_taxon_from_xml(xml_string):
 
     # Also include the lineage as a string
     taxon_dict['Lineage'] = tree.find('Taxon/Lineage').text
-    
+
     return taxon_dict
 
 
@@ -118,9 +118,9 @@ def get_lineage(taxid):
             print e, "Will retry"
     if num_tries == 5:
         print "could not connect to db for taxon" + str(taxid)
-        print str(taxid) + " will not be considered"        
+        print str(taxid) + " will not be considered"
         return None
-        
+
 #@author: Serena
 #checks to make sure lowest rank is included in qiime formated taxnomy string
 def setRank(xml_tree, taxid_dict):
