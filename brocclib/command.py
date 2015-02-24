@@ -5,7 +5,7 @@ import optparse
 import os
 
 from brocclib.assign import Assigner
-from brocclib import get_xml
+from brocclib.get_xml import NcbiEutils
 from brocclib.parse import iter_fasta, read_blast
 
 
@@ -88,7 +88,7 @@ def main(argv=None):
     else:
         logging.basicConfig(level=logging.WARNING)
     
-    taxa_db = get_xml.NcbiEutils(opts.cache_fp)
+    taxa_db = NcbiEutils(opts.cache_fp)
     taxa_db.load_cache()
 
     consensus_thresholds = [t for _, t in CONSENSUS_THRESHOLDS]
