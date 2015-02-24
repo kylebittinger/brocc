@@ -1,0 +1,46 @@
+# BLASTN 2.2.23+
+# Query:  71_mispriming
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 17 hits found
+71_mispriming	gi|156770453|gb|EU060946.1|	99.57	230	1	0	1	230	410	639	3e-114	 420
+71_mispriming	gi|319414919|gb|CP002352.1|	86.31	336	44	2	1	335	1005362	1005696	2e-97	 364
+71_mispriming	gi|259115711|gb|GQ873814.1|	83.93	336	52	2	1	335	424	758	3e-84	 320
+71_mispriming	gi|259117637|gb|GQ875740.1|	100.00	114	0	0	222	335	840	727	2e-51	 211
+71_mispriming	gi|247536273|gb|CP001655.1|	80.29	137	17	10	44	175	572594	572463	2e-16	95.3
+71_mispriming	gi|83025233|gb|AC167966.4|	80.62	129	17	8	51	175	86682	86558	8e-16	93.5
+71_mispriming	gi|117558854|gb|CP000462.1|	79.07	129	19	8	51	175	3533496	3533620	2e-12	82.4
+71_mispriming	gi|270342133|gb|CP001836.1|	78.10	137	20	10	44	175	4152589	4152720	2e-11	78.7
+71_mispriming	gi|218759244|gb|CP001322.1|	92.45	53	4	0	123	175	3257977	3257925	8e-11	76.8
+71_mispriming	gi|140843962|dbj|AP009044.1|	86.76	68	7	2	128	194	1838172	1838106	3e-10	75.0
+71_mispriming	gi|42602314|dbj|BA000036.3|	86.76	68	7	2	128	194	1700011	1699945	3e-10	75.0
+71_mispriming	gi|41325548|emb|BX927152.1|	86.76	68	7	2	128	194	305787	305721	3e-10	75.0
+71_mispriming	gi|8346731|emb|AJ290443.1|	86.76	68	7	2	128	194	680	746	3e-10	75.0
+71_mispriming	gi|323575285|emb|FN543093.2|	77.21	136	23	8	44	175	3626738	3626869	1e-09	73.1
+71_mispriming	gi|219536331|gb|CP001336.1|	93.75	48	1	2	132	178	4126392	4126346	4e-09	71.3
+71_mispriming	gi|89332194|dbj|AP008230.1|	93.75	48	1	2	132	178	3095225	3095179	4e-09	71.3
+71_mispriming	gi|68262661|emb|CR931997.1|	87.10	62	8	0	132	193	1201467	1201406	4e-09	71.3
+# BLASTN 2.2.23+
+# Query:  530_mispriming
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+530_mispriming	gi|291513545|emb|FP929032.1|	84.67	137	15	5	1	133	2891511	2891645	6e-28	 132
+# BLASTN 2.2.23+
+# Query:  2_mispriming
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2_mispriming	gi|312441806|gb|CP002345.1|	74.56	397	72	23	31	413	2544746	2544365	9e-32	 147
+# BLASTN 2.2.23+
+# Query:  42_mispriming
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# 0 hits found
+# BLASTN 2.2.23+
+# Query:  531_mispriming_highE
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# 0 hits found
+# BLASTN 2.2.23+
+# Query:  461_mispriming_highE
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# 0 hits found

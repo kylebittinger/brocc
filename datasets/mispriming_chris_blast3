@@ -1,0 +1,6 @@
+# BLASTN 2.2.23+
+# Query:  2_mispriming
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+2_mispriming	gi|312441806|gb|CP002345.1|	74.56	397	72	23	31	413	2544746	2544365	9e-32	 147

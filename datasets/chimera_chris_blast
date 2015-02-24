@@ -1,0 +1,28 @@
+# BLASTN 2.2.23+
+# Query:  544_chimera_LowE
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+544_chimera_LowE	gi|149935098|gb|CP000140.1|	100.00	61	0	0	1	61	560812	560752	9e-23	 113
+# BLASTN 2.2.23+
+# Query:  50_chimera_lowE
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# 0 hits found
+# BLASTN 2.2.23+
+# Query:  16_chimera_highE
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# 0 hits found
+# BLASTN 2.2.23+
+# Query:  463_chimera_highE
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# 0 hits found
+# BLASTN 2.2.23+
+# Query:  444_chimera_lowE
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+444_chimera_lowE	gi|259115652|gb|GQ873755.1|	88.89	207	17	5	1	204	1279	1076	3e-63	 250
+# BLASTN 2.2.23+
+# Query:  430_chimera_HighE
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# 0 hits found

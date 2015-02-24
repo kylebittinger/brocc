@@ -1,0 +1,416 @@
+Sequence	Winner_Votes	Votes_Cast	Generics_Pruned	Level	Classification
+0 C.3053_187446	28	29	5	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces
+1 C.3067_500057	88	96	154	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium
+10 C.4020a_545911	155	197	53	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales;mitosporic Hypocreales;Fusarium
+100 C.3052_120828	51	59	4	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Kluyveromyces;Kluyveromyces marxianus
+101 C.3040_102694	Abundance of low coverage hits: possible chimera
+102 C.3004_361323	No hits found in database
+103 C.3004_377069	184	187	66	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+104 C.4020b_507663	110	149	53	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Aspergillus
+105 C.3046_309857	6	7	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida quercitrusa
+106 C.4002_828402	No hits found in database
+107 C.3067_513732	1	1	0	species	cellular organisms;Bacteria;Firmicutes;Negativicutes;Selenomonadales;Acidaminococcaceae;Acidaminococcus;Acidaminococcus intestini
+108 C.3045_102621	1	1	2	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;mitosporic Ascomycota;Endoconidioma;Endoconidioma populi
+109 C.3034_102058	128	163	74	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;Eurotium
+11 C.3023_146578	20	31	20	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium;Cladosporium sphaerospermum
+110 C.3027_194339	No hits found in database
+111 C.3083_568891	8	11	4	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+112 C.3017_100621	57	80	170	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Pleosporomycetidae;Pleosporales;Pleosporineae;Pleosporaceae;mitosporic Pleosporaceae;Alternaria
+113 C.3079_873397	2	2	0	species	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides;Bacteroides vulgatus
+114 C.3001_188681	103	119	48	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+115 C.3071_534501	28	28	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida albicans
+116 C.3007_110749	216	240	10	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Fungi incertae sedis;Early diverging fungal lineages;Mucoromycotina;Mucorales;Mucoraceae;Mucor
+117 C.3071_827989	No hits found in database
+118 C.3084_554458	4	5	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+119 C.3064_801520	No hits found in database
+12 C.3046_184378	178	185	68	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+120 C.3045_100113	96	149	55	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Pucciniomycotina;Microbotryomycetes;Sporidiobolales;mitosporic Sporidiobolales;Rhodotorula;Rhodotorula mucilaginosa
+121 C.3015_100851	212	209	41	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota
+122 C.4000_827683	158	171	13	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Ustilaginomycotina;Ustilaginomycetes;Ustilaginales;Ustilaginaceae
+123 C.3037_103649	158	194	53	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetidae;Agaricales;Psathyrellaceae
+124 C.3023_103044	1	1	1	phylum	unclassified sequences;environmental samples;uncultured organism
+125 C.3006_101507	56	83	167	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium
+126 C.4017_518571	2	2	0	genus	cellular organisms;Bacteria;Firmicutes;Clostridia;Clostridiales;Ruminococcaceae;Faecalibacterium
+127 C.3043_100210	45	74	102	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Cystofilobasidiales;Cystofilobasidiaceae
+128 C.3026_150961	159	180	72	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+129 C.3026_171849	1	1	0	species	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides;Bacteroides xylanisolvens
+13 C.3040_101316	208	220	29	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida parapsilosis
+130 C.4014_857478	35	43	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Torulaspora;Torulaspora delbrueckii
+131 C.4028_544693	230	247	231	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+132 C.3079_872437	No hits found in database
+133 C.3062_520483	148	170	81	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida
+134 C.3019_106490	20	23	26	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Aspergillus;Aspergillus penicillioides
+135 C.3043_342590	No hits found in database
+136 C.3009_143917	No hits found in database
+137 C.3006_143205	245	250	247	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+138 C.3064_802231	Abundance of low coverage hits: possible chimera
+139 C.3048_104775	96	126	123	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Pucciniomycotina;Cystobasidiomycetes;Erythrobasidiales;Erythrobasidiaceae;Rhodotorula
+14 C.3034_100489	106	154	2	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetidae;Agaricales;Agaricaceae;Agaricus;Agaricus bisporus
+140 C.4004_502143	250	250	182	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+141 C.3018_384090	8	9	4	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+142 C.4025_501029	10	12	24	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Cystofilobasidiales;mitosporic Cystofilobasidiales;Cryptococcus;Cryptococcus macerans
+143 C.4025_500002	237	243	194	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+144 C.3027_105613	55	68	0	genus	cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;Embryophyta;Tracheophyta;Euphyllophyta;Spermatophyta;Magnoliophyta;eudicotyledons;core eudicotyledons;Caryophyllales;Amaranthaceae;Atriplex
+145 C.4010_559552	239	242	182	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+146 C.3028_108866	184	242	8	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Aspergillus
+147 C.4020b_505148	138	138	120	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+148 C.3027_100899	19	31	12	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida sake
+149 C.4026_515940	194	198	52	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Pucciniomycotina;Microbotryomycetes;Sporidiobolales
+15 C.3034_106338	204	213	37	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+150 C.4002_501828	38	39	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetes incertae sedis;Polyporales;Lentinaceae;Lentinus;Lentinus tuber-regium
+151 C.3029_100533	56	56	51	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+152 C.3079_851677	Abundance of low coverage hits: possible chimera
+153 C.3080_841607	No hits found in database
+154 C.3003_104693	250	250	211	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+155 C.3029_131677	34	34	31	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+156 C.3018_121904	2	3	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+157 C.3025_369412	176	182	71	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+158 C.3018_321415	1	1	0	species	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides;Bacteroides xylanisolvens
+159 C.3070_533289	Abundance of low coverage hits: possible chimera
+16 C.3001_380563	Abundance of low coverage hits: possible chimera
+160 C.3015_192462	119	138	112	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium
+161 C.3033_119519	205	214	36	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+162 C.3044_100544	138	141	109	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales
+163 C.3055_121843	95	117	133	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium
+164 C.4013_534230	124	126	11	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Microascales
+165 C.3020_100301	206	205	45	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota
+166 C.4025_501050	181	204	46	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+167 C.3042_101388	250	250	215	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+168 C.4000_500016	158	167	162	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+169 C.3039_100578	200	237	14	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Meyerozyma
+17 C.3015_107533	No hits found in database
+170 C.3017_382945	202	233	17	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Debaryomyces
+171 C.3022_100297	No hits found in database
+172 C.3014_100440	20	28	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Pichiaceae;Pichia;Pichia mexicana
+173 C.4019_567398	19	22	9	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+174 C.3038_100194	250	250	221	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+175 C.4019_510227	104	168	21	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium;Penicillium citrinum
+176 C.3038_193694	No hits found in database
+177 C.3030_169378	51	74	2	species	cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;Embryophyta;Tracheophyta;Euphyllophyta;Spermatophyta;Magnoliophyta;Liliopsida;commelinids;Poales;Poaceae;PACMAD clade;Panicoideae;Andropogoneae;Zea;Zea mays
+178 C.3057_530883	148	145	49	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota
+179 C.3027_155722	2	3	0	genus	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides
+18 C.4026_530830	205	214	36	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+180 C.3040_101330	No hits found in database
+181 C.3051_129945	1	1	0	species	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides;Bacteroides vulgatus
+182 C.4010_860995	No hits found in database
+183 C.3081_504396	105	116	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetes incertae sedis;Cantharellales;Ceratobasidiaceae;Thanatephorus;Thanatephorus cucumeris
+184 C.4014_502799	112	119	130	class	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes
+185 C.3020_112219	197	207	43	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+186 C.3025_149809	10	13	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;Eurotium;Eurotium halophilicum
+187 C.3041_124332	249	250	231	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+188 C.4013_817436	Abundance of low coverage hits: possible chimera
+189 C.3052_346436	231	236	185	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+19 C.4021_500608	104	170	80	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales;Nectriaceae
+190 C.3046_100347	53	70	5	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida
+191 C.3047_116836	130	207	45	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Aspergillus
+192 C.3017_106396	245	250	0	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Sordariomycetidae;Ophiostomatales;Ophiostomataceae;Ophiostoma
+193 C.3008_352169	1	1	1	phylum	unclassified sequences;environmental samples;uncultured organism
+194 C.3020_117502	94	101	149	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Pleosporomycetidae;Pleosporales
+195 C.3014_101884	58	58	47	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+196 C.3018_122460	4	4	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+197 C.3003_121880	Abundance of low coverage hits: possible chimera
+198 C.3041_115236	6	6	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida dubliniensis
+199 C.3075_862152	No hits found in database
+2 C.4010_873998	1	1	1	phylum	unclassified sequences;environmental samples;uncultured organism
+20 C.3038_130874	91	117	15	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Chaetothyriomycetidae;Chaetothyriales;Herpotrichiellaceae;mitosporic Herpotrichiellaceae;Exophiala
+200 C.3050_304709	No hits found in database
+201 C.3040_115911	205	226	4	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida albicans
+202 C.3032_100104	196	196	176	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+203 C.3032_100651	128	182	68	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Glomerellales;Plectosphaerellaceae
+204 C.3085_505469	Abundance of low coverage hits: possible chimera
+205 C.3026_100035	234	246	238	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+206 C.4020b_544187	42	61	13	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Sordariomycetidae;Diaporthales;Diaporthaceae;Diaporthe;Diaporthe phaseolorum
+207 C.3026_180246	No hits found in database
+208 C.3009_360414	180	186	67	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+209 C.3042_100102	1	1	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetes incertae sedis;Polyporales;Polyporaceae;Perenniporia;Perenniporia narymica
+21 C.3043_165414	47	50	30	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+210 C.3007_103684	Abundance of low coverage hits: possible chimera
+211 C.4020a_500734	119	119	105	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+212 C.4025_561652	175	181	72	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+213 C.4019_516897	206	203	47	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota
+214 C.3006_161022	232	237	183	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+215 C.3026_336143	3	4	2	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetes incertae sedis;Polyporales;Coriolaceae;Tyromyces;Tyromyces fissilis
+216 C.3064_501475	14	16	0	species	cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;Embryophyta;Tracheophyta;Euphyllophyta;Spermatophyta;Magnoliophyta;eudicotyledons;core eudicotyledons;asterids;campanulids;Apiales;Apiineae;Apiaceae;Apioideae;Scandiceae;Daucinae;Daucus;Daucus carota
+217 C.4021_506061	No hits found in database
+218 C.4013_868574	153	249	0	genus	cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;Embryophyta;Tracheophyta;Euphyllophyta;Spermatophyta;Magnoliophyta;eudicotyledons;core eudicotyledons;rosids;malvids;Brassicales;Brassicaceae;Brassiceae;Brassica
+219 C.4020b_500058	66	67	106	class	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes
+22 C.4025_564671	195	204	46	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+220 C.4010_878421	248	250	191	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+221 C.3076_877114	1	1	0	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae
+222 C.3067_861169	214	233	218	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+223 C.3008_179134	No hits found in database
+224 C.4014_862526	No hits found in database
+225 C.3031_100120	241	243	7	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetidae;Agaricales;Physalacriaceae;Armillaria
+226 C.4022_505627	86	104	146	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium
+227 C.3084_860682	1	1	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+228 C.4009_500355	44	47	46	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+229 C.3030_100340	5	7	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Microascales;Ceratocystidaceae;Ceratocystis;Ceratocystis adiposa
+23 C.3082_501183	161	165	85	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales
+230 C.4000_511979	No hits found in database
+231 C.3001_309796	Abundance of low coverage hits: possible chimera
+232 C.3018_158897	37	48	16	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces
+233 C.4013_848358	244	250	180	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+234 C.3053_382190	5	5	3	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+235 C.3062_506123	207	226	24	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida
+236 C.3022_196700	No hits found in database
+237 C.3031_102213	Abundance of low coverage hits: possible chimera
+238 C.3040_100005	209	214	36	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales;Hypocreaceae
+239 C.3053_191280	11	12	6	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+24 C.3025_105395	144	145	104	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales
+240 C.3027_102748	No hits found in database
+241 C.3026_374449	179	187	66	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+242 C.3055_382616	226	247	3	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida
+243 C.3014_100072	7	7	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Filobasidiales;Filobasidiaceae;Filobasidium;Filobasidium capsuligenum
+244 C.3019_101741	125	185	5	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Glomerellales;Glomerellaceae;mitosporic Glomerellaceae;Colletotrichum;Colletotrichum capsici
+245 C.4023_500665	218	221	164	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+246 C.4025_503682	71	89	161	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium
+247 C.4006_549084	152	191	59	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales;mitosporic Hypocreales;Fusarium
+248 C.4022_536233	86	104	146	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium
+249 C.3028_307359	Abundance of low coverage hits: possible chimera
+25 C.3015_110230	210	210	41	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Sordariomycetidae;Diaporthales
+250 C.3010_101612	55	56	3	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales;Clavicipitaceae;Claviceps;Claviceps purpurea
+251 C.3013_183991	Abundance of low coverage hits: possible chimera
+252 C.4010_505417	73	109	133	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Tremellales;mitosporic Tremellales;Cryptococcus;Cryptococcus paraflavus
+253 C.3038_177461	No hits found in database
+254 C.4025_804617	202	212	38	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+255 C.3055_138089	No hits found in database
+256 C.3074_506472	2	2	0	genus	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides
+257 C.3011_381636	138	141	67	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+258 C.4028_500090	123	198	48	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+259 C.4004_500910	2	2	2	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Pucciniomycotina;Microbotryomycetes;Sporidiobolales;Rhodosporidium;Rhodosporidium sp. MAC-2011b
+26 C.3032_104466	237	247	3	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetes incertae sedis;Botryosphaeriales;Botryosphaeriaceae;mitosporic Botryosphaeriaceae;Neofusicoccum
+260 C.4013_513849	13	13	10	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+261 C.4007_854825	No hits found in database
+262 C.3009_353969	No hits found in database
+263 C.4019_565967	183	190	63	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+264 C.3049_112936	177	177	139	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+265 C.3042_105451	44	48	4	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Wickerhamomyces;Wickerhamomyces anomalus
+266 C.3007_191848	183	190	63	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+267 C.3013_138838	Abundance of low coverage hits: possible chimera
+268 C.3068_568395	181	188	65	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+269 C.3014_138012	12	14	22	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Aspergillus;Aspergillus penicillioides
+27 C.3007_344779	No hits found in database
+270 C.3017_100989	3	4	9	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Toxicocladosporium;Toxicocladosporium irritans
+271 C.3009_103016	Abundance of low coverage hits: possible chimera
+272 C.4019_520234	6	6	2	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetes incertae sedis;Polyporales;Coriolaceae;Piptoporus;Piptoporus betulinus
+273 C.3078_507355	2	2	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Cystofilobasidiales;Cystofilobasidiaceae;Cystofilobasidium;Cystofilobasidium ferigula
+274 C.3009_329375	93	142	0	genus	cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;Embryophyta;Tracheophyta;Euphyllophyta;Spermatophyta;Magnoliophyta;eudicotyledons;stem eudicotyledons;Ranunculales;Papaveraceae;Papaver
+275 C.3032_103038	29	29	32	class	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes
+276 C.3043_118634	13	15	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Zygosaccharomyces;Zygosaccharomyces rouxii
+277 C.3015_173916	117	160	90	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Filobasidiales;mitosporic Filobasidiales;Cryptococcus
+278 C.3043_182840	No hits found in database
+279 C.3051_105473	16	21	23	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae
+28 C.4010_509536	61	53	55	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota
+280 C.3083_503427	220	220	201	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+281 C.3015_194579	119	138	112	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium
+282 C.3043_102670	142	235	15	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Aspergillus;Aspergillus flavus
+283 C.3019_110754	Abundance of low coverage hits: possible chimera
+284 C.3009_110334	55	74	23	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Pichiaceae;Pichia;Pichia kudriavzevii
+285 C.3067_500103	81	112	138	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Sordariomycetidae;Sordariales;Chaetomiaceae;Chaetomium
+286 C.3026_104231	Abundance of low coverage hits: possible chimera
+287 C.3047_113834	10	15	9	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;Eurotium
+288 C.3034_144613	239	244	8	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Aspergillus
+289 C.4029_506125	Abundance of low coverage hits: possible chimera
+29 C.4021_501564	83	84	68	class	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes
+290 C.4020b_500388	174	187	63	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales
+291 C.3011_186156	243	250	245	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+292 C.3010_179942	3	4	3	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera;Cyberlindnera jadinii
+293 C.3017_100408	7	9	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Kazachstania;Kazachstania servazzii
+294 C.3043_118449	38	44	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Zygosaccharomyces;Zygosaccharomyces rouxii
+295 C.3028_136879	Abundance of low coverage hits: possible chimera
+296 C.3028_142801	Abundance of low coverage hits: possible chimera
+297 C.3007_116320	85	94	2	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycodaceae;Hanseniaspora
+298 C.3033_186714	108	114	2	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida tropicalis
+299 C.3045_156174	1	1	0	species	cellular organisms;Bacteria;Firmicutes;Clostridia;Clostridiales;Ruminococcaceae;Faecalibacterium;Faecalibacterium prausnitzii
+3 C.3006_100027	Abundance of low coverage hits: possible chimera
+30 C.4030_503046	72	95	83	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Xylariomycetidae;Xylariales;Amphisphaeriaceae
+300 C.3016_100240	2	3	6	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Filobasidiales;mitosporic Filobasidiales;Cryptococcus;Cryptococcus oeirensis
+301 C.3079_877324	Abundance of low coverage hits: possible chimera
+302 C.3004_194769	1	1	0	genus	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Rikenellaceae;Alistipes
+303 C.3007_345310	247	250	0	genus	cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;Embryophyta;Tracheophyta;Euphyllophyta;Spermatophyta;Magnoliophyta;eudicotyledons;core eudicotyledons;rosids;fabids;Rosales;Rosaceae;Maloideae;Amygdaleae;Prunus
+304 C.3006_361342	All BLAST hits were filtered for low quality.
+305 C.3032_156047	250	250	201	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+306 C.4013_503713	102	110	140	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales
+307 C.4029_509576	245	250	246	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+308 C.3042_101124	247	250	205	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+309 C.3015_341305	1	1	0	species	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides;Bacteroides thetaiotaomicron
+31 C.4000_864323	Abundance of low coverage hits: possible chimera
+310 C.3070_501995	7	8	4	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetes incertae sedis;Corticiales;Corticiaceae;Phlebia;Phlebia tremellosa
+311 C.4029_503886	51	53	86	class	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes
+312 C.4021_861880	Abundance of low coverage hits: possible chimera
+313 C.3080_557975	1	1	0	species	cellular organisms;Bacteria;environmental samples;uncultured bacterium
+314 C.3045_100557	91	149	93	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Lecanoromycetes;Lecanoromycetes incertae sedis;Umbilicariales;Umbilicariaceae
+315 C.3062_563951	217	223	13	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Aspergillus
+316 C.3052_104582	16	17	11	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;mitosporic Ascomycota;Thermomyces;Thermomyces lanuginosus
+317 C.3043_144911	Abundance of low coverage hits: possible chimera
+318 C.4020b_501919	4	6	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetes incertae sedis;Corticiales;Corticiaceae;Cinereomyces;Cinereomyces lindbladii
+319 Cont.2_500027	148	165	85	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+32 C.3031_372525	Abundance of low coverage hits: possible chimera
+320 C.4002_561341	213	221	29	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida
+321 C.3037_165132	1	1	0	species	other sequences;artificial sequences;synthetic construct
+322 C.3042_104791	Abundance of low coverage hits: possible chimera
+323 C.3030_178764	Abundance of low coverage hits: possible chimera
+324 C.3001_157699	177	182	69	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+325 C.3015_354057	No hits found in database
+326 C.3011_123145	No hits found in database
+327 C.3009_174150	2	3	5	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+328 C.3064_501103	247	250	224	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+329 C.3029_102066	3	3	4	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Chaetothyriomycetidae;Chaetothyriales;Herpotrichiellaceae;mitosporic Herpotrichiellaceae;Phaeococcomyces;Phaeococcomyces catenatus
+33 C.4014_516859	169	245	5	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Glomerellales;Glomerellaceae;Glomerella;Glomerella acutata
+330 C.3010_107823	25	25	41	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Ustilaginomycotina;Exobasidiomycetes;Malasseziales
+331 C.3009_191573	225	246	4	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida
+332 C.4029_505458	203	222	28	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+333 C.3034_119699	119	161	69	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Tremellales;mitosporic Tremellales;Trichosporon
+334 C.3019_100226	241	250	248	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+335 C.3034_181659	No hits found in database
+336 C.4007_553768	No hits found in database
+337 C.3028_155835	250	250	230	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+338 C.3043_104109	89	77	103	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota
+339 C.4019_519872	120	162	88	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales;mitosporic Hypocreales;Fusarium
+34 C.3013_190989	Abundance of low coverage hits: possible chimera
+340 C.3003_100172	250	250	211	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+341 C.3008_115692	72	72	52	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+342 C.3053_197108	10	11	2	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+343 C.4013_500236	114	176	74	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Pleosporomycetidae;Pleosporales;Pleosporineae;Pleosporaceae;mitosporic Pleosporaceae;Stemphylium
+344 C.3071_504973	173	162	84	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota
+345 C.4021_504155	250	250	217	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+346 C.4025_508313	6	6	5	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+347 C.3086_868497	No hits found in database
+348 C.4024_526111	8	11	4	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+349 C.3026_368425	173	180	73	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+35 C.4025_819372	244	244	171	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+350 C.3015_107235	33	33	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetes incertae sedis;Auriculariales;Auriculariaceae;Auricularia;Auricularia polytricha
+351 C.3025_121411	Abundance of low coverage hits: possible chimera
+352 C.3080_512023	2	2	0	genus	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides
+353 C.4022_500284	65	88	142	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Mycosphaerellaceae;Mycosphaerella;Mycosphaerella punctiformis
+354 C.4020b_503424	137	185	65	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+355 C.3043_104177	118	149	101	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Pleosporomycetidae;Pleosporales;Pleosporineae;Pleosporaceae;Cochliobolus
+356 C.4014_550891	No hits found in database
+357 C.3014_106923	156	204	46	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales;mitosporic Hypocreales;Fusarium
+358 C.3017_100448	10	16	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetidae;Agaricales;Schizophyllaceae;environmental samples;uncultured Chondrostereum
+359 C.3030_120399	1	1	1	genus	cellular organisms;Bacteria;Firmicutes;Clostridia;Clostridiales;Ruminococcaceae;Faecalibacterium
+36 C.3029_148416	30	30	27	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+360 C.3015_175100	115	158	92	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Filobasidiales;mitosporic Filobasidiales;Cryptococcus
+361 C.3064_506543	No hits found in database
+362 C.4006_859589	76	112	32	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+363 C.3027_101412	Abundance of low coverage hits: possible chimera
+364 C.3034_100078	40	60	22	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Basidiomycota incertae sedis;Wallemiomycetes;Wallemiales;Wallemiales incertae sedis;Wallemia;Wallemia sebi
+365 C.4020b_501422	5	6	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida quercitrusa
+366 C.3052_367062	Abundance of low coverage hits: possible chimera
+367 C.4002_856107	212	250	0	genus	cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;Embryophyta;Tracheophyta;Euphyllophyta;Spermatophyta;Magnoliophyta;Liliopsida;commelinids;Poales;Poaceae;BEP clade;Pooideae;Poeae;Aveninae;Avena
+368 C.4027_502727	7	9	2	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;mitosporic Ascomycota;Acremonium;Acremonium implicatum
+369 C.3050_105340	233	250	233	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+37 C.3042_101573	10	14	20	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Filobasidiales;mitosporic Filobasidiales;Cryptococcus;Cryptococcus wieringae
+370 C.4022_867133	184	191	62	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+371 C.3047_100769	Abundance of low coverage hits: possible chimera
+372 C.3043_168949	15	15	11	domain	cellular organisms;Eukaryota
+373 C.3020_108100	27	29	64	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Filobasidiales;mitosporic Filobasidiales;Cryptococcus
+374 C.3019_342767	170	177	76	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+375 C.3045_194203	Abundance of low coverage hits: possible chimera
+376 C.4004_520864	250	250	185	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+377 C.3055_100015	223	245	4	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida albicans
+378 C.4001_501319	232	250	241	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+379 C.3007_113005	1	1	0	family	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae
+38 C.3023_353886	173	180	73	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+380 C.4025_508037	106	144	106	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Teratosphaeriaceae;Teratosphaeria
+381 C.3060_500869	247	250	179	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+382 C.3043_100083	6	6	5	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Cystofilobasidiales;Cystofilobasidiaceae;Cystofilobasidium;Cystofilobasidium infirmominiatum
+383 C.3030_129540	Abundance of low coverage hits: possible chimera
+384 C.3059_546952	No hits found in database
+385 C.3001_185148	4	4	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycodaceae;Hanseniaspora;Hanseniaspora valbyensis
+386 C.4020a_500141	5	8	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida intermedia
+387 C.3045_100646	3	3	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida sp. SH-2011
+388 C.3019_107825	13	14	0	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Vanderwaltozyma
+389 C.3008_141354	1	1	0	species	cellular organisms;Bacteria;Firmicutes;Clostridia;Clostridiales;Lachnospiraceae;Roseburia;Roseburia hominis
+39 C.3027_185931	No hits found in database
+390 C.3013_137942	8	11	4	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+391 C.3055_101630	190	196	54	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium
+392 C.3042_120100	88	126	5	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Wickerhamomyces;Wickerhamomyces anomalus
+393 C.3086_554490	11	12	6	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+394 C.3029_172900	50	50	45	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+395 C.3006_102575	240	242	184	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+396 C.3079_833207	No hits found in database
+397 C.4020b_511544	102	104	15	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Microascales
+398 C.3013_123303	Abundance of low coverage hits: possible chimera
+399 C.4030_569412	193	198	55	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+4 C.4020b_526831	11	17	4	species	cellular organisms;Eukaryota;Viridiplantae;Streptophyta;Streptophytina;Embryophyta;Tracheophyta;Euphyllophyta;Spermatophyta;Magnoliophyta;eudicotyledons;core eudicotyledons;rosids;fabids;Fabales;Fabaceae;Papilionoideae;Phaseoleae;Glycine;Glycine max
+40 C.3027_100393	84	88	94	class	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes
+400 C.4029_567448	1	1	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Metschnikowiaceae;Clavispora;Clavispora lusitaniae
+401 C.3075_521837	32	36	8	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+402 C.3030_101248	Abundance of low coverage hits: possible chimera
+403 C.3018_340323	2	3	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+404 C.3049_107992	Abundance of low coverage hits: possible chimera
+405 C.3045_170989	130	214	36	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales;Hypocreaceae;Hypocrea;mitosporic Hypocrea;Trichoderma
+406 C.3026_100507	Abundance of low coverage hits: possible chimera
+407 C.4028_503752	227	250	229	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+408 C.3006_100324	15	21	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida palmioleophila
+409 C.3052_362035	No hits found in database
+41 C.3046_197137	2	2	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Metschnikowiaceae;Metschnikowia;Metschnikowia bicuspidata
+410 C.3018_168492	41	53	8	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces
+411 C.3020_100064	7	11	19	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Cystofilobasidiales;Cystofilobasidiaceae;Cystofilobasidium;Cystofilobasidium capitatum
+412 C.3019_100044	177	178	70	class	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes
+413 C.3030_101393	250	250	193	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+414 C.4029_879209	1	1	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Metschnikowiaceae;Clavispora;Clavispora lusitaniae
+42 C.3040_101170	1	1	0	family	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Prevotellaceae
+43 C.3029_197617	21	21	19	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+44 C.4030_516120	9	10	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Trichocomaceae;mitosporic Trichocomaceae;Penicillium;Penicillium piceum
+45 C.4028_503066	95	99	151	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales
+46 C.4030_569079	6	7	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+47 C.4006_500035	116	115	134	class	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes
+48 C.3040_100277	87	96	154	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Sordariomycetes incertae sedis;Trichosphaeriales;mitosporic Trichosphaeriales;Nigrospora
+49 C.4007_825676	No hits found in database
+5 C.3050_100008	117	161	89	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Filobasidiales;mitosporic Filobasidiales;Cryptococcus
+50 C.3043_111580	21	23	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Millerozyma;Millerozyma farinosa
+51 C.4013_509575	23	26	3	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Glomerellales;Glomerellaceae;mitosporic Glomerellaceae;Colletotrichum;Colletotrichum coccodes
+52 C.4010_500848	Abundance of low coverage hits: possible chimera
+53 C.4000_501684	60	97	81	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Xylariomycetidae;Xylariales;mitosporic Xylariales;Microdochium
+54 C.3043_102168	12	12	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Zygosaccharomyces;Zygosaccharomyces rouxii
+55 C.4007_500161	19	25	7	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetidae;Agaricales;Strophariaceae;Hypholoma;Hypholoma fasciculare
+56 C.3018_100012	79	114	136	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Agaricomycetes;Agaricomycetes incertae sedis;Auriculariales;Auriculariaceae
+57 C.4020a_510641	249	249	182	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+58 C.3042_166125	80	122	128	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Teratosphaeriaceae
+59 C.3078_500749	111	143	102	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Tremellales;mitosporic Tremellales;Cryptococcus
+6 C.4028_502818	7	9	9	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Chaetothyriomycetidae;Chaetothyriales;Herpotrichiellaceae;environmental samples;uncultured Herpotrichiellaceae
+60 C.3067_500305	213	215	35	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Leotiomycetes;Helotiales;Sclerotiniaceae
+61 C.3045_191278	122	191	58	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Pucciniomycotina;Microbotryomycetes;Sporidiobolales;mitosporic Sporidiobolales;Rhodotorula
+62 C.3039_100968	147	189	51	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Agaricomycotina;Tremellomycetes;Tremellales;mitosporic Tremellales;Trichosporon
+63 C.3081_860233	No hits found in database
+64 C.3008_102676	86	55	92	phylum	cellular organisms;Eukaryota;Opisthokonta;Fungi;environmental samples;uncultured fungus
+65 C.3008_329875	Abundance of low coverage hits: possible chimera
+66 C.3004_101320	No hits found in database
+67 C.4000_504153	250	250	203	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+68 C.3034_105010	Abundance of low coverage hits: possible chimera
+69 C.3018_184742	5	7	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces geotrichum
+7 C.3044_127905	No hits found in database
+70 C.3047_100403	Abundance of low coverage hits: possible chimera
+71 C.4014_507808	17	17	12	domain	cellular organisms;Eukaryota
+72 C.3064_876081	Abundance of low coverage hits: possible chimera
+73 C.3029_176424	22	27	39	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+74 C.4010_507284	250	250	228	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+75 C.3025_105291	220	226	24	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales
+76 C.3018_114770	83	100	150	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Davidiellaceae;mitosporic Davidiellaceae;Cladosporium
+77 C.3025_105110	216	220	27	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetes incertae sedis;Botryosphaeriales;Botryosphaeriaceae
+78 C.3004_167626	207	228	3	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida albicans
+79 C.3086_861818	250	250	178	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+8 C.3041_100168	75	75	0	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;mitosporic Saccharomycetales;Candida;Candida dubliniensis
+80 C.3030_107473	21	23	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Pichiaceae;Pichia;Pichia membranifaciens
+81 C.3037_100498	19	19	1	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;Eurotiomycetes;Eurotiomycetidae;Eurotiales;Elaphomycetaceae;Xeromyces;Xeromyces bisporus
+82 C.3079_875330	No hits found in database
+83 C.3070_863799	Abundance of low coverage hits: possible chimera
+84 C.4021_867962	No hits found in database
+85 C.3045_195253	123	186	59	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Pucciniomycotina;Microbotryomycetes;Sporidiobolales;mitosporic Sporidiobolales;Rhodotorula
+86 C.4014_503329	80	111	139	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetidae;Capnodiales;Mycosphaerellaceae;Mycosphaerella
+87 C.3030_115808	123	155	82	family	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Hypocreomycetidae;Hypocreales;mitosporic Hypocreales;Fusarium;Fusarium sp. JJP-2009a
+88 C.3027_120626	55	55	50	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+89 C.3041_121533	Abundance of low coverage hits: possible chimera
+9 C.3013_178801	Abundance of low coverage hits: possible chimera
+90 C.4000_518513	229	237	13	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales
+91 C.3013_170795	Abundance of low coverage hits: possible chimera
+92 C.3010_100654	144	150	97	order	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Basidiomycota;Pucciniomycotina;Microbotryomycetes;Sporidiobolales
+93 C.3075_501178	No hits found in database
+94 C.3034_101032	26	26	15	genus	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;sordariomyceta;Sordariomycetes;Xylariomycetidae;Xylariales;Diatrypaceae;Eutypella
+95 C.3030_378272	1	1	0	species	cellular organisms;Bacteria;Bacteroidetes/Chlorobi group;Bacteroidetes;Bacteroidia;Bacteroidales;Porphyromonadaceae;Odoribacter;Odoribacter splanchnicus
+96 C.3030_103753	153	231	16	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Saccharomycotina;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Debaryomyces;Debaryomyces hansenii
+97 C.3009_113782	130	212	38	species	cellular organisms;Eukaryota;Opisthokonta;Fungi;Dikarya;Ascomycota;saccharomyceta;Pezizomycotina;leotiomyceta;dothideomyceta;Dothideomycetes;Dothideomycetes incertae sedis;Botryosphaeriales;Botryosphaeriaceae;mitosporic Botryosphaeriaceae;Lasiodiplodia;Lasiodiplodia theobromae
+98 C.3037_186434	250	250	222	kingdom	cellular organisms;Eukaryota;Opisthokonta;Fungi
+99 C.3030_166067	No hits found in database

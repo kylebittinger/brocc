@@ -1,0 +1,23 @@
+# BLASTN 2.2.23+
+# Query:  415_bacteria
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+415_bacteria	gi|295083795|emb|FP929033.1|	98.25	228	4	0	1	228	2631748	2631975	3e-108	 399
+# BLASTN 2.2.23+
+# Query:  527_bacteria
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 6 hits found
+527_bacteria	gi|324316725|gb|CP002530.1|	86.15	130	15	3	6	133	2323976	2324104	1e-29	 137
+527_bacteria	gi|91713371|gb|CP000302.1|	85.05	107	13	3	1	105	192805	192700	4e-20	 106
+527_bacteria	gi|295434944|gb|CP002013.1|	79.10	134	23	5	3	133	3202687	3202818	1e-14	87.9
+527_bacteria	gi|225426926|ref|XM_002264185.1|	84.93	73	11	0	1	73	523	451	1e-10	75.0
+527_bacteria	gi|123678076|emb|AM459130.1|	84.93	73	11	0	1	73	10658	10730	1e-10	75.0
+527_bacteria	gi|255537028|ref|XM_002509535.1|	76.69	133	28	3	3	133	461	330	1e-09	71.3
+# BLASTN 2.2.23+
+# Query:  534_bacteria
+# Database: /home/rohinis/blastdb/blast_nt/nt
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 1 hits found
+534_bacteria	gi|295102939|emb|FP929046.1|	96.40	111	2	2	3	111	2591594	2591484	5e-43	 182

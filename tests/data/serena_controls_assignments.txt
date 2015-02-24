@@ -1,0 +1,41 @@
+0 Candida.glabrata_157	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Nakaseomyces;Candida glabrata
+1 Pneumocystis_14677	Abundance of low coverage hits: possible chimera
+10 Candida.krusei_19594	Abundance of low coverage hits: possible chimera
+11 A..thaliana_7400	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus;Aspergillus penicillioides
+12 Plasmodium.falciparum.7G8_822	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+13 A..thaliana_10299	Eukaryota;Fungi;Ascomycota
+14 Human.293T_16	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Leptosphaeriaceae
+15 Aspergillus.niger.M4_1674	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+16 Candida.parapsilosis_1071	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+17 Crytpococcus.neoformans_1480	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Cordycipitaceae
+18 Candida.tropicalis_19909	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida tropicalis
+19 Candida.krusei_9342	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae
+2 S..cerevisiae_861	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+20 Penicillium.spp._5695	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+21 A..thaliana_323	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+22 A..thaliana_1715	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+23 A..thaliana_1436	Eukaryota;Fungi
+24 A..thaliana_914	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+25 A..thaliana_326	Eukaryota;Fungi;Ascomycota
+26 Aspergillus.spp._28	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+27 A..thaliana_5128	Eukaryota;Fungi
+28 Candida.albicans_26422	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+29 Candida.parapsilosis_19	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+3 A..thaliana_1081	Eukaryota;Viridiplantae;Streptophyta;Brassicales (class);Brassicales;Brassicaceae
+30 Toxoplasma.gondi_11321	Eukaryota;Fungi;Basidiomycota
+31 Candida.parapsilosis_3519	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolus (family);Sporidiobolus;Sporidiobolus johnsonii
+32 Crytpococcus.neoformans_11963	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Tremellaceae;Filobasidiella
+33 Candida.glabrata_1730	Abundance of low coverage hits: possible chimera
+34 A..thaliana_3878	Abundance of low coverage hits: possible chimera
+35 A..thaliana_8	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Cryptococcus (family);Cryptococcus;Cryptococcus wieringae
+36 Candida.glabrata_4832	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Trichosporon (family);Trichosporon
+37 Cryptococcus.laurentii_63	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Cryptococcus (family);Cryptococcus;Cryptococcus laurentii
+38 Candida.krusei_3920	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Pichiaceae;Pichia;Pichia kudriavzevii
+39 Toxoplasma.gondi_66	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+4 Coccidioides.immitis_95	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Onygenales;Coccidioides (family);Coccidioides
+40 Candida.tropicalis_7427	Abundance of low coverage hits: possible chimera
+5 Aspergillus.fumigatus.M1_27265	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+6 Dematiaceus.fungi.spp._4652	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Chaetothyriales;Herpotrichiellaceae;Exophiala;Exophiala lecanii-corni
+7 Aspergillus.flavus_4508	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+8 A..thaliana_9700	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Hypocreaceae;Trichoderma
+9 Toxoplasma.gondi_2431	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Debaryomyces;Debaryomyces hansenii
