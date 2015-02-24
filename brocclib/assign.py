@@ -1,6 +1,6 @@
 from __future__ import division
 
-from brocclib.Taxon import Lineage, NoLineage
+from brocclib.taxonomy import Lineage, NoLineage
 
 '''
 Created on Aug 29, 2011

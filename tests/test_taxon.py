@@ -1,6 +1,6 @@
 import unittest
 
-from brocclib.Taxon import Lineage
+from brocclib.taxonomy import Lineage
 
 class TaxonTests(unittest.TestCase):
     def setUp(self):
