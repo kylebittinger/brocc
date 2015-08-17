@@ -37,6 +37,17 @@ class BroccAcceptance(unittest.TestCase):
         return os.path.join(
             self.output_dir, "Standard_Taxonomy.txt")
 
+    def test_no_cache(self):
+        main([
+            "-i", data_fp("em_10.fasta"),
+            "-b", data_fp("em_10_blast.txt"),
+            "-o", self.output_dir,
+            "-a", "ITS",
+        ])
+        self.assertEqual(
+            read_from(self._assignments_fp),
+            read_from(data_fp("em_10_assignments.txt")))
+
     def test_em_10(self):
         self._run_brocc("em_10.fasta", "em_10_blast.txt")
         self.assertEqual(

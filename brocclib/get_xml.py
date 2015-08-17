@@ -24,6 +24,9 @@ class NcbiEutils(object):
         return self.taxon_ids[gi_num]
 
     def load_cache(self):
+        # Do nothing if there is no cache file
+        if self.cache_fp is None:
+            return None
         if os.path.exists(self.cache_fp):
             with open(self.cache_fp) as f:
                 data = json.load(f)
@@ -32,6 +35,9 @@ class NcbiEutils(object):
                 self.taxon_ids = dict(data["taxon_ids"])
 
     def save_cache(self):
+        # Do nothing if there is no cache file
+        if self.cache_fp is None:
+            return None
         # Do nothing if no lookups have been performed.
         if self._fresh:
             return None
