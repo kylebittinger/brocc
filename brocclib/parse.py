@@ -62,6 +62,14 @@ def read_blast(blast_lines):
         res[query_id].append(hit)
     return res
 
+def parse_accession(desc):
+    if "|" in desc:
+        # Old format
+        return desc.split("|")[3]
+    else:
+        # New format
+        return desc
+
 
 def parse_gi_number(id_string):
         """Recover a GI number from a formatted id string in the nt database."""
