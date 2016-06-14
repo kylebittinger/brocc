@@ -104,39 +104,34 @@ def main(argv=None):
     with open(opts.blast_file) as f:
         blast_hits = read_blast(f)
 
+    # Open output files
+
+    if not os.path.exists(opts.output_directory):
+        os.mkdir(opts.output_directory)
+    output_file = open(
+        os.path.join(opts.output_directory, "Full_Taxonomy.txt"), 'w')
+    standard_taxa_file = open(
+        os.path.join(opts.output_directory, "Standard_Taxonomy.txt"), "w")
+    log_file = open(os.path.join(opts.output_directory, "brocc.log"), "w")
+    log_file.write(
+        "Sequence\tWinner_Votes\tVotes_Cast\tGenerics_Pruned\tLevel\t"
+        "Classification\n")
+
     # Do the work
-        
-    assignments = []
+
     for name, seq in sequences:
         seq_hits = blast_hits[name]
         # This is where the magic happens
         a = assigner.assign(name, seq, seq_hits)
-        assignments.append(a)
 
-    # Write output files
-        
-    taxa_db.save_cache()
-
-    write_output(assignments, opts.output_directory)
-
-
-def write_output(assignments, output_directory):
-    if not os.path.exists(output_directory):
-        os.mkdir(output_directory)
-
-    output_file = open(os.path.join(output_directory, "Full_Taxonomy.txt"), 'w')
-    standard_taxa_file = open(os.path.join(output_directory, "Standard_Taxonomy.txt"), "w")
-    log_file = open(os.path.join(output_directory, "brocc.log"), "w")
-    log_file.write(
-        "Sequence\tWinner_Votes\tVotes_Cast\tGenerics_Pruned\tLevel\t"
-        "Classification\n")    
-
-    for a in assignments:
         output_file.write(a.format_for_full_taxonomy())
         standard_taxa_file.write(a.format_for_standard_taxonomy())
         log_file.write(a.format_for_log())
+
+    # Close output files, write cache
 
     output_file.close()
     standard_taxa_file.close()
     log_file.close()
 
+    taxa_db.save_cache()
