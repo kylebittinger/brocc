@@ -22,8 +22,8 @@ def iter_fasta(fasta_lines):
 
 
 class BlastHit(object):
-    def __init__(self, gi, pct_id, length):
-        self.gi = gi
+    def __init__(self, accession, pct_id, length):
+        self.accession = accession
         self.pct_id = pct_id
         self.length = length
 
@@ -46,12 +46,10 @@ def iter_blast(blast_lines):
                 query_id = vals[0]
             else:
                 query_id = full_query_id
-            # Need to extract the GI number from the NCBI formatted
-            # reference ID.
-            gi_num = parse_gi_number(vals[1])
+            accession = parse_accession(vals[1])
             pct_id = float(vals[2])
             length = float(vals[3])
-            hit = BlastHit(gi_num, pct_id, length)
+            hit = BlastHit(accession, pct_id, length)
             yield query_id, hit
 
 
@@ -69,13 +67,3 @@ def parse_accession(desc):
     else:
         # New format
         return desc
-
-
-def parse_gi_number(id_string):
-        """Recover a GI number from a formatted id string in the nt database."""
-        tokens = id_string.split('|')
-        for t1, t2 in zip(tokens, tokens[1:]):
-            if t1 == 'gi':
-                return t2
-        return None
-

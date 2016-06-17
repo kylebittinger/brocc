@@ -17,11 +17,11 @@ class NcbiEutils(object):
             self.lineages[taxon_id] = get_lineage(taxon_id)
         return self.lineages[taxon_id]
 
-    def get_taxon_id(self, gi_num):
-        if gi_num not in self.taxon_ids:
+    def get_taxon_id(self, acc):
+        if acc not in self.taxon_ids:
             self._fresh = False
-            self.taxon_ids[gi_num] = get_taxid(gi_num)
-        return self.taxon_ids[gi_num]
+            self.taxon_ids[acc] = get_taxid_from_accession(acc)
+        return self.taxon_ids[acc]
 
     def load_cache(self):
         # Do nothing if there is no cache file
@@ -142,18 +142,19 @@ def url_open(url, max_tries=5):
     raise urllib2.URLError("Could not open URL %s (%s attempts)" % (url, n))
 
 
-def get_taxid(gi_num):
-    url = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=nucleotide&db=taxonomy&id=%s' % gi_num
-    xpath = ".//Link/Id"
+def get_taxid_from_accession(acc):
+    url = (
+        "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
+        "?db=nuccore&id={0}&rettype=docsum".format(acc))
+    xpath = ".//Item[@Name='TaxId']"
     try:
         response = url_open(url)
         xml = ET.parse(response)
         elem = xml.find(xpath)
         if elem is None:
-            logging.debug("GI %s: Xpath %s not found in XML" % (gi_num, xpath))
+            logging.debug("Accession %s: Xpath %s not found in XML" % (acc, xpath))
             return None
         return elem.text
     except Exception as e:
-        logging.info("GI %s: %s" % (gi_num, e))
+        logging.info("Accession %s: %s" % (acc, e))
         return None
-

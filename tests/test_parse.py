@@ -2,18 +2,8 @@ from unittest import TestCase, main
 from cStringIO import StringIO
 
 from brocclib.parse import (
-    read_blast, iter_fasta, parse_gi_number, parse_accession,
+    read_blast, iter_fasta, parse_accession,
     )
-
-
-class GiNumberTests(TestCase):
-    def test_gi_start(self):
-        obs = parse_gi_number('gi|259100874|gb|GQ513762.1|')
-        self.assertEqual(obs, '259100874')
-
-    def test_gi_empty(self):
-        for s in ['', 'gi', 'ran|dom']:
-            self.assertEqual(parse_gi_number(s), None)
 
 
 class AccessionTests(TestCase):
@@ -50,14 +40,14 @@ class BlastOutputTests(TestCase):
     def test_normal_output(self):
         obs = read_blast(StringIO(normal_output))
         h = obs['0 E7_168192'][0]
-        self.assertEqual(h.gi, "259100874")
+        self.assertEqual(h.accession, "GQ513762.1")
         self.assertEqual(h.pct_id, 98.74)
         self.assertEqual(h.length, 159)
 
     def test_malformed_output(self):
         obs = read_blast(StringIO(malformed_output))
         h = obs['0 E7_168192'][0]
-        self.assertEqual(h.gi, "259100874")
+        self.assertEqual(h.accession, "GQ513762.1")
         self.assertEqual(h.pct_id, 98.74)
         self.assertEqual(h.length, 159)
 
