@@ -20,7 +20,7 @@ class NcbiEutils(object):
     def get_taxon_id(self, acc):
         if acc not in self.taxon_ids:
             self._fresh = False
-            self.taxon_ids[acc] = get_taxid_from_accession(acc)
+            self.taxon_ids[acc] = get_taxid(acc)
         return self.taxon_ids[acc]
 
     def load_cache(self):
@@ -142,11 +142,12 @@ def url_open(url, max_tries=5):
     raise urllib2.URLError("Could not open URL %s (%s attempts)" % (url, n))
 
 
-def get_taxid_from_accession(acc):
-    url = (
-        "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
-        "?db=nuccore&id={0}&rettype=docsum".format(acc))
-    xpath = ".//Item[@Name='TaxId']"
+def get_taxid(acc):
+    url_fmt = (
+        "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?"
+        "dbfrom=nucleotide&db=taxonomy&id={}")
+    url = url_fmt.format(acc)
+    xpath = ".//Link/Id"
     try:
         response = url_open(url)
         xml = ET.parse(response)

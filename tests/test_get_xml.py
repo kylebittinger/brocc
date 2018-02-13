@@ -2,7 +2,7 @@ import tempfile
 import unittest
 
 from brocclib.get_xml import (
-    get_taxid, get_lineage, NcbiEutils, get_taxid_from_accession,
+    get_taxid, get_lineage, NcbiEutils,
     )
 
 
