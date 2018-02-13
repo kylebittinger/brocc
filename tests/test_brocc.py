@@ -44,9 +44,11 @@ class BroccAcceptance(unittest.TestCase):
             "-o", self.output_dir,
             "-a", "ITS",
         ])
-        self.assertEqual(
-            read_from(self._assignments_fp),
-            read_from(data_fp("em_10_assignments.txt")))
+        # A family assignment has changed.
+        em_assign = read_from(data_fp("em_10_assignments.txt"))
+        em_assign = [a.replace("Coriolaceae", "Steccherinaceae") for a in em_assign]
+        self.assertEqual(read_from(self._assignments_fp), em_assign)
+
 
     def test_em_10(self):
         self._run_brocc("em_10.fasta", "em_10_blast.txt")

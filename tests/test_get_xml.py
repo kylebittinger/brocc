@@ -38,9 +38,9 @@ class NcbiEutilsTests(unittest.TestCase):
                 'cellular organisms; Eukaryota; Opisthokonta; Fungi; Dikarya; '
                 'Ascomycota; saccharomyceta; Pezizomycotina; leotiomyceta; '
                 'sordariomyceta; Sordariomycetes; Xylariomycetidae; '
-                'Xylariales; Amphisphaeriaceae; Pestalotiopsis'),
+                'Xylariales; Sporocadaceae; Pestalotiopsis'),
             'class': 'Sordariomycetes',
-            'family': 'Amphisphaeriaceae',
+            'family': 'Sporocadaceae',
             'genus': 'Pestalotiopsis',
             'kingdom': 'Fungi',
             'no rank': 'sordariomyceta',
