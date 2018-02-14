@@ -109,7 +109,7 @@ class Assigner(object):
         return self.vote(name, seq, hits_to_keep)
 
     def _retrieve_lineage(self, hit):
-        taxid = self.taxa_db.get_taxon_id(hit.gi)
+        taxid = self.taxa_db.get_taxon_id(hit.accession)
         if taxid is None:
             return NoLineage()
         raw_lineage = self.taxa_db.get_lineage(taxid)

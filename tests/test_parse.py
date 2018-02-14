@@ -2,18 +2,24 @@ from unittest import TestCase, main
 from cStringIO import StringIO
 
 from brocclib.parse import (
-    read_blast, iter_fasta, parse_gi_number,
+    read_blast, iter_fasta, parse_accession,
     )
 
 
-class GiNumberTests(TestCase):
-    def test_gi_start(self):
-        obs = parse_gi_number('gi|259100874|gb|GQ513762.1|')
-        self.assertEqual(obs, '259100874')
+class AccessionTests(TestCase):
+    def test_parse_accession_old_format(self):
+        self.assertEqual(
+            parse_accession('gi|259100874|gb|GQ513762.1|'),
+            "GQ513762.1")
+        self.assertEqual(
+            parse_accession("gi|1857499|gb|U83468.1|TSU83468"),
+            "U83468.1")
+        self.assertEqual(
+            parse_accession("gi|163263088|emb|AM922223.1|"),
+            "AM922223.1")
 
-    def test_gi_empty(self):
-        for s in ['', 'gi', 'ran|dom']:
-            self.assertEqual(parse_gi_number(s), None)
+    def test_parse_accession_new_format(self):
+        self.assertEqual(parse_accession('GQ513762.1'), "GQ513762.1")
 
 
 class FastaTests(TestCase):
@@ -34,14 +40,14 @@ class BlastOutputTests(TestCase):
     def test_normal_output(self):
         obs = read_blast(StringIO(normal_output))
         h = obs['0 E7_168192'][0]
-        self.assertEqual(h.gi, "259100874")
+        self.assertEqual(h.accession, "GQ513762.1")
         self.assertEqual(h.pct_id, 98.74)
         self.assertEqual(h.length, 159)
 
     def test_malformed_output(self):
         obs = read_blast(StringIO(malformed_output))
         h = obs['0 E7_168192'][0]
-        self.assertEqual(h.gi, "259100874")
+        self.assertEqual(h.accession, "GQ513762.1")
         self.assertEqual(h.pct_id, 98.74)
         self.assertEqual(h.length, 159)
 
