@@ -73,26 +73,5 @@ class BroccAcceptance(unittest.TestCase):
             read_from(self._assignments_fp),
             read_from(data_fp("sac_otu_assignments.txt")))
 
-    def test_serena_controls(self):
-        self._run_brocc("serena_controls.fasta", "serena_controls_blast.txt")
-        self.assertEqual(
-            read_from(self._assignments_fp),
-            read_from(data_fp("serena_controls_assignments.txt")))
-
-    def test_mouseabx_120k(self):
-        """All unique fungal reads from Dollive mouse abx paper."""
-        self._run_brocc("mouseabx_120k.fasta", "mouseabx_120k_blast.txt")
-        self.assertEqual(
-            read_from(self._assignments_fp),
-            read_from(data_fp("mouseabx_120k_assignments.txt")))
-
-    def test_chris_combo95(self):
-        """Representative sequences from Hoffmann COMBO fungi paper."""
-        self._run_brocc("chris_combo95.fasta", "chris_combo95_blast.txt")
-        self.assertEqual(
-            read_from(self._assignments_fp),
-            read_from(data_fp("chris_combo95_assignments.txt")))
-
-        
 if __name__ == "__main__":
     unittest.main()
