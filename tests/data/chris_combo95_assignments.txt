@@ -26,8 +26,8 @@
 120 C.3045_100113	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Rhodotorula (family);Rhodotorula;Rhodotorula mucilaginosa
 121 C.3015_100851	Eukaryota;Fungi;Basidiomycota
 122 C.4000_827683	Eukaryota;Fungi;Basidiomycota;Ustilaginomycetes;Ustilaginales;Ustilaginaceae
-123 C.3037_103649	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Psathyrellaceae
-124 C.3023_103044	Domain unknown for reference;uncultured organism (kingdom);uncultured organism (phylum)
+123 C.3037_103649	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Psathyrellaceae;Coprinellus
+124 C.3023_103044	Domain unknown for reference
 125 C.3006_101507	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
 126 C.4017_518571	Bacteria;Firmicutes (kingdom);Firmicutes;Clostridia;Clostridiales;Ruminococcaceae;Faecalibacterium
 127 C.3043_100210	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Cystofilobasidiales;Cystofilobasidiaceae
@@ -35,25 +35,25 @@
 129 C.3026_171849	Bacteria;Bacteroidetes (kingdom);Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides;Bacteroides xylanisolvens
 13 C.3040_101316	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
 130 C.4014_857478	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Torulaspora;Torulaspora delbrueckii
-131 C.4028_544693	Eukaryota;Fungi;uncultured fungus (phylum)
+131 C.4028_544693	Eukaryota;Fungi
 132 C.3079_872437	No hits found in database
 133 C.3062_520483	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida
 134 C.3019_106490	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus;Aspergillus penicillioides
 135 C.3043_342590	No hits found in database
 136 C.3009_143917	No hits found in database
-137 C.3006_143205	Eukaryota;Fungi;uncultured fungus (phylum)
+137 C.3006_143205	Eukaryota;Fungi
 138 C.3064_802231	Abundance of low coverage hits: possible chimera
 139 C.3048_104775	Eukaryota;Fungi;Basidiomycota;Cystobasidiomycetes;Cystobasidiales;Cystobasidiaceae;Cystobasidium
 14 C.3034_100489	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Agaricaceae;Agaricus;Agaricus bisporus
-140 C.4004_502143	Eukaryota;Fungi
+140 C.4004_502143	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales
 141 C.3018_384090	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces candidum
 142 C.4025_501029	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Cystofilobasidiales;Cystofilobasidiaceae;Cystofilobasidium;Cystofilobasidium macerans
 143 C.4025_500002	Eukaryota;Fungi
 144 C.3027_105613	Eukaryota;Viridiplantae;Streptophyta;Caryophyllales (class);Caryophyllales;Amaranthaceae;Atriplex
-145 C.4010_559552	Eukaryota;Fungi
+145 C.4010_559552	Eukaryota;Fungi;Basidiomycota
 146 C.3028_108866	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
 147 C.4020b_505148	Eukaryota;Fungi
-148 C.3027_100899	Eukaryota;Fungi;Ascomycota;Saccharomycetes
+148 C.3027_100899	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Candida (family);Candida
 149 C.4026_515940	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales
 15 C.3034_106338	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
 150 C.4002_501828	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Lentinaceae;Lentinus;Lentinus tuber-regium
@@ -75,7 +75,7 @@
 165 C.3020_100301	Eukaryota;Fungi;Basidiomycota
 166 C.4025_501050	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
 167 C.3042_101388	Eukaryota;Fungi
-168 C.4000_500016	Eukaryota;Fungi;uncultured fungus (phylum)
+168 C.4000_500016	Eukaryota;Fungi
 169 C.3039_100578	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Meyerozyma
 17 C.3015_107533	No hits found in database
 170 C.3017_382945	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Debaryomyces
@@ -93,7 +93,7 @@
 181 C.3051_129945	Bacteria;Bacteroidetes (kingdom);Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides;Bacteroides vulgatus
 182 C.4010_860995	No hits found in database
 183 C.3081_504396	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Cantharellales;Ceratobasidiaceae;Rhizoctonia
-184 C.4014_502799	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+184 C.4014_502799	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales
 185 C.3020_112219	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
 186 C.3025_149809	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Eurotium;Eurotium halophilicum
 187 C.3041_124332	Eukaryota;Fungi
@@ -103,21 +103,21 @@
 190 C.3046_100347	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales
 191 C.3047_116836	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
 192 C.3017_106396	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Ophiostomatales;Ophiostomataceae;Ophiostoma
-193 C.3008_352169	Domain unknown for reference;uncultured organism (kingdom);uncultured organism (phylum)
-194 C.3020_117502	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales
+193 C.3008_352169	Domain unknown for reference
+194 C.3020_117502	Eukaryota;Fungi;Ascomycota;Dothideomycetes
 195 C.3014_101884	Eukaryota;Fungi
 196 C.3018_122460	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces candidum
 197 C.3003_121880	Abundance of low coverage hits: possible chimera
 198 C.3041_115236	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
 199 C.3075_862152	No hits found in database
-2 C.4010_873998	Domain unknown for reference;uncultured organism (kingdom);uncultured organism (phylum)
+2 C.4010_873998	Domain unknown for reference
 20 C.3038_130874	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Chaetothyriales;Herpotrichiellaceae;Exophiala
 200 C.3050_304709	No hits found in database
 201 C.3040_115911	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
 202 C.3032_100104	Eukaryota;Fungi
 203 C.3032_100651	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Glomerellales;Plectosphaerellaceae
 204 C.3085_505469	Abundance of low coverage hits: possible chimera
-205 C.3026_100035	Eukaryota;Fungi;uncultured fungus (phylum)
+205 C.3026_100035	Eukaryota;Fungi
 206 C.4020b_544187	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Diaporthales;Diaporthaceae
 207 C.3026_180246	No hits found in database
 208 C.3009_360414	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
@@ -142,13 +142,13 @@
 225 C.3031_100120	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Physalacriaceae;Armillaria
 226 C.4022_505627	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
 227 C.3084_860682	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces candidum
-228 C.4009_500355	Eukaryota;Fungi;uncultured fungus (phylum)
+228 C.4009_500355	Eukaryota;Fungi
 229 C.3030_100340	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Microascales;Ceratocystidaceae;Ceratocystis;Ceratocystis adiposa
 23 C.3082_501183	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales
 230 C.4000_511979	No hits found in database
 231 C.3001_309796	Abundance of low coverage hits: possible chimera
 232 C.3018_158897	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces
-233 C.4013_848358	Eukaryota;Fungi
+233 C.4013_848358	Eukaryota;Fungi;Ascomycota
 234 C.3053_382190	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Dipodascaceae;Galactomyces;Galactomyces candidum
 235 C.3062_506123	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida
 236 C.3022_196700	No hits found in database
@@ -169,7 +169,7 @@
 25 C.3015_110230	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Diaporthales
 250 C.3010_101612	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Clavicipitaceae;Claviceps;Claviceps purpurea
 251 C.3013_183991	Abundance of low coverage hits: possible chimera
-252 C.4010_505417	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Cryptococcus (family)
+252 C.4010_505417	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales
 253 C.3038_177461	No hits found in database
 254 C.4025_804617	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
 255 C.3055_138089	No hits found in database
@@ -178,7 +178,7 @@
 258 C.4028_500090	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Trichocomaceae;Talaromyces
 259 C.4004_500910	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Rhodosporidium (family);Rhodosporidium;Rhodosporidium sp. MAC-2011b
 26 C.3032_104466	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Botryosphaeriales;Botryosphaeriaceae;Neofusicoccum
-260 C.4013_513849	Eukaryota;Fungi
+260 C.4013_513849	Eukaryota;Fungi;Ascomycota;ascomycete sp. E133 (class);ascomycete sp. E133 (order);ascomycete sp. E133 (family);ascomycete sp. E133 (genus);ascomycete sp. E133
 261 C.4007_854825	No hits found in database
 262 C.3009_353969	No hits found in database
 263 C.4019_565967	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
@@ -194,7 +194,7 @@
 272 C.4019_520234	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Coriolaceae;Piptoporus;Piptoporus betulinus
 273 C.3078_507355	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Cystofilobasidiales;Cystofilobasidiaceae;Cystofilobasidium;Cystofilobasidium ferigula
 274 C.3009_329375	Eukaryota;Viridiplantae;Streptophyta;Ranunculales (class);Ranunculales;Papaveraceae;Papaver
-275 C.3032_103038	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales
+275 C.3032_103038	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Skeletocutis
 276 C.3043_118634	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Zygosaccharomyces;Zygosaccharomyces rouxii
 277 C.3015_173916	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Cryptococcus (family);Cryptococcus
 278 C.3043_182840	No hits found in database
@@ -212,7 +212,7 @@
 289 C.4029_506125	Abundance of low coverage hits: possible chimera
 29 C.4021_501564	Eukaryota;Fungi;Ascomycota;Sordariomycetes
 290 C.4020b_500388	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Nectriaceae;Fusarium
-291 C.3011_186156	Eukaryota;Fungi;uncultured fungus (phylum)
+291 C.3011_186156	Eukaryota;Fungi
 292 C.3010_179942	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera;Cyberlindnera jadinii
 293 C.3017_100408	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Kazachstania;Kazachstania servazzii
 294 C.3043_118449	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Zygosaccharomyces;Zygosaccharomyces rouxii
@@ -230,15 +230,15 @@
 304 C.3006_361342	All BLAST hits were filtered for low quality.
 305 C.3032_156047	Eukaryota;Fungi
 306 C.4013_503713	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Teratosphaeriaceae
-307 C.4029_509576	Eukaryota;Fungi;uncultured fungus (phylum)
+307 C.4029_509576	Eukaryota;Fungi
 308 C.3042_101124	Eukaryota;Fungi
 309 C.3015_341305	Bacteria;Bacteroidetes (kingdom);Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides;Bacteroides thetaiotaomicron
 31 C.4000_864323	Abundance of low coverage hits: possible chimera
 310 C.3070_501995	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Corticiales;Corticiaceae;Phlebia;Phlebia tremellosa
-311 C.4029_503886	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+311 C.4029_503886	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales
 312 C.4021_861880	Abundance of low coverage hits: possible chimera
-313 C.3080_557975	Bacteria;uncultured bacterium (kingdom);uncultured bacterium (phylum);uncultured bacterium (class);uncultured bacterium (order);uncultured bacterium (family);uncultured bacterium (genus);uncultured bacterium
-314 C.3045_100557	Eukaryota;Fungi;Ascomycota;Lecanoromycetes;Umbilicariales;Umbilicariaceae
+313 C.3080_557975	Bacteria
+314 C.3045_100557	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Chaetothyriales;Herpotrichiellaceae;Coniosporium
 315 C.3062_563951	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
 316 C.3052_104582	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Trichocomaceae;Thermomyces;Thermomyces lanuginosus
 317 C.3043_144911	Abundance of low coverage hits: possible chimera
@@ -260,11 +260,11 @@
 331 C.3009_191573	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida
 332 C.4029_505458	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
 333 C.3034_119699	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Trichosporon (family);Trichosporon
-334 C.3019_100226	Eukaryota;Fungi;uncultured fungus (phylum)
+334 C.3019_100226	Eukaryota;Fungi
 335 C.3034_181659	No hits found in database
 336 C.4007_553768	No hits found in database
 337 C.3028_155835	Eukaryota;Fungi
-338 C.3043_104109	Eukaryota;Fungi;Basidiomycota
+338 C.3043_104109	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes
 339 C.4019_519872	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Nectriaceae;Fusarium
 34 C.3013_190989	Abundance of low coverage hits: possible chimera
 340 C.3003_100172	Eukaryota;Fungi
@@ -273,11 +273,11 @@
 343 C.4013_500236	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae;Stemphylium
 344 C.3071_504973	Eukaryota;Fungi;Ascomycota
 345 C.4021_504155	Eukaryota;Fungi
-346 C.4025_508313	Eukaryota;Fungi
+346 C.4025_508313	Eukaryota;Fungi;Basidiomycota
 347 C.3086_868497	No hits found in database
 348 C.4024_526111	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
 349 C.3026_368425	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
-35 C.4025_819372	Eukaryota;Fungi;uncultured fungus (phylum)
+35 C.4025_819372	Eukaryota;Fungi;Ascomycota
 350 C.3015_107235	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Auriculariales;Auriculariaceae;Auricularia;Auricularia polytricha
 351 C.3025_121411	Abundance of low coverage hits: possible chimera
 352 C.3080_512023	Bacteria;Bacteroidetes (kingdom);Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides
@@ -286,7 +286,7 @@
 355 C.3043_104177	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae;Bipolaris
 356 C.4014_550891	No hits found in database
 357 C.3014_106923	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Nectriaceae;Fusarium
-358 C.3017_100448	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Schizophyllaceae;uncultured Chondrostereum (genus);uncultured Chondrostereum
+358 C.3017_100448	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Schizophyllaceae;Chondrostereum;Chondrostereum purpureum
 359 C.3030_120399	Bacteria;Firmicutes (kingdom);Firmicutes;Clostridia;Clostridiales;Ruminococcaceae;Faecalibacterium
 36 C.3029_148416	Eukaryota;Fungi
 360 C.3015_175100	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Cryptococcus (family);Cryptococcus
@@ -299,16 +299,16 @@
 367 C.4002_856107	Eukaryota;Viridiplantae;Streptophyta;Liliopsida;Poales;Poaceae;Avena
 368 C.4027_502727	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Sarocladium (family);Sarocladium;Sarocladium implicatum
 369 C.3050_105340	Eukaryota;Fungi
-37 C.3042_101573	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Cryptococcus (family);Cryptococcus;Cryptococcus wieringae
+37 C.3042_101573	Eukaryota;Fungi
 370 C.4022_867133	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
 371 C.3047_100769	Abundance of low coverage hits: possible chimera
 372 C.3043_168949	Eukaryota
 373 C.3020_108100	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Cryptococcus (family);Cryptococcus
 374 C.3019_342767	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
 375 C.3045_194203	Abundance of low coverage hits: possible chimera
-376 C.4004_520864	Eukaryota;Fungi
+376 C.4004_520864	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales
 377 C.3055_100015	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
-378 C.4001_501319	Eukaryota;Fungi;uncultured fungus (phylum)
+378 C.4001_501319	Eukaryota;Fungi
 379 C.3007_113005	Bacteria;Bacteroidetes (kingdom);Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae
 38 C.3023_353886	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
 380 C.4025_508037	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Teratosphaeriaceae
@@ -341,7 +341,7 @@
 404 C.3049_107992	Abundance of low coverage hits: possible chimera
 405 C.3045_170989	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Hypocreaceae;Trichoderma
 406 C.3026_100507	Abundance of low coverage hits: possible chimera
-407 C.4028_503752	Eukaryota;Fungi;uncultured fungus (phylum)
+407 C.4028_503752	Eukaryota;Fungi
 408 C.3006_100324	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida palmioleophila (genus);Candida palmioleophila
 409 C.3052_362035	No hits found in database
 41 C.3046_197137	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Metschnikowiaceae;Metschnikowia;Metschnikowia bicuspidata
@@ -366,15 +366,15 @@
 54 C.3043_102168	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Zygosaccharomyces;Zygosaccharomyces rouxii
 55 C.4007_500161	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Strophariaceae;Hypholoma;Hypholoma fasciculare
 56 C.3018_100012	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Auriculariales;Auriculariaceae
-57 C.4020a_510641	Eukaryota;Fungi
+57 C.4020a_510641	Eukaryota;Fungi;Ascomycota
 58 C.3042_166125	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Teratosphaeriaceae
 59 C.3078_500749	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Cryptococcus (family);Cryptococcus
-6 C.4028_502818	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Chaetothyriales;Herpotrichiellaceae;uncultured Herpotrichiellaceae (genus);uncultured Herpotrichiellaceae
+6 C.4028_502818	Eukaryota;Fungi;Ascomycota
 60 C.3067_500305	Eukaryota;Fungi;Ascomycota;Leotiomycetes;Helotiales;Sclerotiniaceae
 61 C.3045_191278	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Rhodotorula (family);Rhodotorula
 62 C.3039_100968	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Trichosporon (family);Trichosporon
 63 C.3081_860233	No hits found in database
-64 C.3008_102676	Eukaryota;Fungi;uncultured fungus (phylum)
+64 C.3008_102676	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes
 65 C.3008_329875	Abundance of low coverage hits: possible chimera
 66 C.3004_101320	No hits found in database
 67 C.4000_504153	Eukaryota;Fungi

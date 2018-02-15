@@ -59,6 +59,21 @@ GENERIC_FLAGS = [
     "unclassified Ascomycota",
     ]
 
+GENERIC_WORDS = [
+    # "environmental samples" also appears in lineage, but has no rank
+    "uncultured", "unclassified", "unidentified", "fungal sp.",
+    "fungal endophyte", "root associated fungus", "ectomycorrhizal fungus",
+    "endophytic basidiomycete", "soil zygomycete", "vouchered", "fungal contaminant",
+    "basidiomycete sp.", "Basidiomycota sp.", "Ascomycota sp.", "ascomycete strain",
+]
+
+def is_generic(taxon_name):
+    norm_taxon = taxon_name.lower()
+    if any((gword in norm_taxon) for gword in GENERIC_WORDS):
+        return True
+    if taxon_name in GENERIC_TAXA:
+        return True
+    return False
 
 class NoLineage(object):
     def get_taxon(self, rank):

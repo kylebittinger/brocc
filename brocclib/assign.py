@@ -1,6 +1,7 @@
 from __future__ import division
+import collections
 
-from brocclib.taxonomy import Lineage, NoLineage
+from brocclib.taxonomy import Lineage, NoLineage, is_generic
 
 '''
 Created on Aug 29, 2011
@@ -13,12 +14,11 @@ class AssignmentCandidate(object):
         self.lineage = lineage
         self.rank = rank
 
-        is_high_rank = rank in ["phylum", "kingdom", "domain"]
-        is_descended_from_missing_taxon = any("(" in h for h in self.all_taxa)
-        if is_high_rank and not is_descended_from_missing_taxon:
-            self.legit = True
-        else:
-            self.legit = lineage.classified
+    def is_placeholder(self):
+        return "(" in self.lineage.get_taxon(self.rank)
+        #is_high_rank = self.rank in ["phylum", "kingdom", "domain"]
+        #is_descended_from_missing_taxon = any("(" in h for h in self.standard_taxa)
+        #return not (is_high_rank and not is_descended_from_missing_taxon)
 
     @property
     def all_taxa(self):
@@ -28,6 +28,8 @@ class AssignmentCandidate(object):
     def standard_taxa(self):
         return self.lineage.get_standard_taxa(self.rank)
 
+    def to_string(self):
+        return "<AssignmentCandidate {0} {1} {2}>".format(self.rank, self.lineage.get_taxon(self.rank), self.votes)
 
 class Assignment(object):
     def __init__(self, query_id, winning_candidate, total_votes, num_generic):
@@ -130,52 +132,72 @@ class Assigner(object):
 
     def vote_at_rank(self, query_id, rank, db_hits):
         '''Votes at a given rank of the taxonomy.'''
+        # print
+        # print "====", query_id, "===="
         rank_idx = self.ranks.index(rank)
         min_pct_id = self.rank_min_ids[rank_idx]
         consensus_threshold = self.consensus_thresholds[rank_idx]
 
-        # Cast votes and count generic taxa
+        # We need to make a distinction between three types of
+        # assignment candidates as we tally the votes:
+        #
+        # 1. Normal taxa (e.g. Debaryomycetaceae)
+        # 2. Placeholders, created to fill a rank (e.g. Mortierellales (class))
+        # 3. Generic taxa (e.g. uncultured Ascomycota)
+
         candidates = dict()
-        num_generic = 0
+        num_generic_votes = 0
+        generics = collections.defaultdict(int)
         for hit, lineage in db_hits:
             if hit.pct_id <= min_pct_id:
                 continue
             taxon = lineage.get_taxon(rank)
             if taxon is None:
                 continue
+            if is_generic(taxon):
+                generics[taxon] += 1
+                num_generic_votes += 1
+                continue
             if taxon not in candidates:
                 candidates[taxon] = AssignmentCandidate(lineage, rank)
             candidates[taxon].votes += 1
 
-            if lineage.classified is False:
-                num_generic += 1
-
         if len(candidates) == 0:
+            # print "RET: No candidates"
             return None
 
-        total_votes = sum(c.votes for c in candidates.values())
-
-        # Do not count the votes for generic candidates in the total,
-        # when the proportion of generic votes is allowable.  There
-        # are some issues here with generic taxa, though the software
-        # normally does the right thing.
-        if (num_generic / total_votes) < self.max_generic:
-            total_votes = total_votes - num_generic
+        total_candidate_votes = sum(c.votes for c in candidates.values())
+        votes_needed_to_win = total_candidate_votes * consensus_threshold
 
         sorted_candidates = candidates.values()
         sorted_candidates.sort(reverse=True, key=lambda c: c.votes)
-        winning_candidate = sorted_candidates.pop(0)
 
-        # If the winner is a bad classification, consider the runner up.
-        if not winning_candidate.legit:
-            if not sorted_candidates:
-                return None
-            winning_candidate = sorted_candidates.pop(0)
-            # If the runner up is also a bad classification, give up.
-            if not winning_candidate.legit:
-                return None
+        # print [c.to_string() for c in sorted_candidates if c.votes > 0]
+        # print "Generics", list(reversed(sorted((v, k) for k, v in generics.iteritems())))
+        # print "Votes:", total_candidate_votes, "total", num_generic_votes, "generic"
+        # print "Need", votes_needed_to_win, "to win", "(threshold", consensus_threshold, ")"
 
-        if (winning_candidate.votes / total_votes) > consensus_threshold:
-            return Assignment(query_id, winning_candidate, total_votes, num_generic)
+        # The generic taxa shouldn't count towards the vote totals.
+        total_votes = total_candidate_votes + num_generic_votes
+        max_generic_votes = total_votes * self.max_generic
+        if num_generic_votes > max_generic_votes:
+            # print "RET: Too many generic taxa"
+            return None
+
+        leading_candidate = sorted_candidates.pop(0)
+
+        # Placeholder taxa should count towards the total.  However,
+        # if a placeholder taxon wins the vote, we'd like to return
+        # the normal taxon from which the placeholder is derived.
+        # Thus, if a placeholder wins, we return None and kick things
+        # up to the next rank.
+        if leading_candidate.is_placeholder():
+            # print "RET: Placeholder taxon"
+            return None
+
+        if leading_candidate.votes >= votes_needed_to_win:
+            # print "Winner:", leading_candidate.to_string()
+            return Assignment(query_id, leading_candidate, total_votes, num_generic_votes)
         else:
+            # print "RET: No majority"
             return None
