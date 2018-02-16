@@ -48,12 +48,17 @@ class BroccAcceptance(unittest.TestCase):
             read_from(self._assignments_fp),
             read_from(data_fp("em_10_assignments_2018.txt")))
 
+    def test_ize(self):
+        self._run_brocc("ize85.fasta", "ize85_blast.txt")
+        self.assertEqual(
+            read_from(self._assignments_fp),
+            read_from(data_fp("ize85_assignments.txt")))
 
     def test_em_10(self):
         self._run_brocc("em_10.fasta", "em_10_blast.txt")
         self.assertEqual(
             read_from(self._assignments_fp),
-            read_from(data_fp("em_10_assignments.txt")))
+            read_from(data_fp("em_10_assignments_2018.txt")))
 
     def test_em_444(self):
         self._run_brocc("em_444.fasta", "em_444_blast.txt")
