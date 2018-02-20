@@ -1,5 +1,6 @@
 from __future__ import division
 import collections
+import logging
 
 from brocclib.taxonomy import Lineage, NoLineage, is_generic
 
@@ -48,11 +49,11 @@ class Assignment(object):
 
     @property
     def total_votes(self):
-        sum(c.votes for c in self.candidates)
+        return sum(c.votes for c in self.candidates)
 
     @property
     def num_generic(self):
-        sum(n for n, taxon in self.generics)
+        return sum(n for n, taxon in self.generics)
 
     def format_for_full_taxonomy(self):
         lineage = ';'.join(self.winning_candidate.all_taxa)
@@ -68,6 +69,20 @@ class Assignment(object):
             self.query_id, self.winning_candidate.votes, self.total_votes,
             self.num_generic, self.winning_candidate.rank, lineage)
 
+    def log_details(self):
+        candidates2 = [c.to_string() for c in self.candidates if c.votes > 1]
+        parts = [
+            "",
+            "** {0} voting for {1} **".format(self.query_id, self.rank),
+            "Candidates (>1 vote): {0}".format(candidates2),
+            "Generics: {0}".format(self.generics),
+            "Candidate total: {0}".format(self.total_votes),
+            "WINNER: {0}".format(self.winning_candidate.to_string()),
+            "",
+        ]
+        message = "\n".join(parts)
+        logging.debug(message)
+
 
 class NoAssignment(object):
     is_valid_assignment = False
@@ -80,12 +95,33 @@ class NoAssignment(object):
         self.candidates = candidates
         self.generics = generics
 
+    @property
+    def total_votes(self):
+        return sum(c.votes for c in self.candidates)
+
+    @property
+    def num_generic(self):
+        return sum(n for n, taxon in self.generics)
+
     def format_for_full_taxonomy(self):
         return "%s\t%s\n" % (self.query_id, self.message)
 
     format_for_standard_taxonomy = format_for_full_taxonomy
     format_for_log = format_for_full_taxonomy
 
+    def log_details(self):
+        candidates2 = [c.to_string() for c in self.candidates if c.votes > 1]
+        parts = [
+            "",
+            "** {0} voting for {1} **".format(self.query_id, self.rank),
+            "Candidates (>1 vote): {0}".format(candidates2),
+            "Generics: {0}".format(self.generics),
+            "Candidate total: {0}".format(self.total_votes),
+            self.message,
+            "",
+        ]
+        message = "\n".join(parts)
+        logging.debug(message)
 
 class Assigner(object):
     ranks = [
@@ -148,8 +184,10 @@ class Assigner(object):
         hits_lineage = [(hit, self._retrieve_lineage(hit)) for hit in hits]
         for rank in self.ranks:
             a = self.vote_at_rank(name, rank, hits_lineage)
+            a.log_details()
             if a.is_valid_assignment:
                 return a
+        a.message = "Could not find consensus at domain level. No classification."
         return a
 
     def vote_at_rank(self, query_id, rank, db_hits):
@@ -223,8 +261,8 @@ class Assigner(object):
                 candidates=sorted_candidates, generics=sorted_generics)
         else:
             message = (
-                "Could not find consensus at {0} level. "
-                "No classification.".format(rank))
+                "No consensus: Leading candidate needed {0} votes to win, "
+                "had {1}".format(votes_needed_to_win, leading_candidate.votes))
             return NoAssignment(
                 query_id, message, rank=rank,
                 candidates=sorted_candidates, generics=sorted_generics)
