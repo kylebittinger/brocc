@@ -3,6 +3,9 @@ from __future__ import division
 import logging
 import optparse
 import os
+import shutil
+import subprocess
+import tempfile
 
 from brocclib.assign import Assigner
 from brocclib.get_xml import NcbiEutils
@@ -135,3 +138,34 @@ def main(argv=None):
     log_file.close()
 
     taxa_db.save_cache()
+
+def run_acceptance_test(argv=None):
+    p = optparse.OptionParser()
+    p.add_option("--no_cache", action="store_true")
+    opts, args = p.parse_args(argv)
+
+    base_file_paths = [os.path.splitext(fp)[0] for fp in args]
+    for base_fp in set(base_file_paths):
+        fasta_fp = "{0}.fasta".format(base_fp)
+        blast_fp = "{0}_blast.txt".format(base_fp)
+
+        output_dir = tempfile.mkdtemp(prefix="brocc")
+
+        print "Temporary output directory:", output_dir
+
+        brocc_args = [
+            "-i", fasta_fp, "-b", blast_fp, "-o", output_dir,
+            "-a" "ITS", "--verbose"]
+        if not opts.no_cache:
+            cache_fp = os.path.expanduser("~/.brocc_acceptance_tests.json")
+            print "Using cache", cache_fp
+            brocc_args.extend(["--cache_fp", cache_fp])
+        main(brocc_args)
+
+        observed_assignments_fp = os.path.join(
+            output_dir, "Standard_Taxonomy.txt")
+        expected_assignments_fp = "{0}_assignments.txt".format(base_fp)
+        subprocess.call(
+            ["diff", observed_assignments_fp, expected_assignments_fp],
+        )
+        #shutil.rmtree(output_dir)
