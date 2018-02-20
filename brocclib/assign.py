@@ -31,7 +31,10 @@ class AssignmentCandidate(object):
     def to_string(self):
         return "<AssignmentCandidate {0} {1} {2}>".format(self.rank, self.lineage.get_taxon(self.rank), self.votes)
 
+
 class Assignment(object):
+    is_valid_assignment = True
+
     def __init__(self, query_id, winning_candidate, total_votes, num_generic):
         self.query_id = query_id
         self.winning_candidate = winning_candidate
@@ -54,6 +57,8 @@ class Assignment(object):
 
 
 class NoAssignment(object):
+    is_valid_assignment = False
+
     """Null object representing no assignment, with message."""
     def __init__(self, query_id, message):
         self.query_id = query_id
@@ -125,7 +130,7 @@ class Assigner(object):
         hits_lineage = [(hit, self._retrieve_lineage(hit)) for hit in hits]
         for rank in self.ranks:
             a = self.vote_at_rank(name, rank, hits_lineage)
-            if a is not None:
+            if a.is_valid_assignment:
                 return a
         return NoAssignment(
             name, "Could not find consensus at domain level. No classification.")
@@ -163,8 +168,7 @@ class Assigner(object):
             candidates[taxon].votes += 1
 
         if len(candidates) == 0:
-            # print "RET: No candidates"
-            return None
+            return NoAssignment(query_id, "No candidates")
 
         total_candidate_votes = sum(c.votes for c in candidates.values())
         votes_needed_to_win = total_candidate_votes * consensus_threshold
@@ -179,8 +183,11 @@ class Assigner(object):
 
         # The generic taxa shouldn't count towards the vote totals.
         if total_candidate_votes < self.min_votes:
-            # print "RET: Not enough votes, observed", total_candidate_votes
-            return None
+            message = (
+                "Not enough votes observed after removing generic taxa: " \
+                "{0} candidate votes, {1} generic taxa".format(
+                    total_candidate_votes, num_generic_votes))
+            return NoAssignment(query_id, message)
 
         leading_candidate = sorted_candidates.pop(0)
 
@@ -190,12 +197,11 @@ class Assigner(object):
         # Thus, if a placeholder wins, we return None and kick things
         # up to the next rank.
         if leading_candidate.is_placeholder():
-            # print "RET: Placeholder taxon"
-            return None
+            return NoAssignment(query_id, "Placeholder taxon")
 
         if leading_candidate.votes >= votes_needed_to_win:
-            # print "Winner:", leading_candidate.to_string()
             return Assignment(query_id, leading_candidate, total_candidate_votes, num_generic_votes)
         else:
-            # print "RET: No majority"
-            return None
+            message = "Could not find consensus at {0} level. " \
+                  "No classification.".format(rank)
+            return NoAssignment(query_id, message)
