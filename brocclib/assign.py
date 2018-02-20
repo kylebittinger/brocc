@@ -14,6 +14,9 @@ class AssignmentCandidate(object):
         self.lineage = lineage
         self.rank = rank
 
+    def is_generic(self):
+        return is_generic(self.lineage.get_taxon(self.rank))
+
     def is_placeholder(self):
         return "(" in self.lineage.get_taxon(self.rank)
         #is_high_rank = self.rank in ["phylum", "kingdom", "domain"]
@@ -35,11 +38,21 @@ class AssignmentCandidate(object):
 class Assignment(object):
     is_valid_assignment = True
 
-    def __init__(self, query_id, winning_candidate, total_votes, num_generic):
+    def __init__(self, query_id, winning_candidate=None,
+                 rank=None, candidates=None, generics=None):
         self.query_id = query_id
         self.winning_candidate = winning_candidate
-        self.total_votes = total_votes
-        self.num_generic = num_generic
+        self.rank = rank
+        self.candidates = candidates or []
+        self.generics = generics or []
+
+    @property
+    def total_votes(self):
+        sum(c.votes for c in self.candidates)
+
+    @property
+    def num_generic(self):
+        sum(n for n, taxon in self.generics)
 
     def format_for_full_taxonomy(self):
         lineage = ';'.join(self.winning_candidate.all_taxa)
@@ -60,9 +73,12 @@ class NoAssignment(object):
     is_valid_assignment = False
 
     """Null object representing no assignment, with message."""
-    def __init__(self, query_id, message):
+    def __init__(self, query_id, message, rank=None, candidates=None, generics=None):
         self.query_id = query_id
         self.message = message
+        self.rank = rank
+        self.candidates = candidates
+        self.generics = generics
 
     def format_for_full_taxonomy(self):
         return "%s\t%s\n" % (self.query_id, self.message)
@@ -110,9 +126,11 @@ class Assigner(object):
             return NoAssignment(name, "No hits found in database")
         hits_to_keep, frac_low_coverage = self._quality_filter(seq, hits)
         if frac_low_coverage > .9:
-            return NoAssignment(name, "Abundance of low coverage hits: possible chimera")
+            message = "Abundance of low coverage hits: possible chimera"
+            return NoAssignment(name, message)
         if not hits_to_keep:
-            return NoAssignment(name, "All BLAST hits were filtered for low quality.")
+            message = "All BLAST hits were filtered for low quality."
+            return NoAssignment(name, message)
         return self.vote(name, seq, hits_to_keep)
 
     def _retrieve_lineage(self, hit):
@@ -132,13 +150,10 @@ class Assigner(object):
             a = self.vote_at_rank(name, rank, hits_lineage)
             if a.is_valid_assignment:
                 return a
-        return NoAssignment(
-            name, "Could not find consensus at domain level. No classification.")
+        return a
 
     def vote_at_rank(self, query_id, rank, db_hits):
         '''Votes at a given rank of the taxonomy.'''
-        # print
-        # print "====", query_id, "===="
         rank_idx = self.ranks.index(rank)
         min_pct_id = self.rank_min_ids[rank_idx]
         consensus_threshold = self.consensus_thresholds[rank_idx]
@@ -167,41 +182,49 @@ class Assigner(object):
                 candidates[taxon] = AssignmentCandidate(lineage, rank)
             candidates[taxon].votes += 1
 
-        if len(candidates) == 0:
-            return NoAssignment(query_id, "No candidates")
-
-        total_candidate_votes = sum(c.votes for c in candidates.values())
+        sorted_candidates = list(
+            sorted(candidates.values(), reverse=True, key=lambda c: c.votes))
+        total_candidate_votes = sum(c.votes for c in sorted_candidates)
         votes_needed_to_win = total_candidate_votes * consensus_threshold
 
-        sorted_candidates = candidates.values()
-        sorted_candidates.sort(reverse=True, key=lambda c: c.votes)
+        sorted_generics = list(
+            reversed(sorted((v, k) for k, v in generics.items())))
 
-        # print [c.to_string() for c in sorted_candidates if c.votes > 0]
-        # print "Generics", list(reversed(sorted((v, k) for k, v in generics.iteritems())))
-        # print "Votes:", total_candidate_votes, "candidate", num_generic_votes, "generic"
-        # print "Need", votes_needed_to_win, "to win", "(threshold", consensus_threshold, ")"
+        if len(candidates) == 0:
+            return NoAssignment(
+                query_id, "No candidates", rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
 
         # The generic taxa shouldn't count towards the vote totals.
         if total_candidate_votes < self.min_votes:
             message = (
-                "Not enough votes observed after removing generic taxa: " \
+                "Not enough votes observed after removing generic taxa: "
                 "{0} candidate votes, {1} generic taxa".format(
                     total_candidate_votes, num_generic_votes))
-            return NoAssignment(query_id, message)
+            return NoAssignment(
+                query_id, message, rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
 
-        leading_candidate = sorted_candidates.pop(0)
+        leading_candidate = sorted_candidates[0]
 
         # Placeholder taxa should count towards the total.  However,
         # if a placeholder taxon wins the vote, we'd like to return
         # the normal taxon from which the placeholder is derived.
-        # Thus, if a placeholder wins, we return None and kick things
-        # up to the next rank.
+        # Thus, if a placeholder wins, we return a null result and
+        # kick things up to the next rank.
         if leading_candidate.is_placeholder():
-            return NoAssignment(query_id, "Placeholder taxon")
+            return NoAssignment(
+                query_id, "Placeholder taxon", rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
 
         if leading_candidate.votes >= votes_needed_to_win:
-            return Assignment(query_id, leading_candidate, total_candidate_votes, num_generic_votes)
+            return Assignment(
+                query_id, leading_candidate, rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
         else:
-            message = "Could not find consensus at {0} level. " \
-                  "No classification.".format(rank)
-            return NoAssignment(query_id, message)
+            message = (
+                "Could not find consensus at {0} level. "
+                "No classification.".format(rank))
+            return NoAssignment(
+                query_id, message, rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
