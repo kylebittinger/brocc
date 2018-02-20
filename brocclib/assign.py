@@ -73,7 +73,7 @@ class Assigner(object):
         ]
 
     def __init__(self, min_cover, species_min_id, genus_min_id, min_id,
-                 consensus_thresholds, max_generic, taxa_db):
+                 consensus_thresholds, min_votes, taxa_db):
         self.min_cover = min_cover
         self.rank_min_ids = [
             species_min_id, genus_min_id, min_id, min_id,
@@ -81,7 +81,7 @@ class Assigner(object):
             ]
         self.min_id = min_id
         self.consensus_thresholds = consensus_thresholds
-        self.max_generic = max_generic
+        self.min_votes = min_votes
         self.taxa_db = taxa_db
 
     def _quality_filter(self, seq, hits):
@@ -174,14 +174,12 @@ class Assigner(object):
 
         # print [c.to_string() for c in sorted_candidates if c.votes > 0]
         # print "Generics", list(reversed(sorted((v, k) for k, v in generics.iteritems())))
-        # print "Votes:", total_candidate_votes, "total", num_generic_votes, "generic"
+        # print "Votes:", total_candidate_votes, "candidate", num_generic_votes, "generic"
         # print "Need", votes_needed_to_win, "to win", "(threshold", consensus_threshold, ")"
 
         # The generic taxa shouldn't count towards the vote totals.
-        total_votes = total_candidate_votes + num_generic_votes
-        max_generic_votes = total_votes * self.max_generic
-        if num_generic_votes > max_generic_votes:
-            # print "RET: Too many generic taxa"
+        if total_candidate_votes < self.min_votes:
+            # print "RET: Not enough votes, observed", total_candidate_votes
             return None
 
         leading_candidate = sorted_candidates.pop(0)
@@ -197,7 +195,7 @@ class Assigner(object):
 
         if leading_candidate.votes >= votes_needed_to_win:
             # print "Winner:", leading_candidate.to_string()
-            return Assignment(query_id, leading_candidate, total_votes, num_generic_votes)
+            return Assignment(query_id, leading_candidate, total_candidate_votes, num_generic_votes)
         else:
             # print "RET: No majority"
             return None
