@@ -46,7 +46,7 @@ def parse_args(argv=None):
     parser.add_option("--min_genus_id", type="float", help=(
         "minimum identity required for a db hit to be "
         "considered at genus level [default: %default]"))
-    parser.add_option("--min_votes", type="int", default=10, help=(
+    parser.add_option("--min_winning_votes", type="int", default=4, help=(
         "minimum number of votes needed to establish a consensus "
         "after removal of generic taxa [default: %default]"))
     parser.add_option("--cache_fp", help=(
@@ -97,7 +97,7 @@ def main(argv=None):
     consensus_thresholds = [t for _, t in CONSENSUS_THRESHOLDS]
     assigner = Assigner(
         opts.min_cover, opts.min_species_id, opts.min_genus_id, opts.min_id,
-        consensus_thresholds, opts.min_votes, taxa_db)
+        consensus_thresholds, opts.min_winning_votes, taxa_db)
 
     # Read input files
     

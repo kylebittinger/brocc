@@ -130,7 +130,7 @@ class Assigner(object):
         ]
 
     def __init__(self, min_cover, species_min_id, genus_min_id, min_id,
-                 consensus_thresholds, min_votes, taxa_db):
+                 consensus_thresholds, min_winning_votes, taxa_db):
         self.min_cover = min_cover
         self.rank_min_ids = [
             species_min_id, genus_min_id, min_id, min_id,
@@ -138,7 +138,7 @@ class Assigner(object):
             ]
         self.min_id = min_id
         self.consensus_thresholds = consensus_thresholds
-        self.min_votes = min_votes
+        self.min_winning_votes = min_winning_votes
         self.taxa_db = taxa_db
 
     def _quality_filter(self, seq, hits):
@@ -234,14 +234,6 @@ class Assigner(object):
                 candidates=sorted_candidates, generics=sorted_generics)
 
         # The generic taxa shouldn't count towards the vote totals.
-        if total_candidate_votes < self.min_votes:
-            message = (
-                "Not enough votes observed after removing generic taxa: "
-                "{0} candidate votes, {1} generic taxa".format(
-                    total_candidate_votes, num_generic_votes))
-            return NoAssignment(
-                query_id, message, rank=rank,
-                candidates=sorted_candidates, generics=sorted_generics)
 
         leading_candidate = sorted_candidates[0]
 
@@ -255,14 +247,24 @@ class Assigner(object):
                 query_id, "Placeholder taxon", rank=rank,
                 candidates=sorted_candidates, generics=sorted_generics)
 
-        if leading_candidate.votes >= votes_needed_to_win:
-            return Assignment(
-                query_id, leading_candidate, rank=rank,
-                candidates=sorted_candidates, generics=sorted_generics)
-        else:
+
+        if leading_candidate.votes < votes_needed_to_win:
             message = (
                 "No consensus: Leading candidate needed {0} votes to win, "
                 "had {1}".format(votes_needed_to_win, leading_candidate.votes))
             return NoAssignment(
                 query_id, message, rank=rank,
                 candidates=sorted_candidates, generics=sorted_generics)
+
+        if leading_candidate.votes < self.min_winning_votes:
+            message = (
+                "Absolute number of votes too small for leading candidate: "
+                "{0} votes observed, need {1} at a minimum".format(
+                    leading_candidate.votes, self.min_winning_votes))
+            return NoAssignment(
+                query_id, message, rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
+
+        return Assignment(
+            query_id, leading_candidate, rank=rank,
+            candidates=sorted_candidates, generics=sorted_generics)
