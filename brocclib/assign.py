@@ -81,7 +81,8 @@ class Assignment(object):
             "",
         ]
         message = "\n".join(parts)
-        logging.debug(message)
+        logger = logging.getLogger("brocc.votes")
+        logger.info(message)
 
 
 class NoAssignment(object):
@@ -121,7 +122,8 @@ class NoAssignment(object):
             "",
         ]
         message = "\n".join(parts)
-        logging.debug(message)
+        logger = logging.getLogger("brocc.votes")
+        logger.info(message)
 
 class Assigner(object):
     ranks = [

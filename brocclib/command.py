@@ -120,6 +120,15 @@ def main(argv=None):
         "Sequence\tWinner_Votes\tVotes_Cast\tGenerics_Pruned\tLevel\t"
         "Classification\n")
 
+    # Set up log for voting details
+    vote_logger = logging.getLogger("brocc.votes")
+    vote_logger.setLevel(logging.DEBUG)
+    vote_handler = logging.FileHandler(os.path.join(opts.output_directory, "voting_log.txt"))
+    vote_handler.setLevel(logging.DEBUG)
+    vote_formatter = logging.Formatter('%(message)s')
+    vote_handler.setFormatter(vote_formatter)
+    vote_logger.addHandler(vote_handler)
+
     # Do the work
 
     for name, seq in sequences:
