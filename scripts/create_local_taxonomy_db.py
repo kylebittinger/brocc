@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import brocclib.taxonomy_db
 
 if __name__ == "__main__":
