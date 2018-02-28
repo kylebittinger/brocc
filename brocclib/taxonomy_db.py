@@ -17,61 +17,82 @@ CONFIG_DIR = os.path.expanduser("~/.brocc")
 TAXONOMY_DB_FILENAME = "taxonomy.db"
 TAXONOMY_DB_FP = os.path.join(CONFIG_DIR, TAXONOMY_DB_FILENAME)
 
-def parse_names(f):
-    for rec in parse_ncbi_table(f):
+def _parse_names(f):
+    for rec in _parse_ncbi_table(f):
         taxid, name, _, name_class = rec
         if name_class == "scientific name":
             yield taxid, name
 
-def parse_nodes(f):
-    for rec in parse_ncbi_table(f):
+def _parse_nodes(f):
+    for rec in _parse_ncbi_table(f):
         taxid = rec[0]
         parent = rec[1]
         rank = rec[2]
         yield taxid, parent, rank
 
-def parse_ncbi_table(f):
+def _parse_ncbi_table(f):
     for line in f:
         yield line.rstrip("\t|\n").split("\t|\t")
+
+def parse_names_and_nodes(names_file, nodes_file):
+    names = dict(_parse_names(names_file))
+    for taxid, parent, rank in _parse_nodes(nodes_file):
+        name = names.get(taxid)
+        if name is None:
+            name = "<no name ({0})>".format(taxid)
+        yield taxid, parent, name, rank
+
+def parse_accessions(f):
+    # Skip the header
+    next(f)
+    for line in f:
+        vals = line.rstrip().split("\t")
+        unversioned_accession = vals[0]
+        taxid = vals[2]
+        yield unversioned_accession, taxid
+
+def prepare_download_dir(user_download_dir):
+    if user_download_dir is None:
+        return tempfile.mkdtemp(), True
+    else:
+        download_dir = args.download_dir
+        if not os.path.exists(download_dir):
+            os.mkdir(download_dir)
+        return download_dir, False
+
+def prepare_database_dir(user_database_fp):
+    if os.path.exists(user_database_fp):
+        os.remove(user_database_fp)
+    database_dir = os.path.dirname(user_database_fp)
+    database_dir_is_default = database_dir == CONFIG_DIR
+    if database_dir_is_default and (not os.path.exists(CONFIG_DIR)):
+        os.mkdir(CONFIG_DIR)
 
 def main(argv=None):
     p = argparse.ArgumentParser()
     p.add_argument(
         "--download_dir",
-        help="Directory to download files from NCBI. (default: temp dir)")
+        help="directory to download files (default: temp dir)")
     p.add_argument(
-        "--sqlite_db", default=TAXONOMY_DB_FP,
-        help="Path to sqlite3 database (default: %(default)s)")
+        "--database_fp", default=TAXONOMY_DB_FP,
+        help="filepath for sqlite3 database (default: %(default)s)")
     args = p.parse_args(argv)
 
-    if args.download_dir is None:
-        download_dir = tempfile.mkdtemp()
-    else:
-        download_dir = args.download_dir
-        if not os.path.exists(download_dir):
-            os.mkdir(download_dir)
-
+    database_fp = os.path.expanduser(args.database_fp)
+    download_dir, remove_download_dir = prepare_download_dir(args.download_dir)
     accession_fp = download_accessions(download_dir)
     names_fp, nodes_fp = download_nodes(download_dir)
 
-    with open(accession_fp) as f_in:
-        accessions = list(parse_accessions(f_in))
-    with open(names_fp) as f_names, open(nodes_fp) as f_nodes:
-        names = parse_names(f_names)
-        unnamed_nodes = parse_nodes(f_nodes)
-        nodes = list(combine_names_and_nodes(names, unnamed_nodes))
+    with open(accession_fp) as f_acc, \
+         open(names_fp) as f_names, \
+         open(nodes_fp) as f_nodes:
+        accessions = parse_accessions(f_acc)
+        nodes = parse_names_and_nodes(f_names, f_nodes)
+        prepare_database_dir(database_fp)
+        init_db(database_fp, download_dir, accessions, nodes)
 
-    sys.stderr.write("Initializing sqlite3 database...")
-    sqlite_db = os.path.expanduser(args.sqlite_db)
-    if os.path.exists(sqlite_db):
-        os.remove(sqlite_db)
-    database_dir = os.path.dirname(sqlite_db)
-    database_dir_is_default = database_dir == CONFIG_DIR
-    if database_dir_is_default and (not os.path.exists(CONFIG_DIR)):
-        os.mkdir(CONFIG_DIR)
-    init_db(sqlite_db, download_dir, accessions, nodes)
-
-    shutil.rmtree(download_dir)
+    if remove_download_dir:
+        shutil.rmtree(download_dir)
 
 def download_accessions(download_dir):
     zipped_accession_fp = os.path.join(
@@ -93,22 +114,6 @@ def download_nodes(download_dir):
                 ["wget", "--directory-prefix", download_dir, TAXDUMP_URL])
         subprocess.check_call(["tar", "xvzf", taxdump_fp, "-C", download_dir])
     return names_fp, nodes_fp
-
-
-def combine_names_and_nodes(names, nodes):
-    names = dict(names)
-    for taxid, parent, rank in nodes:
-        name = names[taxid]
-        yield taxid, parent, name, rank
-
-def parse_accessions(f):
-    # First line is the header
-    next(f)
-    for line in f:
-        vals = line.rstrip().split("\t")
-        unversioned_accession = vals[0]
-        taxid = vals[2]
-        yield unversioned_accession, taxid
 
 def unversion(acc):
     if "." in acc:
