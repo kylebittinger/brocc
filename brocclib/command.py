@@ -3,6 +3,7 @@ from __future__ import division
 import logging
 import optparse
 import os
+import sys
 
 from brocclib.assign import Assigner
 from brocclib.get_xml import NcbiEutils
@@ -92,6 +93,13 @@ def main(argv=None):
     if os.path.exists(opts.taxonomy_db):
         taxa_db = NcbiLocal(opts.taxonomy_db)
     else:
+        sys.stderr.write(
+            "Did not detect a local copy of the NCBI taxonomy.\n"
+            "Using NCBI EUtils to get taxonomic info instead.\n\n"
+            "The NCBI taxonomy can be dowloaded with the script "
+            "create_local_taxonomy_db.py\n"
+            "This will greatly speed up the assignment process.\n"
+        )
         taxa_db = NcbiEutils()
 
     consensus_thresholds = [t for _, t in CONSENSUS_THRESHOLDS]
