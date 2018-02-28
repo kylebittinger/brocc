@@ -50,9 +50,6 @@ def parse_args(argv=None):
     parser.add_option("--taxonomy_db", default=TAXONOMY_DB_FP, help=(
         "location of sqlite3 database holding a local copy of the "
         "NCBI taxonomy [default: %default]"))
-    parser.add_option("--cache_fp", help=(
-        "Filepath for retaining data retrieved from NCBI between runs.  "
-        "Can help to reduce execution time if BROCC is run several times."))
     parser.add_option("-v", "--verbose", action="store_true",
         help="output message after every query sequence is classified")
     parser.add_option("-i", "--input_fasta_file", dest="fasta_file",
@@ -95,8 +92,7 @@ def main(argv=None):
     if os.path.exists(opts.taxonomy_db):
         taxa_db = NcbiLocal(opts.taxonomy_db)
     else:
-        taxa_db = NcbiEutils(opts.cache_fp)
-        taxa_db.load_cache()
+        taxa_db = NcbiEutils()
 
     consensus_thresholds = [t for _, t in CONSENSUS_THRESHOLDS]
     assigner = Assigner(
@@ -135,10 +131,8 @@ def main(argv=None):
         standard_taxa_file.write(a.format_for_standard_taxonomy())
         log_file.write(a.format_for_log())
 
-    # Close output files, write cache
+    # Close output files
 
     output_file.close()
     standard_taxa_file.close()
     log_file.close()
-
-    taxa_db.save_cache()
