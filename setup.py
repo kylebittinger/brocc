@@ -11,5 +11,5 @@ setup(
     maintainer_email='kbit@mail.med.upenn.edu',
     url='',
     packages=['brocclib'],
-    scripts=['scripts/brocc.py'],
+    scripts=['scripts/brocc.py', 'scripts/create_local_taxonomy_db.py'],
 )
