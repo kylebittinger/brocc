@@ -33,7 +33,7 @@ class AssignmentCandidate(object):
         return self.lineage.get_standard_taxa(self.rank)
 
     def to_string(self):
-        return "<AssignmentCandidate {0} {1} {2}>".format(self.rank, self.lineage.get_taxon(self.rank), self.votes)
+        return "{1} ({2} votes)".format(self.rank, self.lineage.get_taxon(self.rank), self.votes)
 
 
 class Assignment(object):
@@ -71,11 +71,12 @@ class Assignment(object):
 
     def log_details(self):
         candidates2 = [c.to_string() for c in self.candidates if c.votes > 1]
+        generics2 = ["{0} ({1} votes)".format(k, v) for v, k in self.generics]
         parts = [
             "",
             "** {0} voting for {1} **".format(self.query_id, self.rank),
             "Candidates (>1 vote): {0}".format(candidates2),
-            "Generics: {0}".format(self.generics),
+            "Generics: {0}".format(generics2),
             "Candidate total: {0}".format(self.total_votes),
             "WINNER: {0}".format(self.winning_candidate.to_string()),
             "",
@@ -112,11 +113,12 @@ class NoAssignment(object):
 
     def log_details(self):
         candidates2 = [c.to_string() for c in self.candidates if c.votes > 1]
+        generics2 = ["{0} ({1} votes)".format(k, v) for v, k in self.generics]
         parts = [
             "",
             "** {0} voting for {1} **".format(self.query_id, self.rank),
             "Candidates (>1 vote): {0}".format(candidates2),
-            "Generics: {0}".format(self.generics),
+            "Generics: {0}".format(generics2),
             "Candidate total: {0}".format(self.total_votes),
             self.message,
             "",
