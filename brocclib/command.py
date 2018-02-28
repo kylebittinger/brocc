@@ -6,6 +6,7 @@ import os
 
 from brocclib.assign import Assigner
 from brocclib.get_xml import NcbiEutils
+from brocclib.taxonomy_db import NcbiLocal, TAXONOMY_DB_FP
 from brocclib.parse import iter_fasta, read_blast
 
 
@@ -46,6 +47,9 @@ def parse_args(argv=None):
     parser.add_option("--max_generic", type="float", default=.7, help=(
         "maximum proportion of generic classifications allowed "
         "before query cannot be classified [default: %default]"))
+    parser.add_option("--taxonomy_db", default=TAXONOMY_DB_FP, help=(
+        "location of sqlite3 database holding a local copy of the "
+        "NCBI taxonomy [default: %default]"))
     parser.add_option("--cache_fp", help=(
         "Filepath for retaining data retrieved from NCBI between runs.  "
         "Can help to reduce execution time if BROCC is run several times."))
@@ -87,9 +91,12 @@ def main(argv=None):
         logging.basicConfig(level=logging.DEBUG)
     else:
         logging.basicConfig(level=logging.WARNING)
-    
-    taxa_db = NcbiEutils(opts.cache_fp)
-    taxa_db.load_cache()
+
+    if os.path.exists(opts.taxonomy_db):
+        taxa_db = NcbiLocal(opts.taxonomy_db)
+    else:
+        taxa_db = NcbiEutils(opts.cache_fp)
+        taxa_db.load_cache()
 
     consensus_thresholds = [t for _, t in CONSENSUS_THRESHOLDS]
     assigner = Assigner(
@@ -97,7 +104,7 @@ def main(argv=None):
         consensus_thresholds, opts.max_generic, taxa_db)
 
     # Read input files
-    
+
     with open(opts.fasta_file) as f:
         sequences = list(iter_fasta(f))
 
