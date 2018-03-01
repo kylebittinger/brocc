@@ -139,7 +139,7 @@ def main(argv=None):
     vote_formatter = logging.Formatter('%(message)s')
     vote_handler.setFormatter(vote_formatter)
     vote_logger.addHandler(vote_handler)
-
+    vote_logger.propagate = False
     # Do the work
 
     for name, seq in sequences:

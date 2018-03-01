@@ -83,7 +83,7 @@ class Assignment(object):
         ]
         message = "\n".join(parts)
         logger = logging.getLogger("brocc.votes")
-        logger.info(message)
+        logger.debug(message)
 
 
 class NoAssignment(object):
