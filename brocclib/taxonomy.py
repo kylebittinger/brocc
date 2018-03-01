@@ -67,6 +67,7 @@ GENERIC_WORDS = [
     "basidiomycete sp.", "Basidiomycota sp.", "Ascomycota sp.", "ascomycete strain",
 ]
 
+# descended from "environmental samples" or "unclassified Fungi|Basidiomycota|XXXX"?
 def is_generic(taxon_name):
     norm_taxon = taxon_name.lower()
     if any((gword in norm_taxon) for gword in GENERIC_WORDS):
