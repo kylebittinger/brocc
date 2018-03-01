@@ -29,24 +29,12 @@ class BroccAcceptance(unittest.TestCase):
             "-b", data_fp(blast_fp),
             "-o", self.output_dir,
             "-a", "ITS",
-            "--cache_fp", data_fp("brocc_cache.json"),
             ])
 
     @property
     def _assignments_fp(self):
         return os.path.join(
             self.output_dir, "Standard_Taxonomy.txt")
-
-    def test_no_cache(self):
-        main([
-            "-i", data_fp("em_10.fasta"),
-            "-b", data_fp("em_10_blast.txt"),
-            "-o", self.output_dir,
-            "-a", "ITS",
-        ])
-        self.assertEqual(
-            read_from(self._assignments_fp),
-            read_from(data_fp("em_10_assignments_2018.txt")))
 
     def test_ize(self):
         self._run_brocc("ize85.fasta", "ize85_blast.txt")

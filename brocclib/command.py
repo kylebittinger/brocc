@@ -5,10 +5,12 @@ import optparse
 import os
 import shutil
 import subprocess
+import sys
 import tempfile
 
 from brocclib.assign import Assigner
 from brocclib.get_xml import NcbiEutils
+from brocclib.taxonomy_db import NcbiLocal, TAXONOMY_DB_FP
 from brocclib.parse import iter_fasta, read_blast
 
 
@@ -49,9 +51,9 @@ def parse_args(argv=None):
     parser.add_option("--min_winning_votes", type="int", default=4, help=(
         "minimum number of votes needed to establish a consensus "
         "after removal of generic taxa [default: %default]"))
-    parser.add_option("--cache_fp", help=(
-        "Filepath for retaining data retrieved from NCBI between runs.  "
-        "Can help to reduce execution time if BROCC is run several times."))
+    parser.add_option("--taxonomy_db", default=TAXONOMY_DB_FP, help=(
+        "location of sqlite3 database holding a local copy of the "
+        "NCBI taxonomy [default: %default]"))
     parser.add_option("-v", "--verbose", action="store_true",
         help="output message after every query sequence is classified")
     parser.add_option("-i", "--input_fasta_file", dest="fasta_file",
@@ -90,9 +92,18 @@ def main(argv=None):
         logging.basicConfig(level=logging.DEBUG)
     else:
         logging.basicConfig(level=logging.WARNING)
-    
-    taxa_db = NcbiEutils(opts.cache_fp)
-    taxa_db.load_cache()
+
+    if os.path.exists(opts.taxonomy_db):
+        taxa_db = NcbiLocal(opts.taxonomy_db)
+    else:
+        sys.stderr.write(
+            "Did not detect a local copy of the NCBI taxonomy.\n"
+            "Using NCBI EUtils to get taxonomic info instead.\n\n"
+            "The NCBI taxonomy can be dowloaded with the script "
+            "create_local_taxonomy_db.py\n"
+            "This will greatly speed up the assignment process.\n"
+        )
+        taxa_db = NcbiEutils()
 
     consensus_thresholds = [t for _, t in CONSENSUS_THRESHOLDS]
     assigner = Assigner(
@@ -100,7 +111,7 @@ def main(argv=None):
         consensus_thresholds, opts.min_winning_votes, taxa_db)
 
     # Read input files
-    
+
     with open(opts.fasta_file) as f:
         sequences = list(iter_fasta(f))
 
@@ -140,17 +151,15 @@ def main(argv=None):
         standard_taxa_file.write(a.format_for_standard_taxonomy())
         log_file.write(a.format_for_log())
 
-    # Close output files, write cache
+    # Close output files
 
     output_file.close()
     standard_taxa_file.close()
     log_file.close()
 
-    taxa_db.save_cache()
-
 def run_acceptance_test(argv=None):
     p = optparse.OptionParser()
-    p.add_option("--no_cache", action="store_true")
+    p.add_option("--keep_temp", action="store_true")
     opts, args = p.parse_args(argv)
 
     base_file_paths = [os.path.splitext(fp)[0] for fp in args]
@@ -165,10 +174,6 @@ def run_acceptance_test(argv=None):
         brocc_args = [
             "-i", fasta_fp, "-b", blast_fp, "-o", output_dir,
             "-a" "ITS", "--verbose"]
-        if not opts.no_cache:
-            cache_fp = os.path.expanduser("~/.brocc_acceptance_tests.json")
-            print "Using cache", cache_fp
-            brocc_args.extend(["--cache_fp", cache_fp])
         main(brocc_args)
 
         observed_assignments_fp = os.path.join(
@@ -177,4 +182,6 @@ def run_acceptance_test(argv=None):
         subprocess.call(
             ["diff", observed_assignments_fp, expected_assignments_fp],
         )
-        #shutil.rmtree(output_dir)
+
+        if not opts.keep_temp:
+            shutil.rmtree(output_dir)

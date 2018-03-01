@@ -5,56 +5,19 @@ import logging
 
 
 class NcbiEutils(object):
-    def __init__(self, cache_fp=None):
-        self.cache_fp = cache_fp
+    def __init__(self):
         self.lineages = {}
         self.taxon_ids = {}
-        self._fresh = True
 
     def get_lineage(self, taxon_id):
         if taxon_id not in self.lineages:
-            self._fresh = False
             self.lineages[taxon_id] = get_lineage(taxon_id)
         return self.lineages[taxon_id]
 
     def get_taxon_id(self, acc):
         if acc not in self.taxon_ids:
-            self._fresh = False
             self.taxon_ids[acc] = get_taxid(acc)
         return self.taxon_ids[acc]
-
-    def load_cache(self):
-        # Do nothing if there is no cache file
-        if self.cache_fp is None:
-            return None
-        if os.path.exists(self.cache_fp):
-            with open(self.cache_fp) as f:
-                data = json.load(f)
-                self.lineages = dict(
-                    (x, dict(y)) for x, y in data["lineages"])
-                self.taxon_ids = dict(data["taxon_ids"])
-
-    def save_cache(self):
-        # Do nothing if there is no cache file
-        if self.cache_fp is None:
-            return None
-        # Do nothing if no lookups have been performed.
-        if self._fresh:
-            return None
-
-        lineages = list(
-            (x, list(sorted(y.items()))) for x, y in self.lineages.items())
-        lineages.sort()
-
-        taxon_ids = list(self.taxon_ids.items())
-        taxon_ids.sort()
-
-        data = {
-            "lineages": lineages,
-            "taxon_ids": taxon_ids,
-            }
-        with open(self.cache_fp, "w") as f:
-            json.dump(data, f, indent=2, separators=(',', ': '))
 
 
 def get_taxon_from_xml(xml_string):
