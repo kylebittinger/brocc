@@ -43,5 +43,11 @@ class NcbiLocalTests(unittest.TestCase):
             'Lineage': (
                 u'cellular organisms; Bacteria; Firmicutes; '
                 u'Clostridia; Clostridiales'),
+            'LineageWithRanks': [
+                (u'cellular organisms', u'no rank'),
+                (u'Bacteria', u'superkingdom'),
+                (u'Firmicutes', u'phylum'),
+                (u'Clostridia', u'class'),
+                (u'Clostridiales', u'order')],
         }
         self.assertEqual(observed_lineage, expected_lineage)
