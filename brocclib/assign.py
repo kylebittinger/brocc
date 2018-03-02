@@ -22,10 +22,6 @@ class AssignmentCandidate(object):
         #return not (is_high_rank and not is_descended_from_missing_taxon)
 
     @property
-    def all_taxa(self):
-        return self.lineage.get_all_taxa(self.rank)
-
-    @property
     def standard_taxa(self):
         return self.lineage.get_standard_taxa(self.rank)
 
@@ -52,16 +48,12 @@ class Assignment(object):
     def num_generic(self):
         return sum(n for n, taxon in self.generics)
 
-    def format_for_full_taxonomy(self):
-        lineage = ';'.join(self.winning_candidate.all_taxa)
-        return "%s\t%s\n" % (self.query_id, lineage)
-
     def format_for_standard_taxonomy(self):
         lineage = ';'.join(self.winning_candidate.standard_taxa)
         return "%s\t%s\n" % (self.query_id, lineage)
 
     def format_for_log(self):
-        lineage = ';'.join(self.winning_candidate.all_taxa)
+        lineage = ';'.join(self.winning_candidate.standard_taxa)
         return "%s\t%s\t%s\t%s\t%s\t%s\n" % (
             self.query_id, self.winning_candidate.votes, self.total_votes,
             self.num_generic, self.winning_candidate.rank, lineage)
@@ -102,11 +94,10 @@ class NoAssignment(object):
     def num_generic(self):
         return sum(n for n, taxon in self.generics)
 
-    def format_for_full_taxonomy(self):
+    def format_for_standard_taxonomy(self):
         return "%s\t%s\n" % (self.query_id, self.message)
 
-    format_for_standard_taxonomy = format_for_full_taxonomy
-    format_for_log = format_for_full_taxonomy
+    format_for_log = format_for_standard_taxonomy
 
     def log_details(self):
         candidates2 = [c.to_string() for c in self.candidates if c.votes > 1]

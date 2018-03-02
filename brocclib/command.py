@@ -122,8 +122,6 @@ def main(argv=None):
 
     if not os.path.exists(opts.output_directory):
         os.mkdir(opts.output_directory)
-    output_file = open(
-        os.path.join(opts.output_directory, "Full_Taxonomy.txt"), 'w')
     standard_taxa_file = open(
         os.path.join(opts.output_directory, "Standard_Taxonomy.txt"), "w")
     log_file = open(os.path.join(opts.output_directory, "brocc.log"), "w")
@@ -147,13 +145,11 @@ def main(argv=None):
         # This is where the magic happens
         a = assigner.assign(name, seq, seq_hits)
 
-        output_file.write(a.format_for_full_taxonomy())
         standard_taxa_file.write(a.format_for_standard_taxonomy())
         log_file.write(a.format_for_log())
 
     # Close output files
 
-    output_file.close()
     standard_taxa_file.close()
     log_file.close()
 

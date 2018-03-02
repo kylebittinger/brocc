@@ -17,12 +17,15 @@ class Lineage(object):
         (rank, idx) for idx, rank in enumerate(ranks))
 
     def __init__(self, taxa):
-        self.indexed_lineage = [
+        # Internally, taxa are stored using an integer to represent
+        # the rank. This helps when comparing ranks to see which is
+        # higher or lower
+        self._taxa = [
             (name, self.standard_rank_idx.get(rank)) for name, rank in taxa]
 
     def get_taxon(self, rank):
         rank_idx = self.ranks.index(rank)
-        for name, idx in self.indexed_lineage:
+        for name, idx in self._taxa:
             if idx is None:
                 continue
             elif idx == rank_idx:
@@ -38,22 +41,6 @@ class Lineage(object):
         for r in ranks_up_to:
             yield self.get_taxon(r)
 
-    def get_all_taxa(self, rank):
-        rank_idx = self.ranks.index(rank)
-        for name, idx in self.indexed_lineage:
-            if idx is None:
-                yield name
-            elif idx < rank_idx:
-                yield name
-            if idx == rank_idx:
-                yield name
-                break
-            if idx > rank_idx:
-                # If we've skipped over the rank of interest, yield a
-                # placeholder and stop
-                yield self.get_taxon(rank)
-                break
-
     @staticmethod
     def is_generic_name(name):
         return (name == "environmental samples") or \
@@ -62,7 +49,7 @@ class Lineage(object):
     def is_generic(self, rank):
         rank_idx = self.ranks.index(rank)
         last_idx = 0
-        for name, idx in self.indexed_lineage:
+        for name, idx in self._taxa:
             if idx is None:
                 if self.is_generic_name(name):
                     if last_idx < rank_idx:

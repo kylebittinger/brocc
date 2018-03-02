@@ -37,15 +37,6 @@ class TaxonTests(unittest.TestCase):
             "Candida albicans"]
         self.assertEqual(list(t.get_standard_taxa("species")), expected)
 
-    def test_all_taxa(self):
-        t = Lineage(self.d)
-        expected = [
-            "cellular organisms", "Eukaryota", "Opisthokonta",
-            "Fungi", "Dikarya", "Ascomycota", "saccharomyceta", "Saccharomycotina",
-            "Saccharomycetes", "Saccharomycetales", "mitosporic Saccharomycetales", 
-            "Candida", "Candida albicans"]
-        self.assertEqual(list(t.get_all_taxa("species")), expected)
-
     def test_generic_species(self):
         t = Lineage(self.d)
         self.assertEqual(t.is_generic("species"), False)
