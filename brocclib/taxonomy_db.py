@@ -163,10 +163,10 @@ class NcbiLocal(object):
             if res is None:
                 break
             parent, name, rank = res
-            yield name, rank
             if parent == taxon_id:
                 break
             else:
+                yield name, rank
                 taxon_id = parent
 
     def save_cache(self):

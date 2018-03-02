@@ -23,6 +23,7 @@ TEST_NODES = [
 ]
 
 class NcbiLocalTests(unittest.TestCase):
+    maxDiff = None
     def setUp(self):
         self.temp_dir = tempfile.mkdtemp()
         sqlite_fp = os.path.join(self.temp_dir, "taxonomy.db")

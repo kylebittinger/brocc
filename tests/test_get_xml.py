@@ -26,7 +26,6 @@ class NcbiEutilsTests(unittest.TestCase):
                 'sordariomyceta; Sordariomycetes; Xylariomycetidae; '
                 'Xylariales; Sporocadaceae; Pestalotiopsis'),
             'LineageWithRanks': [
-                ('root', 'no rank'),
                 ('cellular organisms', 'no rank'),
                 ('Eukaryota', 'superkingdom'),
                 ('Opisthokonta', 'no rank'),

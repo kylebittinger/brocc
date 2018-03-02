@@ -22,7 +22,7 @@ class NcbiEutils(object):
 
 def get_taxon_from_xml(xml_string):
     taxon_dict = {}
-    lineage_with_ranks = [("root", "no rank")]
+    lineage_with_ranks = []
     xml_string_new = "".join(
         [s for s in xml_string.splitlines(True) if s.strip("\r\n")])
     tree = ET.XML(xml_string_new)
