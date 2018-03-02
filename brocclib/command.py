@@ -153,7 +153,7 @@ def main(argv=None):
     standard_taxa_file.close()
     log_file.close()
 
-def run_acceptance_test(argv=None):
+def run_comparison(argv=None):
     p = optparse.OptionParser()
     p.add_option("--keep_temp", action="store_true")
     opts, args = p.parse_args(argv)
@@ -169,15 +169,24 @@ def run_acceptance_test(argv=None):
 
         brocc_args = [
             "-i", fasta_fp, "-b", blast_fp, "-o", output_dir,
-            "-a" "ITS", "--verbose"]
+            "-a" "ITS"]
         main(brocc_args)
+
+        base_filename = os.path.basename(base_fp)
+
+        voting_src = os.path.join(output_dir, "voting_log.txt")
+        voting_dest = "{0}_voting_log.txt".format(base_filename)
+        shutil.copyfile(voting_src, voting_dest)
 
         observed_assignments_fp = os.path.join(
             output_dir, "Standard_Taxonomy.txt")
         expected_assignments_fp = "{0}_assignments.txt".format(base_fp)
-        subprocess.call(
-            ["diff", observed_assignments_fp, expected_assignments_fp],
-        )
+        diff_fp = "{0}_diff.txt".format(base_filename)
+        with open(diff_fp, "w") as f:
+            subprocess.call(
+                ["diff", observed_assignments_fp, expected_assignments_fp],
+                stdout=f,
+            )
 
         if not opts.keep_temp:
             shutil.rmtree(output_dir)
