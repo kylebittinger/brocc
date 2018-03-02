@@ -91,15 +91,6 @@ class Lineage(object):
 
     def __init__(self, dictionary):
         self.store = dictionary
-
-        self.species = self.store.get("species")
-
-        self.classified = True
-        if self.species in self.generic_taxa:
-            self.classified = False
-        if ("no rank" in self.store) and (self.store["no rank"] in self.generic_flags):
-            self.classified = False
-
         self.full_lineage = self.store["LineageWithRanks"]
         self.standard_taxa = self._create_standard_taxa(self.full_lineage)
 
@@ -107,15 +98,12 @@ class Lineage(object):
     def _create_standard_taxa(cls, lineage):
         std_taxa = dict(
             (rank, name) for name, rank in lineage if rank in cls.ranks)
-        print(std_taxa)
         fill_in_val = None
         for rank in cls.ranks:
-            print(rank, std_taxa.get(rank))
             if rank in std_taxa:
                 fill_in_val = std_taxa[rank]
             else:
                 std_taxa[rank] = "{0} ({1})".format(fill_in_val, rank)
-        print(std_taxa)
         return std_taxa
 
     def get_standard_taxa(self, rank):
@@ -134,3 +122,6 @@ class Lineage(object):
 
     def get_taxon(self, rank):
         return self.standard_taxa.get(rank)
+
+    def is_generic(self, rank):
+        return is_generic(self.get_taxon(rank))

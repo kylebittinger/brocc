@@ -50,7 +50,6 @@ class TaxonTests(unittest.TestCase):
             "Saccharomycetales", "Candida (family)", "Candida",
             "Candida albicans"]
         self.assertEqual(list(t.get_standard_taxa("species")), expected)
-        self.assertEqual(t.classified, True)
 
     def test_all_taxa(self):
         t = Lineage(self.d)
@@ -60,18 +59,10 @@ class TaxonTests(unittest.TestCase):
             "Saccharomycetes", "Saccharomycetales", "mitosporic Saccharomycetales", 
             "Candida", "Candida albicans"]
         self.assertEqual(list(t.get_all_taxa("species")), expected)
-        self.assertEqual(t.classified, True)
 
     def test_generic_species(self):
-        self.d["species"] = "uncultured organism"
         t = Lineage(self.d)
-        self.assertEqual(t.classified, False)
-
-    def test_generic_taxon(self):
-        self.d["no rank"] = "unclassified Fungi"
-        t = Lineage(self.d)
-        self.assertEqual(t.classified, False)
-
+        self.assertEqual(t.is_generic("species"), False)
 
 if __name__ == "__main__":
     unittest.main()
