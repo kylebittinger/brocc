@@ -38,10 +38,8 @@ The BROCC program requires two input files and the name of an output directory:
 
     brocc.py -i <SEQUENCES (FASTA FORMAT)> -b <BLAST RESULTS> -o <OUTPUT DIRECTORY>
 
-`brocc.py` outputs a QIIME-formated taxonomy map and a log file.  The
-log file that contains the full classification and voting details:
-number of votes for winner, total votes cast, and number of generic
-hits pruned.
+`brocc.py` outputs a QIIME-formated taxonomy map and a couple of log
+files, giving details on the voting.
 
 Settings
 --------
