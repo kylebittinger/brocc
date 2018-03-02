@@ -86,7 +86,7 @@ class Lineage(object):
     generic_flags = GENERIC_FLAGS
     ranks = [
         "species", "genus", "family", "order",
-        "class", "phylum", "kingdom", "domain",
+        "class", "phylum", "kingdom", "superkingdom",
         ]
 
     def __init__(self, dictionary):
@@ -100,39 +100,23 @@ class Lineage(object):
         if ("no rank" in self.store) and (self.store["no rank"] in self.generic_flags):
             self.classified = False
 
-        ### FIXME: do not store taxa in attributes.
-        self.genus = self.store.get("genus")
-        if (self.genus is None) and (self.species is not None):
-            self.genus = self.species + " (genus)"
+        self.full_lineage = self.store["LineageWithRanks"]
+        self.standard_taxa = self._create_standard_taxa(self.full_lineage)
 
-        self.family = self.store.get("family")
-        if (self.family is None) and (self.genus is not None):
-            self.family = self.genus.split(" (")[0] + " (family)"
-
-        self.order = self.store.get("order")
-        if (self.order is None) and (self.family is not None):
-            self.order = self.family.split(" (")[0] + " (order)"
-
-        self.clas = self.store.get("class")
-        if (self.clas is None) and (self.order is not None):
-            self.clas = self.order.split(" (")[0] + " (class)"
-
-        self.phylum = self.store.get("phylum")
-        if (self.phylum is None) and (self.clas is not None):
-            self.phylum = self.clas.split(" (")[0] + " (phylum)"
-
-        self.kingdom = self.store.get("kingdom")
-        if (self.kingdom is None) and (self.phylum is not None):
-            self.kingdom = self.phylum.split(" (")[0] + " (kingdom)"
-
-        self.domain = self.store.get("superkingdom")
-        if (self.domain is None) and (self.kingdom is not None):
-            self.domain = "Domain unknown for reference"
-        ################## End FIXME
-
-        self.full_lineage = self.store["Lineage"].split("; ")
-        if self.species is not None:
-            self.full_lineage.append(self.species)
+    @classmethod
+    def _create_standard_taxa(cls, lineage):
+        std_taxa = dict(
+            (rank, name) for name, rank in lineage if rank in cls.ranks)
+        print(std_taxa)
+        fill_in_val = None
+        for rank in cls.ranks:
+            print(rank, std_taxa.get(rank))
+            if rank in std_taxa:
+                fill_in_val = std_taxa[rank]
+            else:
+                std_taxa[rank] = "{0} ({1})".format(fill_in_val, rank)
+        print(std_taxa)
+        return std_taxa
 
     def get_standard_taxa(self, rank):
         for r in reversed(self.ranks):
@@ -143,13 +127,10 @@ class Lineage(object):
                 break
 
     def get_all_taxa(self, rank):
-        taxon = self.get_taxon(rank)
-        for t in self.full_lineage:
-            yield t
-            if t == taxon:
+        for taxon_name, taxon_rank in self.full_lineage:
+            yield taxon_name
+            if taxon_rank == rank:
                 break
 
     def get_taxon(self, rank):
-        if rank == "class":
-            rank = "clas"
-        return getattr(self, rank)
+        return self.standard_taxa.get(rank)

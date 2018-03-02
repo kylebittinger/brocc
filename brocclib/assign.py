@@ -130,7 +130,7 @@ class NoAssignment(object):
 class Assigner(object):
     ranks = [
         "species", "genus", "family", "order",
-        "class", "phylum", "kingdom", "domain",
+        "class", "phylum", "kingdom", "superkingdom",
         ]
 
     def __init__(self, min_cover, species_min_id, genus_min_id, min_id,

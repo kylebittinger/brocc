@@ -28,7 +28,7 @@ CONSENSUS_THRESHOLDS = [
     ("clas", 0.9),
     ("phylum", 0.9),
     ("kingdom", 0.9),
-    ("domain", 0.9),
+    ("superkingdom", 0.9),
     ]
 
 
