@@ -2,7 +2,7 @@ from __future__ import division
 import collections
 import logging
 
-from brocclib.taxonomy import Lineage, NoLineage, is_generic
+from brocclib.taxonomy import Lineage, NoLineage
 
 '''
 Created on Aug 29, 2011
