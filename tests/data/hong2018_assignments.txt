@@ -1,0 +1,909 @@
+OTU1	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Nakaseomyces;[Candida] glabrata
+OTU2	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Nakaseomyces;[Candida] glabrata
+OTU3	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Nakaseomyces;[Candida] glabrata
+OTU4	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+OTU5	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces
+OTU6	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+OTU7	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+OTU8	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+OTU9	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+OTU10	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Saccharomyces;Saccharomyces cerevisiae
+OTU11	Abundance of low coverage hits: possible chimera
+OTU12	Abundance of low coverage hits: possible chimera
+OTU13	Eukaryota;Metazoa;Cnidaria;Hydrozoa;Anthoathecata;Hydridae;Hydra;Hydra vulgaris
+OTU14	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU15	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Citeromyces;Citeromyces siamensis
+OTU16	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Torulaspora;Torulaspora delbrueckii
+OTU17	Abundance of low coverage hits: possible chimera
+OTU18	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Hymenochaetales;Hymenochaetaceae;Hymenochaete
+OTU19	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Agaricaceae;Agaricus;Agaricus bisporus
+OTU20	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycodaceae;Hanseniaspora
+OTU21	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Hymenochaetales;Hymenochaetaceae;Hymenochaete;Hymenochaete innexa
+OTU22	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Hymenochaetales;Hymenochaetaceae;Hymenochaete;Hymenochaete corrugata
+OTU23	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Hymenochaetales;Hymenochaetaceae;Hymenochaetopsis
+OTU24	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Cyphellaceae;Cyphellopsis
+OTU25	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia globosa
+OTU26	Abundance of low coverage hits: possible chimera
+OTU27	Abundance of low coverage hits: possible chimera
+OTU28	Abundance of low coverage hits: possible chimera
+OTU29	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia globosa
+OTU30	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia globosa
+OTU31	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Tricholomataceae;Baeospora;Baeospora myosura
+OTU32	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia globosa
+OTU33	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia globosa
+OTU34	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Hymenochaetales;Trichaptum (family);Trichaptum;Trichaptum biforme
+OTU35	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Physalacriaceae;Cylindrobasidium
+OTU36	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia globosa
+OTU37	Eukaryota;Fungi;Basidiomycota;Ustilaginomycetes;Ustilaginales;Ustilaginaceae;Ustilago;Ustilago striiformis
+OTU38	Eukaryota;Fungi;Basidiomycota;Ustilaginomycetes;Ustilaginales;Ustilaginaceae;Ustilago
+OTU39	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Mycenaceae;Mycena
+OTU40	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia globosa
+OTU41	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Tricholomataceae;Resupinatus;Resupinatus alboniger
+OTU42	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Psathyrellaceae;Coprinellus
+OTU43	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia globosa
+OTU44	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Omphalotaceae;Lentinula;Lentinula edodes
+OTU45	Eukaryota;Fungi;Basidiomycota;Ustilaginomycetes;Ustilaginales;Ustilaginaceae
+OTU46	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Hymenochaetales;Resinicium (family);Resinicium;Resinicium furfuraceum
+OTU47	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Irpicaceae;Trametopsis;Trametopsis cervina
+OTU48	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Hymenochaetales;Hymenochaetaceae;Fuscoporia;Fuscoporia gilva
+OTU49	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Meruliaceae;Phlebia
+OTU50	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Meruliaceae;Phlebia
+OTU51	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Pleurotaceae;Pleurotus
+OTU52	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Kluyveromyces;Kluyveromyces marxianus
+OTU53	Eukaryota;Fungi;Basidiomycota;Ustilaginomycetes;Ustilaginales;Ustilaginaceae
+OTU54	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Onygenales;[Arthropsis] hispanica (family);[Arthropsis] hispanica (genus);[Arthropsis] hispanica
+OTU55	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Mycenaceae;Panellus;Panellus stipticus
+OTU56	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales
+OTU57	Eukaryota;Fungi;Basidiomycota;Ustilaginomycetes;Ustilaginales;Ustilaginaceae
+OTU58	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Sordariomycetes sp. (order);Sordariomycetes sp. (family);Sordariomycetes sp. (genus);Sordariomycetes sp.
+OTU59	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Zygosaccharomyces
+OTU60	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Irpicaceae;Irpex;Irpex lacteus
+OTU61	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum;Stereum subtomentosum
+OTU62	Eukaryota;Metazoa;Cnidaria;Anthozoa;Scleractinia;Lobophylliidae;Acanthastrea;Acanthastrea echinata
+OTU63	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Fomitopsidaceae;Fomitopsis
+OTU64	Eukaryota;Fungi
+OTU65	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Incrustoporiaceae;Skeletocutis;Skeletocutis ochroalba
+OTU66	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Incrustoporiaceae;Skeletocutis;Skeletocutis nivea
+OTU67	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Corticiales;Corticiaceae;Sistotrema
+OTU68	Eukaryota;Fungi
+OTU69	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia obtusa
+OTU70	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae
+OTU71	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales
+OTU72	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales
+OTU73	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales
+OTU74	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Chaetothyriales;Trichomeriaceae;'Lithophila';'Lithophila guttulata'
+OTU75	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales
+OTU76	Abundance of low coverage hits: possible chimera
+OTU77	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Corticiales;Corticiaceae;Corticium;Corticium confine
+OTU78	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia japonica
+OTU79	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Irpicaceae;Ceriporia;Ceriporia nanlingensis
+OTU80	Eukaryota;Fungi;Ascomycota
+OTU81	Abundance of low coverage hits: possible chimera
+OTU82	Eukaryota;Viridiplantae;Streptophyta;Cucurbitales (class);Cucurbitales;Cucurbitaceae
+OTU83	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales
+OTU84	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Ganoderma
+OTU85	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia furfur
+OTU86	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Phanerochaetaceae
+OTU87	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Ganoderma
+OTU88	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Chaetothyriales
+OTU89	Eukaryota;Fungi
+OTU90	Eukaryota;Fungi;Basidiomycota;Exobasidiomycetes;Tilletiales;Tilletiaceae;Tilletia;Tilletia horrida
+OTU91	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Ganoderma
+OTU92	No hits found in database
+OTU93	Eukaryota;Fungi
+OTU94	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Trametes
+OTU95	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Meruliaceae;Mycoacia;Mycoacia fuscoatra
+OTU96	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Debaryomyces;Debaryomyces hansenii
+OTU97	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Meruliaceae;Phlebia
+OTU98	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Daedaleopsis;Daedaleopsis confragosa
+OTU99	Eukaryota;Fungi
+OTU100	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Atheliales;Atheliaceae;Fibularhizoctonia;Fibularhizoctonia sp. TMB
+OTU101	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Ophiostomatales;Ophiostomataceae;Ophiostoma
+OTU102	Abundance of low coverage hits: possible chimera
+OTU103	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Phanerochaetaceae;Phlebiopsis;Phlebiopsis gigantea
+OTU104	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Phanerochaetaceae;Phlebiopsis
+OTU105	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Ganoderma
+OTU106	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Meruliaceae
+OTU107	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae
+OTU108	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU109	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Corticiales;Corticiaceae;Hyphodontia
+OTU110	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Steccherinaceae;Steccherinaceae sp. (genus);Steccherinaceae sp.
+OTU111	Eukaryota;Fungi
+OTU112	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Meruliaceae;Phlebia;Phlebia chrysocreas
+OTU113	Eukaryota;Fungi
+OTU114	Abundance of low coverage hits: possible chimera
+OTU115	Eukaryota;Fungi
+OTU116	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Peniophoraceae;Peniophora;Peniophora lycii
+OTU117	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Leptospora (order);Leptospora (family);Leptospora;Leptospora rubella
+OTU118	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Fomitopsidaceae;Antrodia
+OTU119	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Debaryomyces
+OTU120	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus;Aspergillus tardicrescens
+OTU121	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Peniophoraceae;Peniophora
+OTU122	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Phanerochaetaceae;Phanerochaete
+OTU123	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Irpicaceae;Gloeoporus;Gloeoporus dichrous
+OTU124	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Meruliaceae
+OTU125	Eukaryota;Fungi
+OTU126	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Steccherinaceae;Steccherinum;Steccherinum bourdotii
+OTU127	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae;Alternaria
+OTU128	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Lenzites;Lenzites betulinus
+OTU129	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus;Aspergillus penicillioides
+OTU130	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Irpicaceae;Emmia;Emmia lacerata
+OTU131	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Peniophoraceae;Peniophora
+OTU132	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Incrustoporiaceae;Tyromyces
+OTU133	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Steccherinaceae;Steccherinum;Steccherinum ochraceum
+OTU134	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Ophiostomatales;Ophiostomataceae;Ophiostoma
+OTU135	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU136	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Peniophoraceae;Peniophora
+OTU137	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae;Alternaria
+OTU138	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU139	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Steccherinaceae;Steccherinum;Steccherinum ochraceum
+OTU140	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae;Alternaria
+OTU141	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Chaetothyriales;Chaetothyriales sp. AR-2010 (family)
+OTU142	Abundance of low coverage hits: possible chimera
+OTU143	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Kurtzmaniella;[Candida] zeylanoides
+OTU144	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Phanerochaetaceae;Bjerkandera;Bjerkandera adusta
+OTU145	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Steccherinaceae;Junghuhnia;Junghuhnia nitida
+OTU146	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Phaeosphaeriaceae
+OTU147	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum
+OTU148	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Xenasmataceae (order);Xenasmataceae;Xenasmataceae sp. RB-2011 (genus);Xenasmataceae sp. RB-2011
+OTU149	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales
+OTU150	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Irpicaceae;Gloeoporus;Gloeoporus pannocinctus
+OTU151	Abundance of low coverage hits: possible chimera
+OTU152	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Trametes;Trametes gibbosa
+OTU153	Eukaryota;Fungi
+OTU154	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU155	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Phaeosphaeriaceae
+OTU156	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Hyphodermataceae;Hyphoderma;Hyphoderma setigerum
+OTU157	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Diaporthales;Gnomoniaceae
+OTU158	No hits found in database
+OTU159	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Corticiales;Corticiaceae;Sistotrema;Sistotrema oblongisporum
+OTU160	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Gelatoporiaceae;Cinereomyces;Cinereomyces lindbladii
+OTU161	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum
+OTU162	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Corticiales;Corticiaceae;Sistotrema
+OTU163	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU164	Abundance of low coverage hits: possible chimera
+OTU165	Eukaryota;Fungi
+OTU166	Eukaryota;Fungi
+OTU167	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia pachydermatis
+OTU168	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Ischnodermataceae;Ischnoderma
+OTU169	Abundance of low coverage hits: possible chimera
+OTU170	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus;Aspergillus terreus
+OTU171	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia pachydermatis
+OTU172	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae
+OTU173	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Phaeosphaeriaceae
+OTU174	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Bondarzewiaceae;Heterobasidion
+OTU175	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU176	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU177	Abundance of low coverage hits: possible chimera
+OTU178	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum
+OTU179	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus;Aspergillus fumigatus
+OTU180	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Trametes;Trametes versicolor
+OTU181	Eukaryota;Fungi;Ascomycota
+OTU182	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Hypocreaceae;Trichoderma
+OTU183	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum
+OTU184	Abundance of low coverage hits: possible chimera
+OTU185	Eukaryota;Fungi
+OTU186	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum
+OTU187	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum
+OTU188	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Hyphodermataceae;Hyphoderma;Hyphoderma setigerum
+OTU189	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU190	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Meruliaceae;Phlebia
+OTU191	Eukaryota;Fungi;Basidiomycota;Agaricomycetes
+OTU192	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU193	Eukaryota;Fungi
+OTU194	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum
+OTU195	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU196	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae;Trametes
+OTU197	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Dacryobolaceae
+OTU198	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Dothideales;Dothioraceae
+OTU199	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Glomerellales;Glomerellaceae;Colletotrichum
+OTU200	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum
+OTU201	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Xylariales;Diatrypaceae;Eutypella
+OTU202	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Dothideales
+OTU203	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae
+OTU204	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Togniniales;Togniniaceae;Phaeoacremonium;Phaeoacremonium minimum
+OTU205	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Russulales;Stereaceae;Stereum
+OTU206	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae
+OTU207	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Dothideales;Saccotheciaceae;Aureobasidium
+OTU208	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU209	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU210	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Dothideales;Saccotheciaceae
+OTU211	Abundance of low coverage hits: possible chimera
+OTU212	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Polyporales;Polyporaceae
+OTU213	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Dothideales;Saccotheciaceae;Aureobasidium
+OTU214	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Dothideales;Saccotheciaceae;Aureobasidium
+OTU215	Abundance of low coverage hits: possible chimera
+OTU216	Abundance of low coverage hits: possible chimera
+OTU217	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Periconiaceae;Periconia
+OTU218	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Saccharomycetaceae;Kazachstania;Kazachstania humilis
+OTU219	Eukaryota;Fungi;Basidiomycota;Exobasidiomycetes;Entylomatales;Tilletiopsis (family);Tilletiopsis;Tilletiopsis lilacina
+OTU220	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Trichocomaceae;Talaromyces
+OTU221	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Microascales;Microascaceae;Scedosporium;Scedosporium aurantiacum
+OTU222	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Diaporthales;Diaporthaceae;Stenocarpella;Stenocarpella maydis
+OTU223	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+OTU224	Eukaryota;Fungi
+OTU225	Eukaryota;Fungi;Ascomycota;Dothideomycetes
+OTU226	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Bionectriaceae;Geosmithia
+OTU227	Eukaryota;Fungi
+OTU228	Eukaryota;Fungi;Ascomycota;Taphrinomycetes;Taphrinales;Taphrinaceae;Taphrina
+OTU229	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Mycosphaerellaceae
+OTU230	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Sordariales;Chaetomiaceae;Chaetomium
+OTU231	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Clavicipitaceae;Claviceps
+OTU232	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae
+OTU233	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Xeromyces;Xeromyces bisporus
+OTU234	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+OTU235	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Diaporthales;Diaporthaceae
+OTU236	Eukaryota;Fungi;Basidiomycota;Exobasidiomycetes;Golubeviales;Golubeviaceae;Golubevia;Golubevia pallescens
+OTU237	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+OTU238	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+OTU239	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Xylariales;Diatrypaceae;Eutypella
+OTU240	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+OTU241	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+OTU242	Eukaryota;Fungi
+OTU243	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+OTU244	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+OTU245	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium
+OTU246	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Xylariales;Diatrypaceae;Eutypella
+OTU247	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Corticiales;Corticiaceae;Sistotrema
+OTU248	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Pleurotheciales;Pleurotheciaceae;Phaeoisaria
+OTU249	Eukaryota;Fungi;Ascomycota;Leotiomycetes;Pseudeurotiaceae (order);Pseudeurotiaceae
+OTU250	Eukaryota;Fungi;Basidiomycota;Exobasidiomycetes;Robbauerales;Robbaueraceae;Robbauera
+OTU251	Eukaryota;Fungi
+OTU252	Abundance of low coverage hits: possible chimera
+OTU253	Abundance of low coverage hits: possible chimera
+OTU254	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU255	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Sordariales;Chaetomiaceae;Chaetomium
+OTU256	Eukaryota;Fungi
+OTU257	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Microascales;Microascaceae;Scedosporium
+OTU258	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Microascales;Microascaceae;Scedosporium
+OTU259	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Meyerozyma
+OTU260	Eukaryota;Fungi;Ascomycota;Sordariomycetes
+OTU261	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Microascales;Microascaceae;Scedosporium;Scedosporium apiospermum
+OTU262	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Microascales;Microascaceae;Scedosporium
+OTU263	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Meyerozyma;Meyerozyma guilliermondii
+OTU264	Eukaryota;Fungi
+OTU265	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Microascales;Microascaceae;Scedosporium
+OTU266	Eukaryota;Fungi;fungal sp. (phylum)
+OTU267	No hits found in database
+OTU268	Abundance of low coverage hits: possible chimera
+OTU269	Eukaryota;Fungi;Ascomycota
+OTU270	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae;Alternaria
+OTU271	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Sarocladium (family);Sarocladium
+OTU272	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae;Alternaria
+OTU273	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Pleosporaceae;Alternaria
+OTU274	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Sarocladium (family);Sarocladium
+OTU275	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Bionectriaceae;Geosmithia
+OTU276	Eukaryota;Fungi;Basidiomycota;Malasseziomycetes;Malasseziales;Malasseziaceae;Malassezia;Malassezia sympodialis
+OTU277	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU278	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales
+OTU279	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Barnettozyma;Barnettozyma californica
+OTU280	Eukaryota;Fungi;Ascomycota;Sordariomycetes
+OTU281	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Trichomonascaceae;Trichomonascus
+OTU282	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Cystofilobasidiales;Mrakiaceae;Mrakia
+OTU283	Abundance of low coverage hits: possible chimera
+OTU284	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Sordariales;Cephalothecaceae;Phialemonium;Phialemonium inflatum
+OTU285	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium;Cladosporium sphaerospermum
+OTU286	Eukaryota;Fungi
+OTU287	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Rhodotorula
+OTU288	Eukaryota;Fungi;Ascomycota;Leotiomycetes
+OTU289	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Toxicocladosporium
+OTU290	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU291	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Chrysozymaceae (order);Chrysozymaceae;Sampaiozyma;Sampaiozyma ingeniosa
+OTU292	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Auriculariales;Exidiaceae
+OTU293	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus;Aspergillus unguis
+OTU294	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU295	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Toxicocladosporium
+OTU296	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU297	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU298	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida metapsilosis
+OTU299	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Acremonium (family);Acremonium
+OTU300	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU301	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU302	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU303	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU304	Eukaryota;Fungi;Ascomycota
+OTU305	Eukaryota
+OTU306	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU307	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU308	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU309	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU310	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU311	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU312	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU313	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU314	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU315	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU316	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU317	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Filobasidiaceae;Naganishia
+OTU318	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU319	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Filobasidiaceae;Naganishia
+OTU320	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU321	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU322	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Filobasidiaceae;Naganishia
+OTU323	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Filobasidiaceae;Naganishia
+OTU324	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU325	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU326	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU327	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Trichomonascaceae;Trichomonascus;Trichomonascus ciferrii
+OTU328	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Trichosphaeriales;Trichosphaeriaceae;Nigrospora
+OTU329	Abundance of low coverage hits: possible chimera
+OTU330	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Acremonium (family);Acremonium
+OTU331	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Cystofilobasidiales;Mrakiaceae;Itersonilia
+OTU332	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Trichosphaeriales;Trichosphaeriaceae;Nigrospora
+OTU333	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+OTU334	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Filobasidiaceae;Naganishia
+OTU335	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Rhodotorula;Rhodotorula mucilaginosa
+OTU336	Eukaryota;Fungi
+OTU337	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae
+OTU338	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Hymenochaetales;Resinicium (family);Resinicium;Resinicium friabile
+OTU339	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Teratosphaeriaceae;Hortaea;Hortaea werneckii
+OTU340	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU341	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Rhodotorula;Rhodotorula mucilaginosa
+OTU342	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Sporidiobolus;Sporidiobolus salmonicolor
+OTU343	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Rhodotorula;Rhodosporidium sp. MAC-2011b
+OTU344	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Cryptococcaceae;Kwoniella
+OTU345	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU346	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Kriegeriales;Kriegeriaceae;Phenoliferia;Phenoliferia glacialis
+OTU347	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae
+OTU348	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Colacogloea (order);Colacogloea (family);Colacogloea
+OTU349	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU350	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Nectriaceae;Fusarium
+OTU351	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Rhodotorula;Rhodotorula toruloides
+OTU352	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Teratosphaeriaceae
+OTU353	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Rhodotorula;Rhodotorula toruloides
+OTU354	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU355	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU356	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU357	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Agaricales;Schizophyllaceae;Schizophyllum;Schizophyllum commune
+OTU358	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Rhodosporidiobolus;Rhodosporidiobolus ruineniae
+OTU359	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Nectriaceae;Fusarium
+OTU360	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Microascales;Microascaceae;Pithoascus;Pithoascus intermedius
+OTU361	Eukaryota;Fungi
+OTU362	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU363	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU364	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Leucosporidiales;Leucosporidiaceae
+OTU365	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU366	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU367	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU368	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU369	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU370	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU371	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU372	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU373	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU374	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU375	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU376	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU377	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Curvibasidium (order);Curvibasidium (family);Curvibasidium
+OTU378	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU379	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU380	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU381	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU382	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU383	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU384	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU385	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU386	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU387	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU388	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU389	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU390	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU391	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU392	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU393	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU394	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU395	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU396	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU397	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU398	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU399	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU400	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU401	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU402	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU403	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU404	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU405	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU406	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU407	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU408	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU409	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU410	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU411	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU412	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU413	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU414	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU415	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU416	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU417	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU418	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU419	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU420	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU421	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU422	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU423	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU424	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU425	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU426	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU427	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU428	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU429	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU430	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU431	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU432	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU433	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU434	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU435	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU436	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU437	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU438	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU439	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU440	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU441	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU442	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU443	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU444	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU445	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU446	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU447	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU448	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU449	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU450	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU451	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU452	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU453	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU454	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU455	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU456	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU457	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU458	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU459	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU460	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU461	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU462	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU463	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU464	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU465	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU466	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU467	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU468	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU469	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU470	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU471	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU472	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU473	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU474	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU475	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU476	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU477	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU478	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU479	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU480	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU481	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU482	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU483	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU484	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU485	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU486	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU487	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Rhodotorula
+OTU488	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Rhodotorula
+OTU489	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Nectriaceae;Fusarium
+OTU490	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Nectriaceae;Fusarium
+OTU491	Eukaryota;Fungi;Basidiomycota;Agaricomycetes;Corticiales;Corticiaceae;Hyphodontia;Hyphodontia alutacea
+OTU492	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Nectriaceae;Fusarium
+OTU493	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU494	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU495	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU496	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU497	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU498	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU499	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU500	Eukaryota;Fungi;Ascomycota
+OTU501	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU502	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Hypocreales;Nectriaceae;Fusarium
+OTU503	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU504	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU505	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU506	Eukaryota;Fungi
+OTU507	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Sporidiobolus;Sporidiobolus pararoseus
+OTU508	Eukaryota;Fungi;Ascomycota;Sordariomycetes
+OTU509	Eukaryota;Fungi;Basidiomycota;Microbotryomycetes;Sporidiobolales;Sporidiobolaceae;Sporobolomyces;Sporobolomyces beijingensis
+OTU510	Eukaryota;Fungi;Ascomycota;Leotiomycetes;Helotiales;Sclerotiniaceae
+OTU511	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida parapsilosis
+OTU512	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Lophiostomataceae
+OTU513	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales
+OTU514	Eukaryota;Fungi;Basidiomycota;Cystobasidiomycetes;Erythrobasidiales;Erythrobasidiaceae;Erythrobasidium;Erythrobasidium elongatum
+OTU515	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU516	No hits found in database
+OTU517	Eukaryota;Fungi;Ascomycota;Sordariomycetes;Glomerellales;Plectosphaerellaceae;Musicillium;Musicillium theobromae
+OTU518	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Cystofilobasidiales;Cystofilobasidiaceae;Cystofilobasidium;Cystofilobasidium capitatum
+OTU519	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Didymellaceae
+OTU520	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU521	Eukaryota;Fungi;Basidiomycota;Cystobasidiomycetes;Erythrobasidiales;uncultured Erythrobasidiaceae (family);uncultured Erythrobasidiaceae (genus);uncultured Erythrobasidiaceae
+OTU522	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Mycosphaerellaceae
+OTU523	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales
+OTU524	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Aspergillus
+OTU525	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Didymellaceae
+OTU526	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+OTU527	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU528	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU529	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU530	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+OTU531	Eukaryota;Fungi
+OTU532	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Didymellaceae
+OTU533	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales
+OTU534	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU535	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Sporormiaceae
+OTU536	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU537	Eukaryota;Fungi;Ascomycota;Dothideomycetes
+OTU538	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida
+OTU539	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida tropicalis
+OTU540	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+OTU541	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+OTU542	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+OTU543	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+OTU544	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+OTU545	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU546	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Didymellaceae
+OTU547	Eukaryota;Fungi
+OTU548	No hits found in database
+OTU549	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU550	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Didymellaceae
+OTU551	Eukaryota;Fungi;Ascomycota;Eurotiomycetes;Eurotiales;Aspergillaceae;Penicillium;Penicillium citrinum
+OTU552	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU553	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida
+OTU554	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida tropicalis
+OTU555	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU556	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU557	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Phaffomycetaceae;Cyberlindnera
+OTU558	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU559	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU560	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU561	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU562	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU563	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU564	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU565	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU566	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU567	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU568	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU569	Eukaryota;Fungi;Ascomycota;Dothideomycetes
+OTU570	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Mycosphaerellaceae;Zymoseptoria;Zymoseptoria tritici
+OTU571	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+OTU572	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU573	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida
+OTU574	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Pleosporales;Didymellaceae
+OTU575	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU576	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU577	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU578	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU579	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU580	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU581	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU582	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU583	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU584	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU585	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU586	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU587	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU588	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU589	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU590	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU591	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU592	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU593	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU594	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU595	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU596	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU597	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU598	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU599	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU600	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU601	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU602	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU603	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU604	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU605	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU606	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU607	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU608	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU609	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU610	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU611	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU612	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU613	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU614	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU615	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU616	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU617	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU618	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU619	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU620	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU621	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU622	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU623	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU624	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida tropicalis
+OTU625	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida tropicalis
+OTU626	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida tropicalis
+OTU627	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU628	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU629	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU630	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU631	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU632	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU633	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU634	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU635	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU636	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU637	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU638	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU639	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU640	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU641	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU642	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU643	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU644	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU645	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU646	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU647	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU648	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU649	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU650	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU651	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU652	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU653	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU654	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU655	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU656	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU657	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU658	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU659	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU660	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU661	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU662	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU663	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU664	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU665	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU666	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU667	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU668	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU669	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU670	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU671	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU672	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU673	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU674	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU675	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU676	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU677	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU678	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU679	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU680	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU681	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU682	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU683	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU684	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU685	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU686	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU687	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU688	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU689	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU690	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU691	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU692	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU693	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU694	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU695	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU696	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU697	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU698	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU699	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU700	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU701	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU702	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU703	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU704	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU705	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU706	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU707	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU708	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU709	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU710	Eukaryota;Fungi;Ascomycota;Dothideomycetes
+OTU711	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU712	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU713	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU714	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU715	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU716	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU717	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU718	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU719	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU720	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU721	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU722	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU723	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida tropicalis
+OTU724	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU725	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU726	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU727	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU728	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU729	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU730	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU731	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU732	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU733	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU734	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU735	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU736	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU737	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU738	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU739	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU740	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU741	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU742	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU743	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU744	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU745	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU746	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU747	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU748	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Cystofilobasidiales;Cystofilobasidiaceae;Cystofilobasidium;Cystofilobasidium infirmominiatum
+OTU749	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Filobasidiaceae;Filobasidium
+OTU750	Eukaryota;Fungi;Basidiomycota;Cystobasidiomycetes;Cystobasidiales;Cystobasidiaceae;Cystobasidium
+OTU751	Abundance of low coverage hits: possible chimera
+OTU752	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU753	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU754	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU755	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU756	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Botryosphaeriales;Botryosphaeriaceae;Lasiodiplodia
+OTU757	Eukaryota;Fungi;Basidiomycota;Cystobasidiomycetes;Cystobasidiales;Cystobasidiaceae;Cystobasidium
+OTU758	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU759	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU760	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU761	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU762	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU763	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+OTU764	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida albicans
+OTU765	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU766	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+OTU767	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+OTU768	Eukaryota;Fungi;Basidiomycota;Cystobasidiomycetes;Cystobasidiales;Cystobasidiaceae;Cystobasidium
+OTU769	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU770	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Filobasidiales;Filobasidiaceae;Filobasidium;Filobasidium wieringae
+OTU771	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+OTU772	No hits found in database
+OTU773	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;uncultured Cryptococcus (order);uncultured Cryptococcus (family);uncultured Cryptococcus (genus);uncultured Cryptococcus
+OTU774	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Debaryomycetaceae;Candida;Candida dubliniensis
+OTU775	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleraceae;Genolevuria
+OTU776	Eukaryota;Fungi
+OTU777	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleraceae;Genolevuria
+OTU778	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleraceae;Genolevuria
+OTU779	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleraceae;Genolevuria
+OTU780	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleraceae;Genolevuria
+OTU781	Eukaryota;Fungi
+OTU782	Eukaryota;Fungi
+OTU783	Eukaryota;Fungi
+OTU784	Eukaryota;Fungi
+OTU785	Eukaryota;Fungi
+OTU786	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleraceae;Genolevuria
+OTU787	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+OTU788	Eukaryota;Fungi
+OTU789	Eukaryota;Fungi
+OTU790	Eukaryota;Fungi
+OTU791	Eukaryota;Fungi
+OTU792	Eukaryota;Fungi
+OTU793	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleraceae;Genolevuria
+OTU794	Eukaryota;Fungi
+OTU795	Eukaryota;Fungi
+OTU796	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleraceae;Genolevuria
+OTU797	Eukaryota;Fungi
+OTU798	Eukaryota;Fungi
+OTU799	No hits found in database
+OTU800	Eukaryota;Fungi;Ascomycota;Saccharomycetes;Saccharomycetales;Starmerella (family);Starmerella;[Candida] etchellsii
+OTU801	Eukaryota;Fungi
+OTU802	Eukaryota;Fungi
+OTU803	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU804	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU805	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU806	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU807	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU808	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU809	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU810	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU811	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU812	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU813	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU814	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU815	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU816	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU817	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU818	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU819	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU820	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU821	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU822	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon;Trichosporon asahii
+OTU823	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU824	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU825	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU826	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU827	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU828	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU829	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon;Trichosporon asahii
+OTU830	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU831	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon;Trichosporon asahii
+OTU832	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU833	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU834	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU835	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU836	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU837	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon;Trichosporon asahii
+OTU838	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU839	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU840	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU841	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU842	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU843	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU844	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU845	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU846	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU847	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU848	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU849	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU850	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU851	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU852	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU853	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU854	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU855	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU856	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU857	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU858	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU859	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU860	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU861	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU862	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU863	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU864	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU865	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU866	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU867	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU868	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU869	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU870	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU871	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU872	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU873	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon;Trichosporon asahii
+OTU874	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU875	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU876	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU877	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU878	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU879	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU880	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU881	No hits found in database
+OTU882	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU883	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU884	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae;Trichosporon
+OTU885	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleribasidiaceae;Hannaella;Hannaella oryzae
+OTU886	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae
+OTU887	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae
+OTU888	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleraceae;Bullera;Bullera alba
+OTU889	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae
+OTU890	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae
+OTU891	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae
+OTU892	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae
+OTU893	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae
+OTU894	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae
+OTU895	Eukaryota;Fungi;uncultured fungus (phylum)
+OTU896	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Trichosporonales;Trichosporonaceae
+OTU897	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales
+OTU898	Eukaryota;Fungi;Basidiomycota;Tremellomycetes
+OTU899	Eukaryota;Fungi;Basidiomycota;Wallemiomycetes;Wallemiales;Wallemia (family);Wallemia
+OTU900	Eukaryota;Fungi;Basidiomycota;Wallemiomycetes;Wallemiales;Wallemia (family);Wallemia
+OTU901	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Tremellaceae
+OTU902	Eukaryota;Fungi;Basidiomycota;Wallemiomycetes;Wallemiales;Wallemia (family);Wallemia
+OTU903	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Tremellaceae
+OTU904	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleribasidiaceae;Hannaella
+OTU905	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Rhynchogastremataceae;Papiliotrema
+OTU906	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleribasidiaceae;Dioszegia
+OTU907	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleribasidiaceae;Hannaella;Hannaella sinensis
+OTU908	Eukaryota;Fungi;Basidiomycota;Tremellomycetes;Tremellales;Bulleribasidiaceae;Hannaella;Hannaella luteola
+OTU909	Eukaryota;Fungi
