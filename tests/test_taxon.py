@@ -15,6 +15,7 @@ class TaxonTests(unittest.TestCase):
             ("Saccharomycotina", "subphylum"),
             ("Saccharomycetes", "class"),
             ("Saccharomycetales", "order"),
+            # No family
             ("mitosporic Saccharomycetales", "no rank"),
             ("Candida", "genus"),
             ("Candida albicans", "species"),

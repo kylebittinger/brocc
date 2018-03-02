@@ -85,43 +85,65 @@ class Lineage(object):
     generic_taxa = GENERIC_TAXA
     generic_flags = GENERIC_FLAGS
     ranks = [
-        "species", "genus", "family", "order",
-        "class", "phylum", "kingdom", "superkingdom",
-        ]
+        "superkingdom", "kingdom", "phylum", "class",
+        "order", "family", "genus", "species"
+    ]
+    standard_rank_idx = dict(
+        (rank, idx) for idx, rank in enumerate(ranks))
 
     def __init__(self, taxa):
-        self.full_lineage = taxa
-        self.standard_taxa = self._create_standard_taxa(self.full_lineage)
-
-    @classmethod
-    def _create_standard_taxa(cls, lineage):
-        std_taxa = dict(
-            (rank, name) for name, rank in lineage if rank in cls.ranks)
-        fill_in_val = None
-        for rank in cls.ranks:
-            if rank in std_taxa:
-                fill_in_val = std_taxa[rank]
-            else:
-                if fill_in_val is not None:
-                    std_taxa[rank] = "{0} ({1})".format(fill_in_val, rank)
-        return std_taxa
-
-    def get_standard_taxa(self, rank):
-        for r in reversed(self.ranks):
-            t = self.get_taxon(r)
-            if t is not None:
-                yield t
-            if rank == r:
-                break
-
-    def get_all_taxa(self, rank):
-        for taxon_name, taxon_rank in self.full_lineage:
-            yield taxon_name
-            if taxon_rank == rank:
-                break
+        self.indexed_lineage = [
+            (name, self.standard_rank_idx.get(rank)) for name, rank in taxa]
 
     def get_taxon(self, rank):
-        return self.standard_taxa.get(rank)
+        rank_idx = self.ranks.index(rank)
+        for name, idx in self.indexed_lineage:
+            if idx is None:
+                continue
+            elif idx == rank_idx:
+                return name
+            elif idx > rank_idx:
+                return "{0} ({1})".format(name, rank)
+        return None
+
+    def get_standard_taxa(self, rank):
+        rank_idx = self.ranks.index(rank)
+        slice_idx = rank_idx + 1
+        ranks_up_to = self.ranks[:slice_idx]
+        for r in ranks_up_to:
+            yield self.get_taxon(r)
+
+    def get_all_taxa(self, rank):
+        rank_idx = self.ranks.index(rank)
+        for name, idx in self.indexed_lineage:
+            if idx is None:
+                yield name
+            elif idx < rank_idx:
+                yield name
+            if idx == rank_idx:
+                yield name
+                break
+            if idx > rank_idx:
+                # If we've skipped over the rank of interest, yield a
+                # placeholder and stop
+                yield self.get_taxon(rank)
+                break
+
+    @staticmethod
+    def is_generic_name(name):
+        return (name == "environmental samples") or \
+            name.startswith("unclassified")
 
     def is_generic(self, rank):
-        return is_generic(self.get_taxon(rank))
+        rank_idx = self.ranks.index(rank)
+        last_idx = 0
+        for name, idx in self.indexed_lineage:
+            if idx is None:
+                if self.is_generic_name(name):
+                    if last_idx < rank_idx:
+                        return True
+            else:
+                if idx >= rank_idx:
+                    return False
+                last_idx = idx
+        return False

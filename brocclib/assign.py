@@ -15,9 +15,6 @@ class AssignmentCandidate(object):
         self.lineage = lineage
         self.rank = rank
 
-    def is_generic(self):
-        return is_generic(self.lineage.get_taxon(self.rank))
-
     def is_placeholder(self):
         return "(" in self.lineage.get_taxon(self.rank)
         #is_high_rank = self.rank in ["phylum", "kingdom", "domain"]
@@ -216,7 +213,7 @@ class Assigner(object):
             taxon = lineage.get_taxon(rank)
             if taxon is None:
                 continue
-            if is_generic(taxon):
+            if lineage.is_generic(rank):
                 generics[taxon] += 1
                 num_generic_votes += 1
                 continue
