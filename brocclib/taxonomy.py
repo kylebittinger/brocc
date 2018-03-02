@@ -102,7 +102,8 @@ class Lineage(object):
             if rank in std_taxa:
                 fill_in_val = std_taxa[rank]
             else:
-                std_taxa[rank] = "{0} ({1})".format(fill_in_val, rank)
+                if fill_in_val is not None:
+                    std_taxa[rank] = "{0} ({1})".format(fill_in_val, rank)
         return std_taxa
 
     def get_standard_taxa(self, rank):
