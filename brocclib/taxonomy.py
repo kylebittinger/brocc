@@ -89,9 +89,8 @@ class Lineage(object):
         "class", "phylum", "kingdom", "superkingdom",
         ]
 
-    def __init__(self, dictionary):
-        self.store = dictionary
-        self.full_lineage = self.store["LineageWithRanks"]
+    def __init__(self, taxa):
+        self.full_lineage = taxa
         self.standard_taxa = self._create_standard_taxa(self.full_lineage)
 
     @classmethod

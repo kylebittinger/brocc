@@ -142,15 +142,9 @@ class NcbiLocal(object):
             return res[0]
 
     def get_lineage(self, taxon_id):
-        max_iter = 100
         lineage = list(self._query_nodes(taxon_id))
         lineage.reverse()
-        res = {}
-        for name, rank in lineage:
-            res[rank] = name
-        res["Lineage"] = "; ".join(name for name, rank in lineage)
-        res["LineageWithRanks"] = lineage
-        return res
+        return lineage
 
     def _query_nodes(self, taxon_id):
         max_iter = 100

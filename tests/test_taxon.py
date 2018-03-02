@@ -4,36 +4,21 @@ from brocclib.taxonomy import Lineage
 
 class TaxonTests(unittest.TestCase):
     def setUp(self):
-        self.d = {
-            "species": "Candida albicans",
-            "genus": "Candida",
-            # no family
-            "order": "Saccharomycetales",
-            "class": "Saccharomycetes",
-            "phylum": "Ascomycota",
-            "kingdom": "Fungi",
-            "superkingdom": "Eukaryota",
-            "Lineage": (
-                "cellular organisms; Eukaryota; Opisthokonta; Fungi; "
-                "Dikarya; Ascomycota; saccharomyceta; Saccharomycotina; "
-                "Saccharomycetes; Saccharomycetales; mitosporic "
-                "Saccharomycetales; Candida"),
-            "LineageWithRanks": [
-                ("cellular organisms", "no rank"),
-                ("Eukaryota", "superkingdom"),
-                ("Opisthokonta", "no rank"),
-                ("Fungi", "kingdom"),
-                ("Dikarya", "subkingdom"),
-                ("Ascomycota", "phylum"),
-                ("saccharomyceta", "no rank"),
-                ("Saccharomycotina", "subphylum"),
-                ("Saccharomycetes", "class"),
-                ("Saccharomycetales", "order"),
-                ("mitosporic Saccharomycetales", "no rank"),
-                ("Candida", "genus"),
-                ("Candida albicans", "species"),
-            ]
-        }
+        self.d = [
+            ("cellular organisms", "no rank"),
+            ("Eukaryota", "superkingdom"),
+            ("Opisthokonta", "no rank"),
+            ("Fungi", "kingdom"),
+            ("Dikarya", "subkingdom"),
+            ("Ascomycota", "phylum"),
+            ("saccharomyceta", "no rank"),
+            ("Saccharomycotina", "subphylum"),
+            ("Saccharomycetes", "class"),
+            ("Saccharomycetales", "order"),
+            ("mitosporic Saccharomycetales", "no rank"),
+            ("Candida", "genus"),
+            ("Candida albicans", "species"),
+        ]
 
     def test_missing_family(self):
         t = Lineage(self.d)
