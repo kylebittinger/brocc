@@ -64,9 +64,9 @@ class Assignment(object):
         parts = [
             "",
             "** {0} voting for {1} **".format(self.query_id, self.rank),
-            "Candidates (>1 vote): {0}".format(candidates2),
-            "Generics: {0}".format(generics2),
-            "Candidate total: {0}".format(self.total_votes),
+            "Candidates (>1 vote): {0}".format(", ".join(candidates2)),
+            "Generic taxa: {0}".format(", ".join(generics2)),
+            "Candidate total: {0} votes".format(self.total_votes),
             "WINNER: {0}".format(self.winning_candidate.to_string()),
             "",
         ]
@@ -105,9 +105,9 @@ class NoAssignment(object):
         parts = [
             "",
             "** {0} voting for {1} **".format(self.query_id, self.rank),
-            "Candidates (>1 vote): {0}".format(candidates2),
-            "Generics: {0}".format(generics2),
-            "Candidate total: {0}".format(self.total_votes),
+            "Candidates (>1 vote): {0}".format(", ".join(candidates2)),
+            "Generic taxa: {0}".format(", ".join(generics2)),
+            "Candidate total: {0} votes".format(self.total_votes),
             self.message,
             "",
         ]
