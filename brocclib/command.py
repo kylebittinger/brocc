@@ -3,7 +3,10 @@ from __future__ import division
 import logging
 import optparse
 import os
+import shutil
+import subprocess
 import sys
+import tempfile
 
 from brocclib.assign import Assigner
 from brocclib.get_xml import NcbiEutils
@@ -21,11 +24,11 @@ CONSENSUS_THRESHOLDS = [
     ("species", 0.6),
     ("genus", 0.6),
     ("family", 0.6),
-    ("order", 0.9),
-    ("clas", 0.9),
+    ("order", 0.7),
+    ("class", 0.8),
     ("phylum", 0.9),
     ("kingdom", 0.9),
-    ("domain", 0.9),
+    ("superkingdom", 0.9),
     ]
 
 
@@ -45,9 +48,9 @@ def parse_args(argv=None):
     parser.add_option("--min_genus_id", type="float", help=(
         "minimum identity required for a db hit to be "
         "considered at genus level [default: %default]"))
-    parser.add_option("--max_generic", type="float", default=.7, help=(
-        "maximum proportion of generic classifications allowed "
-        "before query cannot be classified [default: %default]"))
+    parser.add_option("--min_winning_votes", type="int", default=4, help=(
+        "minimum number of votes needed to establish a consensus "
+        "after removal of generic taxa [default: %default]"))
     parser.add_option("--taxonomy_db", default=TAXONOMY_DB_FP, help=(
         "location of sqlite3 database holding a local copy of the "
         "NCBI taxonomy [default: %default]"))
@@ -105,7 +108,7 @@ def main(argv=None):
     consensus_thresholds = [t for _, t in CONSENSUS_THRESHOLDS]
     assigner = Assigner(
         opts.min_cover, opts.min_species_id, opts.min_genus_id, opts.min_id,
-        consensus_thresholds, opts.max_generic, taxa_db)
+        consensus_thresholds, opts.min_winning_votes, taxa_db)
 
     # Read input files
 
@@ -119,8 +122,6 @@ def main(argv=None):
 
     if not os.path.exists(opts.output_directory):
         os.mkdir(opts.output_directory)
-    output_file = open(
-        os.path.join(opts.output_directory, "Full_Taxonomy.txt"), 'w')
     standard_taxa_file = open(
         os.path.join(opts.output_directory, "Standard_Taxonomy.txt"), "w")
     log_file = open(os.path.join(opts.output_directory, "brocc.log"), "w")
@@ -128,6 +129,15 @@ def main(argv=None):
         "Sequence\tWinner_Votes\tVotes_Cast\tGenerics_Pruned\tLevel\t"
         "Classification\n")
 
+    # Set up log for voting details
+    vote_logger = logging.getLogger("brocc.votes")
+    vote_logger.setLevel(logging.DEBUG)
+    vote_handler = logging.FileHandler(os.path.join(opts.output_directory, "voting_log.txt"))
+    vote_handler.setLevel(logging.DEBUG)
+    vote_formatter = logging.Formatter('%(message)s')
+    vote_handler.setFormatter(vote_formatter)
+    vote_logger.addHandler(vote_handler)
+    vote_logger.propagate = False
     # Do the work
 
     for name, seq in sequences:
@@ -135,12 +145,48 @@ def main(argv=None):
         # This is where the magic happens
         a = assigner.assign(name, seq, seq_hits)
 
-        output_file.write(a.format_for_full_taxonomy())
         standard_taxa_file.write(a.format_for_standard_taxonomy())
         log_file.write(a.format_for_log())
 
     # Close output files
 
-    output_file.close()
     standard_taxa_file.close()
     log_file.close()
+
+def run_comparison(argv=None):
+    p = optparse.OptionParser()
+    p.add_option("--keep_temp", action="store_true")
+    opts, args = p.parse_args(argv)
+
+    base_file_paths = [os.path.splitext(fp)[0] for fp in args]
+    for base_fp in set(base_file_paths):
+        fasta_fp = "{0}.fasta".format(base_fp)
+        blast_fp = "{0}_blast.txt".format(base_fp)
+
+        output_dir = tempfile.mkdtemp(prefix="brocc")
+
+        print "Temporary output directory:", output_dir
+
+        brocc_args = [
+            "-i", fasta_fp, "-b", blast_fp, "-o", output_dir,
+            "-a" "ITS"]
+        main(brocc_args)
+
+        base_filename = os.path.basename(base_fp)
+
+        voting_src = os.path.join(output_dir, "voting_log.txt")
+        voting_dest = "{0}_voting_log.txt".format(base_filename)
+        shutil.copyfile(voting_src, voting_dest)
+
+        observed_assignments_fp = os.path.join(
+            output_dir, "Standard_Taxonomy.txt")
+        expected_assignments_fp = "{0}_assignments.txt".format(base_fp)
+        diff_fp = "{0}_diff.txt".format(base_filename)
+        with open(diff_fp, "w") as f:
+            subprocess.call(
+                ["diff", observed_assignments_fp, expected_assignments_fp],
+                stdout=f,
+            )
+
+        if not opts.keep_temp:
+            shutil.rmtree(output_dir)

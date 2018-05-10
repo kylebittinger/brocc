@@ -1,7 +1,8 @@
 from __future__ import division
 import collections
+import logging
 
-from brocclib.taxonomy import Lineage, NoLineage, is_generic
+from brocclib.taxonomy import Lineage, NoLineage
 
 '''
 Created on Aug 29, 2011
@@ -21,59 +22,107 @@ class AssignmentCandidate(object):
         #return not (is_high_rank and not is_descended_from_missing_taxon)
 
     @property
-    def all_taxa(self):
-        return self.lineage.get_all_taxa(self.rank)
-
-    @property
     def standard_taxa(self):
         return self.lineage.get_standard_taxa(self.rank)
 
     def to_string(self):
-        return "<AssignmentCandidate {0} {1} {2}>".format(self.rank, self.lineage.get_taxon(self.rank), self.votes)
+        return "{1} ({2} votes)".format(self.rank, self.lineage.get_taxon(self.rank), self.votes)
+
 
 class Assignment(object):
-    def __init__(self, query_id, winning_candidate, total_votes, num_generic):
+    is_valid_assignment = True
+
+    def __init__(self, query_id, winning_candidate=None,
+                 rank=None, candidates=None, generics=None):
         self.query_id = query_id
         self.winning_candidate = winning_candidate
-        self.total_votes = total_votes
-        self.num_generic = num_generic
+        self.rank = rank
+        self.candidates = candidates or []
+        self.generics = generics or []
 
-    def format_for_full_taxonomy(self):
-        lineage = ';'.join(self.winning_candidate.all_taxa)
-        return "%s\t%s\n" % (self.query_id, lineage)
+    @property
+    def total_votes(self):
+        return sum(c.votes for c in self.candidates)
+
+    @property
+    def num_generic(self):
+        return sum(n for n, taxon in self.generics)
 
     def format_for_standard_taxonomy(self):
         lineage = ';'.join(self.winning_candidate.standard_taxa)
         return "%s\t%s\n" % (self.query_id, lineage)
 
     def format_for_log(self):
-        lineage = ';'.join(self.winning_candidate.all_taxa)
+        lineage = ';'.join(self.winning_candidate.standard_taxa)
         return "%s\t%s\t%s\t%s\t%s\t%s\n" % (
             self.query_id, self.winning_candidate.votes, self.total_votes,
             self.num_generic, self.winning_candidate.rank, lineage)
 
+    def log_details(self):
+        candidates2 = [c.to_string() for c in self.candidates if c.votes > 1]
+        generics2 = ["{0} ({1} votes)".format(k, v) for v, k in self.generics]
+        parts = [
+            "",
+            "** {0} voting for {1} **".format(self.query_id, self.rank),
+            "Candidates (>1 vote): {0}".format(", ".join(candidates2)),
+            "Generic taxa: {0}".format(", ".join(generics2)),
+            "Candidate total: {0} votes".format(self.total_votes),
+            "WINNER: {0}".format(self.winning_candidate.to_string()),
+            "",
+        ]
+        message = "\n".join(parts)
+        logger = logging.getLogger("brocc.votes")
+        logger.debug(message)
+
 
 class NoAssignment(object):
+    is_valid_assignment = False
+
     """Null object representing no assignment, with message."""
-    def __init__(self, query_id, message):
+    def __init__(self, query_id, message, rank=None, candidates=None, generics=None):
         self.query_id = query_id
         self.message = message
+        self.rank = rank
+        self.candidates = candidates
+        self.generics = generics
 
-    def format_for_full_taxonomy(self):
+    @property
+    def total_votes(self):
+        return sum(c.votes for c in self.candidates)
+
+    @property
+    def num_generic(self):
+        return sum(n for n, taxon in self.generics)
+
+    def format_for_standard_taxonomy(self):
         return "%s\t%s\n" % (self.query_id, self.message)
 
-    format_for_standard_taxonomy = format_for_full_taxonomy
-    format_for_log = format_for_full_taxonomy
+    format_for_log = format_for_standard_taxonomy
 
+    def log_details(self):
+        candidates2 = [c.to_string() for c in self.candidates if c.votes > 1]
+        generics2 = ["{0} ({1} votes)".format(k, v) for v, k in self.generics]
+        parts = [
+            "",
+            "** {0} voting for {1} **".format(self.query_id, self.rank),
+            "Candidates (>1 vote): {0}".format(", ".join(candidates2)),
+            "Generic taxa: {0}".format(", ".join(generics2)),
+            "Candidate total: {0} votes".format(self.total_votes),
+            self.message,
+            "",
+        ]
+        message = "\n".join(parts)
+        logger = logging.getLogger("brocc.votes")
+        logger.info(message)
 
 class Assigner(object):
     ranks = [
         "species", "genus", "family", "order",
-        "class", "phylum", "kingdom", "domain",
+        "class", "phylum", "kingdom", "superkingdom",
         ]
 
     def __init__(self, min_cover, species_min_id, genus_min_id, min_id,
-                 consensus_thresholds, max_generic, taxa_db):
+                 consensus_thresholds, min_winning_votes, taxa_db):
         self.min_cover = min_cover
         self.rank_min_ids = [
             species_min_id, genus_min_id, min_id, min_id,
@@ -81,7 +130,7 @@ class Assigner(object):
             ]
         self.min_id = min_id
         self.consensus_thresholds = consensus_thresholds
-        self.max_generic = max_generic
+        self.min_winning_votes = min_winning_votes
         self.taxa_db = taxa_db
 
     def _quality_filter(self, seq, hits):
@@ -105,9 +154,11 @@ class Assigner(object):
             return NoAssignment(name, "No hits found in database")
         hits_to_keep, frac_low_coverage = self._quality_filter(seq, hits)
         if frac_low_coverage > .9:
-            return NoAssignment(name, "Abundance of low coverage hits: possible chimera")
+            message = "Abundance of low coverage hits: possible chimera"
+            return NoAssignment(name, message)
         if not hits_to_keep:
-            return NoAssignment(name, "All BLAST hits were filtered for low quality.")
+            message = "All BLAST hits were filtered for low quality."
+            return NoAssignment(name, message)
         return self.vote(name, seq, hits_to_keep)
 
     def _retrieve_lineage(self, hit):
@@ -125,15 +176,14 @@ class Assigner(object):
         hits_lineage = [(hit, self._retrieve_lineage(hit)) for hit in hits]
         for rank in self.ranks:
             a = self.vote_at_rank(name, rank, hits_lineage)
-            if a is not None:
+            a.log_details()
+            if a.is_valid_assignment:
                 return a
-        return NoAssignment(
-            name, "Could not find consensus at domain level. No classification.")
+        a.message = "Could not find consensus at domain level. No classification."
+        return a
 
     def vote_at_rank(self, query_id, rank, db_hits):
         '''Votes at a given rank of the taxonomy.'''
-        # print
-        # print "====", query_id, "===="
         rank_idx = self.ranks.index(rank)
         min_pct_id = self.rank_min_ids[rank_idx]
         consensus_threshold = self.consensus_thresholds[rank_idx]
@@ -154,7 +204,7 @@ class Assigner(object):
             taxon = lineage.get_taxon(rank)
             if taxon is None:
                 continue
-            if is_generic(taxon):
+            if lineage.is_generic(rank):
                 generics[taxon] += 1
                 num_generic_votes += 1
                 continue
@@ -162,42 +212,51 @@ class Assigner(object):
                 candidates[taxon] = AssignmentCandidate(lineage, rank)
             candidates[taxon].votes += 1
 
-        if len(candidates) == 0:
-            # print "RET: No candidates"
-            return None
-
-        total_candidate_votes = sum(c.votes for c in candidates.values())
+        sorted_candidates = list(
+            sorted(candidates.values(), reverse=True, key=lambda c: c.votes))
+        total_candidate_votes = sum(c.votes for c in sorted_candidates)
         votes_needed_to_win = total_candidate_votes * consensus_threshold
 
-        sorted_candidates = candidates.values()
-        sorted_candidates.sort(reverse=True, key=lambda c: c.votes)
+        sorted_generics = list(
+            reversed(sorted((v, k) for k, v in generics.items())))
 
-        # print [c.to_string() for c in sorted_candidates if c.votes > 0]
-        # print "Generics", list(reversed(sorted((v, k) for k, v in generics.iteritems())))
-        # print "Votes:", total_candidate_votes, "total", num_generic_votes, "generic"
-        # print "Need", votes_needed_to_win, "to win", "(threshold", consensus_threshold, ")"
+        if len(candidates) == 0:
+            return NoAssignment(
+                query_id, "No candidates", rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
 
         # The generic taxa shouldn't count towards the vote totals.
-        total_votes = total_candidate_votes + num_generic_votes
-        max_generic_votes = total_votes * self.max_generic
-        if num_generic_votes > max_generic_votes:
-            # print "RET: Too many generic taxa"
-            return None
 
-        leading_candidate = sorted_candidates.pop(0)
+        leading_candidate = sorted_candidates[0]
 
         # Placeholder taxa should count towards the total.  However,
         # if a placeholder taxon wins the vote, we'd like to return
         # the normal taxon from which the placeholder is derived.
-        # Thus, if a placeholder wins, we return None and kick things
-        # up to the next rank.
+        # Thus, if a placeholder wins, we return a null result and
+        # kick things up to the next rank.
         if leading_candidate.is_placeholder():
-            # print "RET: Placeholder taxon"
-            return None
+            return NoAssignment(
+                query_id, "Placeholder taxon", rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
 
-        if leading_candidate.votes >= votes_needed_to_win:
-            # print "Winner:", leading_candidate.to_string()
-            return Assignment(query_id, leading_candidate, total_votes, num_generic_votes)
-        else:
-            # print "RET: No majority"
-            return None
+
+        if leading_candidate.votes < votes_needed_to_win:
+            message = (
+                "No consensus: Leading candidate needed {0} votes to win, "
+                "had {1}".format(votes_needed_to_win, leading_candidate.votes))
+            return NoAssignment(
+                query_id, message, rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
+
+        if leading_candidate.votes < self.min_winning_votes:
+            message = (
+                "Absolute number of votes too small for leading candidate: "
+                "{0} votes observed, need {1} at a minimum".format(
+                    leading_candidate.votes, self.min_winning_votes))
+            return NoAssignment(
+                query_id, message, rank=rank,
+                candidates=sorted_candidates, generics=sorted_generics)
+
+        return Assignment(
+            query_id, leading_candidate, rank=rank,
+            candidates=sorted_candidates, generics=sorted_generics)

@@ -34,14 +34,10 @@ class NcbiLocalTests(unittest.TestCase):
 
     def test_get_lineage(self):
         observed_lineage = self.db.get_lineage(3324)
-        expected_lineage = {
-            u'class': u'Clostridia',
-            u'no rank': u'cellular organisms',
-            u'order': u'Clostridiales',
-            u'phylum': u'Firmicutes',
-            u'superkingdom': u'Bacteria',
-            'Lineage': (
-                u'cellular organisms; Bacteria; Firmicutes; '
-                u'Clostridia; Clostridiales'),
-        }
+        expected_lineage = [
+            (u'cellular organisms', u'no rank'),
+            (u'Bacteria', u'superkingdom'),
+            (u'Firmicutes', u'phylum'),
+            (u'Clostridia', u'class'),
+            (u'Clostridiales', u'order')]
         self.assertEqual(observed_lineage, expected_lineage)

@@ -15,24 +15,23 @@ class NcbiEutilsTests(unittest.TestCase):
     def test_get_lineage(self):
         db = NcbiEutils()
         observed_lineage = db.get_lineage("531911")
-        expected_lineage = {
-            'superkingdom': 'Eukaryota',
-            'kingdom': 'Fungi',
-            'no rank': 'sordariomyceta',
-            'family': 'Sporocadaceae',
-            'Lineage': (
-                'cellular organisms; Eukaryota; Opisthokonta; Fungi; Dikarya; '
-                'Ascomycota; saccharomyceta; Pezizomycotina; leotiomyceta; '
-                'sordariomyceta; Sordariomycetes; Xylariomycetidae; '
-                'Xylariales; Sporocadaceae; Pestalotiopsis'),
-            'subkingdom': 'Dikarya',
-            'subclass': 'Xylariomycetidae',
-            'order': 'Xylariales',
-            'phylum': 'Ascomycota',
-            'species': 'Pestalotiopsis maculiformans',
-            'subphylum': 'Pezizomycotina',
-            'genus': 'Pestalotiopsis',
-            'class': 'Sordariomycetes'}
+        expected_lineage = [
+                ('cellular organisms', 'no rank'),
+                ('Eukaryota', 'superkingdom'),
+                ('Opisthokonta', 'no rank'),
+                ('Fungi', 'kingdom'),
+                ('Dikarya', 'subkingdom'),
+                ('Ascomycota', 'phylum'),
+                ('saccharomyceta', 'no rank'),
+                ('Pezizomycotina', 'subphylum'),
+                ('leotiomyceta', 'no rank'),
+                ('sordariomyceta', 'no rank'),
+                ('Sordariomycetes', 'class'),
+                ('Xylariomycetidae', 'subclass'),
+                ('Xylariales', 'order'),
+                ('Sporocadaceae', 'family'),
+                ('Pestalotiopsis', 'genus'),
+                ('Pestalotiopsis maculiformans', 'species')]
         self.assertEqual(observed_lineage, expected_lineage)
         self.assertEqual(db.lineages, {'531911': expected_lineage})
 
@@ -45,9 +44,6 @@ class FunctionTests(unittest.TestCase):
         self.assertEqual(get_taxid("HQ844023.1"), "1056490")
 
     def test_getLineage(self):
-        lineage = get_lineage("531911")
-        self.assertEqual(lineage["genus"], "Pestalotiopsis")
-        self.assertEqual(lineage["kingdom"], "Fungi")
         # Should this return the HTTP 400 error?
         self.assertEqual(get_lineage("asdf"), None)
 

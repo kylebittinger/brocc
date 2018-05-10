@@ -21,7 +21,7 @@ class NcbiEutils(object):
 
 
 def get_taxon_from_xml(xml_string):
-    taxon_dict = {}
+    lineage_with_ranks = []
     xml_string_new = "".join(
         [s for s in xml_string.splitlines(True) if s.strip("\r\n")])
     tree = ET.XML(xml_string_new)
@@ -31,17 +31,14 @@ def get_taxon_from_xml(xml_string):
     for elem in list(lineage_elem):
         rank = elem.find('Rank').text
         name = elem.find('ScientificName').text
-        taxon_dict[rank] = name
+        lineage_with_ranks.append((name, rank))
 
     # Include lowest rank in lineage
     rank = tree.find('Taxon/Rank').text
-    if rank not in taxon_dict:
-        taxon_dict[rank] = tree.find('Taxon/ScientificName').text
+    name = tree.find('Taxon/ScientificName').text
+    lineage_with_ranks.append((name, rank))
 
-    # Also include the lineage as a string
-    taxon_dict['Lineage'] = tree.find('Taxon/Lineage').text
-
-    return taxon_dict
+    return lineage_with_ranks
 
 
 def _get_xml_from_html(html_response):

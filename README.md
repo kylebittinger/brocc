@@ -10,17 +10,27 @@ Dollive S, Peterfreund GL, Sherrill-Mix S, Bittinger K, Sinha R, Hoffmann C, Nab
 Installion
 ----------
 
-To install BROCC system-wide, run this command in the current directory.
+To install BROCC, run this command in the current directory.
 
-    python setup.py install
+    pip install .
 
+BROCC has two methods of looking up taxon names: it can use a local
+copy of the NCBI taxonomy, or it can use NCBI's E-utilities to ask for
+names over the web.  Using a local copy of the NCBI taxonomy is much
+faster and more reliable.  To prepare this taxonomy database, use the
+command:
+
+    create_local_taxonomy_db.py
+
+You will need about 5G for the taxonomy databaase, which is stored at
+`~/.brocc/taxonomy.db` by default.
 
 Running
 -------
 
 The BROCC classifier takes BLAST results as input, using output format
 7 (see BLAST documentation).  The following BLAST parameters are
-found to work best for amplicon based sequence sets:
+found to work best for amplicon-based sequence sets:
 
     blastn -query <SEQUENCES (FASTA FORMAT)> -evalue 1e-5 -outfmt 7 -db nt -out <BLAST RESULTS> -num_threads 8 -max_target_seqs 100
 
@@ -28,10 +38,8 @@ The BROCC program requires two input files and the name of an output directory:
 
     brocc.py -i <SEQUENCES (FASTA FORMAT)> -b <BLAST RESULTS> -o <OUTPUT DIRECTORY>
 
-`brocc.py` outputs a QIIME-formated taxonomy map and a log file.  The
-log file that contains the full classification and voting details:
-number of votes for winner, total votes cast, and number of generic
-hits pruned.
+`brocc.py` outputs a QIIME-formated taxonomy map and a couple of log
+files, giving details on the voting.
 
 Settings
 --------
@@ -41,9 +49,6 @@ The BROCC command has several options for consensus formation:
 * minimum hit coverage (for consideration)
 * minimum species identity (for consideration at the species level)
 * minimum genus identity (for consideration at the genus level)
-* minimum overall identity (for consideration at higher levels)
-* maximum proportion of generic hits pruned out before query is
-  given a high level classification only
 
 The defaults are currently set for the ITS1 gene, because these
 settings seem to work well over several different amplicons.  The

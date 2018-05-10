@@ -4,29 +4,30 @@ from brocclib.taxonomy import Lineage
 
 class TaxonTests(unittest.TestCase):
     def setUp(self):
-        self.d = {
-            "species": "Candida albicans",
-            "genus": "Candida",
-            # no family
-            "order": "Saccharomycetales",
-            "class": "Saccharomycetes",
-            "phylum": "Ascomycota",
-            "kingdom": "Fungi",
-            "superkingdom": "Eukaryota",
-            "Lineage": (
-                "cellular organisms; Eukaryota; Opisthokonta; Fungi; "
-                "Dikarya; Ascomycota; saccharomyceta; Saccharomycotina; "
-                "Saccharomycetes; Saccharomycetales; mitosporic "
-                "Saccharomycetales; Candida"),
-            }
+        self.d = [
+            ("cellular organisms", "no rank"),
+            ("Eukaryota", "superkingdom"),
+            ("Opisthokonta", "no rank"),
+            ("Fungi", "kingdom"),
+            ("Dikarya", "subkingdom"),
+            ("Ascomycota", "phylum"),
+            ("saccharomyceta", "no rank"),
+            ("Saccharomycotina", "subphylum"),
+            ("Saccharomycetes", "class"),
+            ("Saccharomycetales", "order"),
+            # No family
+            ("mitosporic Saccharomycetales", "no rank"),
+            ("Candida", "genus"),
+            ("Candida albicans", "species"),
+        ]
 
     def test_missing_family(self):
         t = Lineage(self.d)
-        self.assertEqual(t.family, "Candida (family)")
+        self.assertEqual(t.get_taxon("family"), "Candida (family)")
 
     def test_species(self):
         t = Lineage(self.d)
-        self.assertEqual(t.species, "Candida albicans")
+        self.assertEqual(t.get_taxon("species"), "Candida albicans")
 
     def test_standard_taxa(self):
         t = Lineage(self.d)
@@ -35,34 +36,10 @@ class TaxonTests(unittest.TestCase):
             "Saccharomycetales", "Candida (family)", "Candida",
             "Candida albicans"]
         self.assertEqual(list(t.get_standard_taxa("species")), expected)
-        self.assertEqual(t.classified, True)
-
-    def test_all_taxa(self):
-        t = Lineage(self.d)
-        expected = [
-            "cellular organisms", "Eukaryota", "Opisthokonta",
-            "Fungi", "Dikarya", "Ascomycota", "saccharomyceta", "Saccharomycotina",
-            "Saccharomycetes", "Saccharomycetales", "mitosporic Saccharomycetales", 
-            "Candida", "Candida albicans"]
-        self.assertEqual(list(t.get_all_taxa("species")), expected)
-        self.assertEqual(t.classified, True)
-        
-    def test_missing_species_family(self):
-        del self.d["species"]
-        del self.d["genus"]
-        t = Lineage(self.d)
-        self.assertEqual(t.family, None)
 
     def test_generic_species(self):
-        self.d["species"] = "uncultured organism"
         t = Lineage(self.d)
-        self.assertEqual(t.classified, False)
-
-    def test_generic_taxon(self):
-        self.d["no rank"] = "unclassified Fungi"
-        t = Lineage(self.d)
-        self.assertEqual(t.classified, False)
-
+        self.assertEqual(t.is_generic("species"), False)
 
 if __name__ == "__main__":
     unittest.main()
