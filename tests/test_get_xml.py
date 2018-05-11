@@ -9,8 +9,8 @@ from brocclib.get_xml import (
 class NcbiEutilsTests(unittest.TestCase):
     def test_get_taxon_id(self):
         db = NcbiEutils()
-        self.assertEqual(db.get_taxon_id("312434489"), "531911")
-        self.assertEqual(db.taxon_ids, {"312434489": "531911"})
+        self.assertEqual(db.get_taxon_id("HQ608011.1"), "531911")
+        self.assertEqual(db.taxon_ids, {"HQ608011.1": "531911"})
 
     def test_get_lineage(self):
         db = NcbiEutils()
