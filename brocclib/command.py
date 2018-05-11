@@ -165,8 +165,6 @@ def run_comparison(argv=None):
 
         output_dir = tempfile.mkdtemp(prefix="brocc")
 
-        print "Temporary output directory:", output_dir
-
         brocc_args = [
             "-i", fasta_fp, "-b", blast_fp, "-o", output_dir,
             "-a" "ITS"]

@@ -1,5 +1,5 @@
 from unittest import TestCase, main
-from cStringIO import StringIO
+from io import StringIO
 
 from brocclib.parse import (
     read_blast, iter_fasta, parse_accession,
@@ -31,9 +31,9 @@ class FastaTests(TestCase):
                  "CCAAAA",
                  ]
         seqs = iter_fasta(lines)
-        self.assertEqual(seqs.next(), ("lab1", "TTTTCCC"))
-        self.assertEqual(seqs.next(), ("lab2", "CCAAAA"))
-        self.assertRaises(StopIteration, seqs.next)
+        self.assertEqual(next(seqs), ("lab1", "TTTTCCC"))
+        self.assertEqual(next(seqs), ("lab2", "CCAAAA"))
+        self.assertRaises(StopIteration, next, seqs)
 
 
 class BlastOutputTests(TestCase):

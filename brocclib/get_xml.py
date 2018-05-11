@@ -1,5 +1,7 @@
 import json
-import urllib2, os, StringIO
+import urllib.request
+import urllib.error
+import os
 from xml.etree import ElementTree as ET
 import logging
 
@@ -22,9 +24,7 @@ class NcbiEutils(object):
 
 def get_taxon_from_xml(xml_string):
     lineage_with_ranks = []
-    xml_string_new = "".join(
-        [s for s in xml_string.splitlines(True) if s.strip("\r\n")])
-    tree = ET.XML(xml_string_new)
+    tree = ET.XML(xml_string)
     lineage_elem = tree.find('Taxon/LineageEx')
     if lineage_elem is None:
         raise ValueError("No lineage info found in XML:\n" + xml_string)
@@ -63,43 +63,42 @@ def get_lineage(taxid):
     num_tries = 0 #numter of times db connection was attempted
     while num_tries < 5:
         try:        #watch out for db connection time out
-            url = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=' + taxid + '&rettype=xml'
-            xml = urllib2.urlopen(url)
+            url = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id={0}&rettype=xml'.format(taxid)
+            xml = urllib.request.urlopen(url)
             xml_str = xml.read()
             xml_string_from_html = _get_xml_from_html(xml_str)
             taxon_dict = get_taxon_from_xml(xml_string_from_html)
             return taxon_dict
-        except urllib2.HTTPError as e:
+        except urllib.error.HTTPError as e:
             logging.info(str(e))
             if e.code == 400:
                 return None
             else:
                 num_tries += 1
-        except urllib2.URLError as e:
+        except urllib.error.URLError as e:
             num_tries += 1
-            print e
-            print "Database connectiom timed out for taxon", taxid, "Will retry"
+            logging.info(str(e))
         except Exception as e:
             num_tries += 1
-            print e, "Will retry"
+            logging.info(str(e))
     if num_tries == 5:
-        print "could not connect to db for taxon" + str(taxid)
-        print str(taxid) + " will not be considered"
+        logging.info(
+            "Could not retrieve lineage for taxon {0}, will not be considered".format(taxid))
         return None
 
 
 def url_open(url, max_tries=5):
-    for n in xrange(max_tries):
+    for n in range(max_tries):
         try:
-            return urllib2.urlopen(url)
-        except urllib2.HTTPError as e:
+            return urllib.request.urlopen(url)
+        except urllib.error.HTTPError as e:
             # Don't keep trying if you gave a bad request
             if e.code == 400:
                 raise e
             logging.debug("Retrying URL %s (attempt %s)" % (url, n))
-        except urllib2.URLError:
+        except urllib.error.URLError:
             logging.debug("Retrying URL %s (attempt %s)" % (url, n))
-    raise urllib2.URLError("Could not open URL %s (%s attempts)" % (url, n))
+    raise urllib.error.URLError("Could not open URL %s (%s attempts)" % (url, n))
 
 
 def get_taxid(acc):
@@ -109,6 +108,7 @@ def get_taxid(acc):
     url = url_fmt.format(acc)
     xpath = ".//Link/Id"
     try:
+        logging.info(url)
         response = url_open(url)
         xml = ET.parse(response)
         elem = xml.find(xpath)
