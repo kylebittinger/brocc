@@ -3,12 +3,12 @@ from distutils.core import setup
 
 setup(
     name='BLAST READ and OTU Consensus Classifier',
-    version='1.3.0',
+    version='1.4.0',
     description='BLAST READ and OTU Consensus Classifier',
     author='Serena Dollive, Kyle Bittinger',
-    author_email='kbit@mail.med.upenn.edu',
+    author_email='kylebittinger@gmail.com',
     maintainer='Kyle Bittinger',
-    maintainer_email='kbit@mail.med.upenn.edu',
+    maintainer_email='kylebittinger@gmail.com',
     url='',
     packages=['brocclib'],
     scripts=[
