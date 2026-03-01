@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brocc"
+version = "1.4.0"
+description = "BLAST Consensus Classifier"
+readme = "README.md"
+authors = [
+    {name = "Kyle Bittinger", email = "kylebittinger@gmail.com"},
+    {name = "Serena Dollive"},
+    ]
+maintainers = [
+    {name = "Kyle Bittinger", email = "kylebittinger@gmail.com"},
+]
+license = "GPL-3.0-or-later"
+requires-python = ">= 3.9"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+]
+
+[project.urls]
+Homepage = "https://github.com/kylebittinger/brocc"
+
+[project.scripts]
+brocc = "brocclib.command:main"
+create_local_taxonomy_db = "brocclib.taxonomy_db:main"
+compare_brocc_assignments = "brocclib.command:run_comparison"
+
+[tool.setuptools.packages.find]
+include = ["brocclib"]
