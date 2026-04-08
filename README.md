@@ -20,9 +20,9 @@ names over the web.  Using a local copy of the NCBI taxonomy is much
 faster and more reliable.  To prepare this taxonomy database, use the
 command:
 
-    create_local_taxonomy_db.py
+    create_local_taxonomy_db
 
-You will need about 5G for the taxonomy databaase, which is stored at
+You will need about 5G for the taxonomy database, which is stored at
 `~/.brocc/taxonomy.db` by default.
 
 Running

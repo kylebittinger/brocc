@@ -100,7 +100,7 @@ def main(argv=None):
             "Did not detect a local copy of the NCBI taxonomy.\n"
             "Using NCBI EUtils to get taxonomic info instead.\n\n"
             "The NCBI taxonomy can be dowloaded with the script "
-            "create_local_taxonomy_db.py\n"
+            "create_local_taxonomy_db\n"
             "This will greatly speed up the assignment process.\n"
         )
         taxa_db = NcbiEutils()
