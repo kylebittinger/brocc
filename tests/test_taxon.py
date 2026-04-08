@@ -6,7 +6,7 @@ class TaxonTests(unittest.TestCase):
     def setUp(self):
         self.d = [
             ("cellular organisms", "no rank"),
-            ("Eukaryota", "superkingdom"),
+            ("Eukaryota", "domain"),
             ("Opisthokonta", "no rank"),
             ("Fungi", "kingdom"),
             ("Dikarya", "subkingdom"),
