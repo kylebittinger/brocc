@@ -1,1 +1,1 @@
-312 P30.524_1481	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Capnodiales;Cladosporiaceae;Cladosporium
+312 P30.524_1481	Eukaryota;Fungi;Ascomycota;Dothideomycetes;Cladosporiales;Cladosporiaceae;Cladosporium
