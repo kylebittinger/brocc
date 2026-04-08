@@ -20,9 +20,9 @@ names over the web.  Using a local copy of the NCBI taxonomy is much
 faster and more reliable.  To prepare this taxonomy database, use the
 command:
 
-    create_local_taxonomy_db.py
+    create_local_taxonomy_db
 
-You will need about 5G for the taxonomy databaase, which is stored at
+You will need about 5G for the taxonomy database, which is stored at
 `~/.brocc/taxonomy.db` by default.
 
 Running
@@ -36,9 +36,9 @@ found to work best for amplicon-based sequence sets:
 
 The BROCC program requires two input files and the name of an output directory:
 
-    brocc.py -i <SEQUENCES (FASTA FORMAT)> -b <BLAST RESULTS> -o <OUTPUT DIRECTORY>
+    brocc -i <SEQUENCES (FASTA FORMAT)> -b <BLAST RESULTS> -o <OUTPUT DIRECTORY>
 
-`brocc.py` outputs a QIIME-formated taxonomy map and a couple of log
+`brocc` outputs a QIIME-formated taxonomy map and a couple of log
 files, giving details on the voting.
 
 Settings
