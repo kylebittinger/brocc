@@ -16,19 +16,19 @@ class NcbiEutilsTests(unittest.TestCase):
         db = NcbiEutils()
         observed_lineage = db.get_lineage("531911")
         expected_lineage = [
-                ('cellular organisms', 'no rank'),
-                ('Eukaryota', 'superkingdom'),
-                ('Opisthokonta', 'no rank'),
+                ('cellular organisms', 'cellular root'),
+                ('Eukaryota', 'domain'),
+                ('Opisthokonta', 'clade'),
                 ('Fungi', 'kingdom'),
                 ('Dikarya', 'subkingdom'),
                 ('Ascomycota', 'phylum'),
-                ('saccharomyceta', 'no rank'),
+                ('saccharomyceta', 'clade'),
                 ('Pezizomycotina', 'subphylum'),
-                ('leotiomyceta', 'no rank'),
-                ('sordariomyceta', 'no rank'),
+                ('leotiomyceta', 'clade'),
+                ('sordariomyceta', 'clade'),
                 ('Sordariomycetes', 'class'),
                 ('Xylariomycetidae', 'subclass'),
-                ('Xylariales', 'order'),
+                ('Amphisphaeriales', 'order'),
                 ('Sporocadaceae', 'family'),
                 ('Pestalotiopsis', 'genus'),
                 ('Pestalotiopsis maculiformans', 'species')]
