@@ -10,7 +10,7 @@ class NoLineage(object):
 
 class Lineage(object):
     ranks = [
-        "superkingdom", "kingdom", "phylum", "class",
+        "domain", "kingdom", "phylum", "class",
         "order", "family", "genus", "species"
     ]
     standard_rank_idx = dict(
